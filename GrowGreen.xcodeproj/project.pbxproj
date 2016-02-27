@@ -20,6 +20,9 @@
 		51B9E2431C7E649000B449DA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 51B9E2421C7E649000B449DA /* home.png */; };
 		51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
+		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
+		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
+		F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		51B9E2421C7E649000B449DA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
+		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
+		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
+		F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerOrdersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +80,11 @@
 				51B9E2251C7E51E100B449DA /* ViewController.swift */,
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
 				51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */,
-				51B9E2271C7E51E100B449DA /* Main.storyboard */,
+				F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */,
+				F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */,
+				F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */,
 				F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */,
+				51B9E2271C7E51E100B449DA /* Main.storyboard */,
 				51B9E22A1C7E51E100B449DA /* Assets.xcassets */,
 				51B9E22C1C7E51E100B449DA /* LaunchScreen.storyboard */,
 				51B9E22F1C7E51E100B449DA /* Info.plist */,
@@ -174,7 +183,10 @@
 			files = (
 				51B9E2261C7E51E100B449DA /* ViewController.swift in Sources */,
 				51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */,
+				F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */,
 				51B9E2241C7E51E100B449DA /* AppDelegate.swift in Sources */,
+				F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */,
+				F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */,
 				F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */,
 				51B9E2411C7E61E200B449DA /* ProduceViewController.swift in Sources */,
 			);
