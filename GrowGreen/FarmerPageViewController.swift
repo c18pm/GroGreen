@@ -20,11 +20,18 @@ class FarmerPageViewController: UIViewController {
     
     @IBAction func quantityChangeStepper(sender: UIStepper) {
         
-        
-        
         numLabel.text = Int(sender.value).description
+    }
+    
+    @IBAction func submitOrder(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "GroGreen", message: "Order complete!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
         
     }
+    
    
     
     override func viewDidLoad() {
@@ -38,10 +45,11 @@ class FarmerPageViewController: UIViewController {
         quantityStepper.autorepeat = true
         quantityStepper.maximumValue = 10
         
-        farmstring = NSUserDefaults .standardUserDefaults() .stringForKey("farmchoosen")!
+        farmstring = NSUserDefaults .standardUserDefaults() .stringForKey("farmChosen")!
         print(farmstring)
         
         namelabel.text = farmstring
+        
         
         
         
@@ -53,13 +61,13 @@ class FarmerPageViewController: UIViewController {
 
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
+ 
     
     
     

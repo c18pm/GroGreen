@@ -86,7 +86,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You selected \(self.mainFarm[indexPath.row])")
         
-        NSUserDefaults .standardUserDefaults() .setObject(self.mainFarm[indexPath.row], forKey: "farmchoosen")
+        NSUserDefaults .standardUserDefaults() .setObject(self.mainFarm[indexPath.row], forKey: "farmChosen")
         
         self.performSegueWithIdentifier("tofarmerpage", sender: self)
         
