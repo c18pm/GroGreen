@@ -23,7 +23,6 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    
     //This sets the amount of cells in the table view. This is equal to the amount of produceArray in the array.
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.produceArray.count;

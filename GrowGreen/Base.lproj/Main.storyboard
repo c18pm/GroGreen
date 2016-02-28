@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -37,30 +37,34 @@
                                 <color key="textColor" red="0.26845661227172746" green="0.68827715968586389" blue="0.22577728272622824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep5-2P-IIB">
-                                <rect key="frame" x="233" y="316" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iei-mk-HVN">
+                                <rect key="frame" x="221" y="280" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BaS-vJ-mAe"/>
-                                    <constraint firstAttribute="width" constant="75" id="RQS-3d-vj0"/>
+                                    <constraint firstAttribute="width" constant="127" id="KBh-Qs-z1E"/>
+                                    <constraint firstAttribute="height" constant="39" id="xXZ-xP-Py7"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
                                 <state key="normal" title="Restaurant">
-                                    <color key="titleColor" red="0.26845661227172746" green="0.68827715968586389" blue="0.22577728272622824" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Xcj-WV-xEF"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="VBX-Hl-SfO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b11-c2-vr6">
-                                <rect key="frame" x="246" y="389" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4D-PD-n8w">
+                                <rect key="frame" x="221" y="375" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="5i6-Sz-10o"/>
-                                    <constraint firstAttribute="height" constant="30" id="EHm-tg-rK7"/>
+                                    <constraint firstAttribute="width" constant="127" id="QRW-W1-G9L"/>
+                                    <constraint firstAttribute="height" constant="39" id="a6P-En-hdN"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
                                 <state key="normal" title="Farmer">
-                                    <color key="titleColor" red="0.26845661227172746" green="0.68827715968586389" blue="0.22577728272622824" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bOA-t0-3pq" kind="show" id="4jY-PU-XkV"/>
+                                    <segue destination="bOA-t0-3pq" kind="show" id="b9S-XZ-88H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,12 +72,8 @@
                         <constraints>
                             <constraint firstItem="8Rq-uE-q8w" firstAttribute="top" secondItem="Rps-x8-asO" secondAttribute="bottom" constant="38" id="03I-2a-SXd"/>
                             <constraint firstItem="8Rq-uE-q8w" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="1D1-nG-d2w"/>
-                            <constraint firstItem="b11-c2-vr6" firstAttribute="top" secondItem="ep5-2P-IIB" secondAttribute="bottom" constant="43" id="2tl-IQ-YzC"/>
-                            <constraint firstItem="ep5-2P-IIB" firstAttribute="top" secondItem="8Rq-uE-q8w" secondAttribute="bottom" constant="119" id="CQ9-7g-X9q"/>
                             <constraint firstItem="Rps-x8-asO" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="Ush-FA-zu5"/>
-                            <constraint firstItem="b11-c2-vr6" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="auP-1O-wEW"/>
                             <constraint firstItem="Rps-x8-asO" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="15" id="gg5-53-xUe"/>
-                            <constraint firstItem="ep5-2P-IIB" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="kSv-N3-VJY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -637,10 +637,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WpJ-DM-1gK"/>
-        <segue reference="4jY-PU-XkV"/>
+        <segue reference="VBX-Hl-SfO"/>
         <segue reference="bTb-fX-bhg"/>
-        <segue reference="WbD-LO-QYo"/>
-        <segue reference="ude-ca-fMK"/>
+        <segue reference="b9S-XZ-88H"/>
+        <segue reference="xBp-l1-vtG"/>
         <segue reference="4e1-a0-wZZ"/>
     </inferredMetricsTieBreakers>
 </document>
