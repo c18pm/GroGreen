@@ -19,6 +19,13 @@
 		51B9E2411C7E61E200B449DA /* ProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2401C7E61E200B449DA /* ProduceViewController.swift */; };
 		51B9E2431C7E649000B449DA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 51B9E2421C7E649000B449DA /* home.png */; };
 		51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */; };
+		DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92DD1C892BAA00E130D6 /* Firebase.framework */; };
+		DE4F92E21C892C4300E130D6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E11C892C4300E130D6 /* libc++.tbd */; };
+		DE4F92E31C892C6800E130D6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */; };
+		DE4F92E51C892C7200E130D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E41C892C7200E130D6 /* CFNetwork.framework */; };
+		DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E61C892C7700E130D6 /* Security.framework */; };
+		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
+		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
 		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
@@ -40,6 +47,13 @@
 		51B9E2401C7E61E200B449DA /* ProduceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceViewController.swift; sourceTree = "<group>"; };
 		51B9E2421C7E649000B449DA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
+		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		DE4F92E11C892C4300E130D6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DE4F92E41C892C7200E130D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DE4F92E61C892C7700E130D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
 		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */,
+				DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */,
+				DE4F92E51C892C7200E130D6 /* CFNetwork.framework in Frameworks */,
+				DE4F92E31C892C6800E130D6 /* libicucore.tbd in Frameworks */,
+				DE4F92E21C892C4300E130D6 /* libc++.tbd in Frameworks */,
+				DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +80,11 @@
 		51B9E2171C7E51E000B449DA = {
 			isa = PBXGroup;
 			children = (
+				DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */,
+				DE4F92E61C892C7700E130D6 /* Security.framework */,
+				DE4F92E41C892C7200E130D6 /* CFNetwork.framework */,
+				DE4F92E11C892C4300E130D6 /* libc++.tbd */,
+				DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */,
 				51B9E2221C7E51E100B449DA /* GrowGreen */,
 				51B9E2211C7E51E100B449DA /* Products */,
 			);
@@ -85,9 +110,11 @@
 				F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */,
 				F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */,
 				51B9E2271C7E51E100B449DA /* Main.storyboard */,
+				DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */,
 				51B9E22A1C7E51E100B449DA /* Assets.xcassets */,
 				51B9E22C1C7E51E100B449DA /* LaunchScreen.storyboard */,
 				51B9E22F1C7E51E100B449DA /* Info.plist */,
+				DE4F92DD1C892BAA00E130D6 /* Firebase.framework */,
 				51B9E2351C7E53DA00B449DA /* Supporting Files */,
 			);
 			path = GrowGreen;
@@ -181,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */,
 				51B9E2261C7E51E100B449DA /* ViewController.swift in Sources */,
 				51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */,
 				F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */,
@@ -301,6 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrowGreen",
+				);
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mitchell.GrowGreen;
@@ -312,6 +344,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrowGreen",
+				);
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mitchell.GrowGreen;

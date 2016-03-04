@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-1063" y="697"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant Log In View Controller-->
         <scene sceneID="kwW-Uo-1iA">
             <objects>
-                <viewController id="TH8-Lm-kc5" sceneMemberID="viewController">
+                <viewController id="TH8-Lm-kc5" customClass="restaurantLogInViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KIm-V2-f6B"/>
                         <viewControllerLayoutGuide type="bottom" id="0gB-Jv-LZl"/>
@@ -94,14 +94,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="signin.png" translatesAutoresizingMaskIntoConstraints="NO" id="EEt-OF-d8g">
-                                <rect key="frame" x="102" y="157" width="64" height="56"/>
+                                <rect key="frame" x="110" y="157" width="64" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="eO4-Ut-Odb"/>
                                     <constraint firstAttribute="height" constant="56" id="gXL-Cx-Xc9"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-uM-fTB">
+                                <rect key="frame" x="237" y="280" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="UTD-JJ-Isv"/>
+                                    <constraint firstAttribute="height" constant="39" id="oWE-kd-KWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="TH8-Lm-kc5" eventType="touchUpInside" id="PXM-Q1-udn"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-fa-UQz">
-                                <rect key="frame" x="224" y="280" width="127" height="39"/>
+                                <rect key="frame" x="244" y="344" width="127" height="39"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="F8A-Ei-8C9"/>
@@ -112,28 +127,30 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-fv-5uu">
+                                <rect key="frame" x="252" y="164" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-I3-WJv">
+                                <rect key="frame" x="252" y="225" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="signup.png" translatesAutoresizingMaskIntoConstraints="NO" id="zYD-40-u21">
-                                <rect key="frame" x="115" y="272" width="64" height="56"/>
+                                <rect key="frame" x="121" y="336" width="64" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="FwE-si-yh2"/>
                                     <constraint firstAttribute="height" constant="56" id="wFE-BB-c3j"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-uM-fTB">
-                                <rect key="frame" x="224" y="165" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="UTD-JJ-Isv"/>
-                                    <constraint firstAttribute="height" constant="39" id="oWE-kd-KWA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="Gr4-I3-WJv" id="0GQ-6K-6JI"/>
+                        <outlet property="usernameField" destination="w4l-fv-5uu" id="VgP-fj-4Pu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ot7-FS-Pob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
