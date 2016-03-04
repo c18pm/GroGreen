@@ -11,18 +11,37 @@ import Firebase
 
 class restaurantLogInViewController: ViewController {
 
-      let ref = Firebase(url: "https://grogreen.firebaseio.com")
-
+    let ref = Firebase(url: "https://grogreen.firebaseio.com")
+    
     @IBOutlet weak var usernameField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
     
+    
     @IBAction func signInButton(sender: AnyObject) {
+        
+       
+        self.ref.authUser(usernameField.text!, password: passwordField.text!) { (error, auth) -> Void in
+            if(error == nil)
+            {
+                print("Login Successful")
+            }
+            else
+            {
+                print("Login Fail")
+            }
+        }
+        
         
         
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+
+
 
         // Do any additional setup after loading the view.
     }
