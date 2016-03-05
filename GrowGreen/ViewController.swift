@@ -7,17 +7,18 @@
 //
 
 import UIKit
-
+import Firebase
 
 class ViewController: UIViewController {
     
+    
+    let segueRef = Firebase(url: "https://grogreen.firebaseio.com")
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
-
     }
 
 
@@ -25,10 +26,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func restaurantLogout(sender: AnyObject) {
+        
+        segueRef.unauth();
+        print("Logout successful")
+        self.performSegueWithIdentifier("restaurantLogout", sender: nil)
+    }
+    
 
-
-
-
-
+    
 
 }

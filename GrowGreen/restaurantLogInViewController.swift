@@ -17,33 +17,30 @@ class restaurantLogInViewController: ViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    
     @IBAction func signInButton(sender: AnyObject) {
         
-       
         self.ref.authUser(usernameField.text!, password: passwordField.text!) { (error, auth) -> Void in
             if(error == nil)
             {
                 print("Login Successful")
+
+                self.performSegueWithIdentifier("loginToRestaurantHome", sender: nil)
+                
             }
             else
             {
                 print("Login Fail")
+        
             }
         }
         
-        
-        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-
-
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +48,26 @@ class restaurantLogInViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        
+//        // 1
+//        ref.observeAuthEventWithBlock { (authData) -> Void in
+//            // 2
+//            print("uid")
+//           // print(authData)
+//            if authData != nil {
+//                // 3
+//                self.performSegueWithIdentifier("loginToRestaurantHome", sender: nil)
+//            }
+//        }
+//    }
+
+    
+}
+
 
     /*
     // MARK: - Navigation
@@ -62,4 +79,4 @@ class restaurantLogInViewController: ViewController {
     }
     */
 
-}
+
