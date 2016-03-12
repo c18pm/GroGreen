@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
 class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     
+    //firebase reference
+    let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
+
+    var farms = [FDataSnapshot]()
+    
+    // your firebase reference as a property
+    
+    // your data source, you can replace this with your own model if you wish
+    var items = [FDataSnapshot]()
+
+
     //These are all different arrays which show which farms supply which types of produce. There is also a main array and once the view is loaded, that array will be set to the array that has the farms of the selected produce.
     @IBOutlet var tableView: UITableView!
-    let dairyFarm = ["farm 1", "farm 2"]
-    let vegetableFarm = ["farm 3", "farm 4"]
-    let fruitFarm = ["farm 5", "farm 6"]
-    let jamFarm = ["farm 7", "farm 8"]
-    let poultryFarm = ["farm 9", "farm 10"]
-    var mainFarm = [String]()
+  
     var produceType = String()
 
     
@@ -30,51 +38,36 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         //Sends data to FarmerPageViewController
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        //let defaults = NSUserDefaults.standardUserDefaults()
         
         //let key = "myTableViewWithRowOf\(indexPath.row)"
         //defaults.setFloat(selectedCell.contentView.alpha, forKey: key)
         
         
         //Activates the segue to transition to the next view.
-//        self.performSegueWithIdentifier("toFarmResults", sender: self)
+        //self.performSegueWithIdentifier("toFarmResults", sender: self)
         
-        
-        
-        
-        //This if statement sets the main array to the correct array for the produce choosen.
-        if produceType == "Dairy" {
-            mainFarm = dairyFarm
-        }
-        else if produceType == "Vegetable" {
-            mainFarm = vegetableFarm
-        }
-        else if produceType == "Fruit" {
-            mainFarm = fruitFarm
-        }
-        else if produceType == "Jam" {
-            mainFarm = jamFarm
-        }
-        else if produceType == "Poultry" {
-            mainFarm = poultryFarm
-        }
-        
-        
-        //The rest of the code is the same as the table view in the previous class. 
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.mainFarm.count;
+        return farms.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        
+        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+//        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell!
+        let farmItem = farms[indexPath.row]
+        print(farmItem.value["name"] as! String)
         
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
-        cell.textLabel?.text = self.mainFarm[indexPath.row]
+   
+        cell.textLabel?.text = farmItem.value["name"] as! String
         cell.textLabel?.textColor = UIColor .greenColor()
         cell.textLabel?.font = UIFont.boldSystemFontOfSize(20)
         cell.backgroundColor = UIColor .clearColor()
@@ -84,22 +77,47 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected \(self.mainFarm[indexPath.row])")
+        let farmItem = farms[indexPath.row]
         
-        NSUserDefaults .standardUserDefaults() .setObject(self.mainFarm[indexPath.row], forKey: "farmChosen")
+        var name = farmItem.value["name"] as! String
+
+        print("You selected \(name)")
+        
+        NSUserDefaults .standardUserDefaults() .setObject(name, forKey: "farmChosen")
         
         self.performSegueWithIdentifier("tofarmerpage", sender: self)
         
         //method called when tapped cell
         
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // 1
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            
+            // 2
+            var newfarms = [FDataSnapshot]()
+            
+            // 3
+            for item in snapshot.children {
+                newfarms.append(item as! FDataSnapshot)
+            }
+            
+            // 5
+            self.farms = newfarms
+            self.tableView.reloadData()
+        })
+    }
+    
 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
