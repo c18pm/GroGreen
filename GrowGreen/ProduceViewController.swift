@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import Firebase
 
 class ProduceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
+    
+    var produce = [FDataSnapshot]()
+    
+    var items = [FDataSnapshot]()
 
     //This is the outlet for the table view.
     @IBOutlet var tableView: UITableView!
     
     //This is the array which has all of the different types of produce.
-    var produceArray = ["Dairy", "Vegetable", "Fruit", "Jam", "Poultry"]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,18 +31,21 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //This sets the amount of cells in the table view. This is equal to the amount of produceArray in the array.
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.produceArray.count;
+        return self.produce.count;
     }
     
     //This sets up the table view cell.
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let produceItem = produce[indexPath.row]
+        print(produceItem.value["produce"] as! String)
         
         //Type of cell.
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
+            
         //Sets the text in the cell.
-        cell.textLabel?.text = self.produceArray[indexPath.row]
+        cell.textLabel?.text = produceItem.value["produce"] as! String
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .greenColor()
         //Sets the font of the text in the cell.
@@ -51,18 +60,39 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //This method is called when a cell is tapped on the table view.
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected \(self.produceArray[indexPath.row])")
+        print("You selected \(self.produce[indexPath.row])")
         
         //This finds the text of what cell was tapped and sets it to an nsuserdefualt to be used in the next view.
-        NSUserDefaults .standardUserDefaults() .setObject(self.produceArray[indexPath.row], forKey: "produceType")
+        NSUserDefaults .standardUserDefaults() .setObject(self.produce[indexPath.row], forKey: "produceType")
         
         //Activates the segue to transition to the next view. 
         self.performSegueWithIdentifier("toFarmResults", sender: self)
         
-        
     }
     
+    override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+        
+        //1
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            
+            //2
+            var newProduce = [FDataSnapshot]()
+            
+
+            
+            //3
+            for item in snapshot.children {
+                newProduce.append(item as! FDataSnapshot)
+                
+            }
+                //5
+                self.produce = newProduce
+                self.tableView.reloadData()
+            })
+    }
     
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

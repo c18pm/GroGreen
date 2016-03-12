@@ -45,14 +45,13 @@ class FarmerPageViewController: UIViewController {
         quantityStepper.autorepeat = true
         quantityStepper.maximumValue = 10
         
-        farmstring = NSUserDefaults .standardUserDefaults() .stringForKey("farmChosen")!
+       let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
+       
+        let farmstring =
+            farmItem.value!!["name"] as! String
         print(farmstring)
         
         namelabel.text = farmstring
-        
-        
-        
-        
         
 //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
 //        

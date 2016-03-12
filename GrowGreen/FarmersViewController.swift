@@ -83,7 +83,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         print("You selected \(name)")
         
-        NSUserDefaults .standardUserDefaults() .setObject(name, forKey: "farmChosen")
+        NSUserDefaults .standardUserDefaults() .setObject(farmItem, forKey: "farmChosen")
         
         self.performSegueWithIdentifier("tofarmerpage", sender: self)
         
