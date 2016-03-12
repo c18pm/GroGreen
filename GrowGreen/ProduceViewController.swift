@@ -63,7 +63,8 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
         print("You selected \(self.produce[indexPath.row])")
         
         //This finds the text of what cell was tapped and sets it to an nsuserdefualt to be used in the next view.
-        NSUserDefaults .standardUserDefaults() .setObject(self.produce[indexPath.row], forKey: "produceType")
+        
+        // NSUserDefaults .standardUserDefaults() .setObject(self.produce[indexPath.row], forKey: "produceType")
         
         //Activates the segue to transition to the next view. 
         self.performSegueWithIdentifier("toFarmResults", sender: self)

@@ -48,7 +48,7 @@ class FarmerPageViewController: UIViewController {
        let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
        
         let farmstring =
-            farmItem.value!!["name"] as! String
+            farmItem["name"] as! String
         print(farmstring)
         
         namelabel.text = farmstring

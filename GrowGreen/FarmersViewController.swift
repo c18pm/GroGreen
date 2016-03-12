@@ -34,7 +34,8 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Do any additional setup after loading the view.
         
         //Recieves the type of produce selected on the previous table view from NSUserDefaults.
-        produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
+        
+        // produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
         
         //Sends data to FarmerPageViewController
         
@@ -83,7 +84,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         print("You selected \(name)")
         
-        NSUserDefaults .standardUserDefaults() .setObject(farmItem, forKey: "farmChosen")
+        NSUserDefaults .standardUserDefaults() .setObject(farmItem.value, forKey: "farmChosen")
         
         self.performSegueWithIdentifier("tofarmerpage", sender: self)
         
