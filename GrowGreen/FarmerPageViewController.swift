@@ -23,12 +23,17 @@ class FarmerPageViewController: UIViewController {
         numLabel.text = Int(sender.value).description
     }
     
+    @IBOutlet weak var farmEmail: UILabel!
+    
+    
     @IBAction func submitOrder(sender: AnyObject) {
         
         let alertController = UIAlertController(title: "GroGreen", message: "Order complete!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
+        
+        let orderItem = Item(name: farmstring, addedByUser: self.user.email, completed: false)
         
     }
     

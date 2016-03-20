@@ -28,8 +28,8 @@
 		DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E61C892C7700E130D6 /* Security.framework */; };
 		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
 		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
+		F4053FAC1C9DD84700A336F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4053FAB1C9DD84700A336F6 /* User.swift */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
-		F4755B891C9275E8005CF2D2 /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4755B881C9275E8005CF2D2 /* Farm.swift */; };
 		F49866001C94B1C500B8451A /* FirebaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49865FF1C94B1C500B8451A /* FirebaseUI.framework */; };
 		F4A54FE91C92692300E08207 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A54FE81C92692300E08207 /* Item.swift */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
@@ -63,8 +63,8 @@
 		DE4F92E61C892C7700E130D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
+		F4053FAB1C9DD84700A336F6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
-		F4755B881C9275E8005CF2D2 /* Farm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Farm.swift; path = ../Farm.swift; sourceTree = "<group>"; };
 		F49865FF1C94B1C500B8451A /* FirebaseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseUI.framework; path = GrowGreen/FirebaseUI.framework; sourceTree = "<group>"; };
 		F4A54FE81C92692300E08207 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
 				51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */,
 				F4A54FE81C92692300E08207 /* Item.swift */,
-				F4755B881C9275E8005CF2D2 /* Farm.swift */,
+				F4053FAB1C9DD84700A336F6 /* User.swift */,
 				F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */,
 				F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */,
 				F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */,
@@ -304,10 +304,10 @@
 				F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */,
 				51B9E2241C7E51E100B449DA /* AppDelegate.swift in Sources */,
 				F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */,
-				F4755B891C9275E8005CF2D2 /* Farm.swift in Sources */,
 				F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */,
 				F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */,
 				51B9E2411C7E61E200B449DA /* ProduceViewController.swift in Sources */,
+				F4053FAC1C9DD84700A336F6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

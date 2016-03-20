@@ -74,22 +74,24 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
         
+        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/farmers")
+        
         //1
         ref.observeEventType(.Value, withBlock: { snapshot in
-            
             //2
             var newProduce = [FDataSnapshot]()
             
-
+            var farmItem = [FDataSnapshot]()
+        
             
-            //3
             for item in snapshot.children {
                 newProduce.append(item as! FDataSnapshot)
-                
             }
-                //5
+            
+            
                 self.produce = newProduce
                 self.tableView.reloadData()
+            
             })
     }
     
