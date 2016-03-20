@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var orderView: UITableView!
     
-    var orderArray = ["Order 1", "Order 2", "Order 3"]
     
+     let ref = Firebase(url: "https://grogreen.firebaseio.com/orders")
+    
+    var orders = [FDataSnapshot]()
+    var items = [FDataSnapshot]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +29,7 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     //set # of cells in table view
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print("hello")
-        return self.orderArray.count;
+        return self.orders.count;
         
     }
     
@@ -33,13 +37,30 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.orderView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
+        let orderItem = orders[indexPath.row]
+        
+        let restaurantString = orderItem.value["restaurantUid"] as! String
+        let produceString = orderItem.value["produce"] as! String
+        
+        let quantityInt = orderItem.value["quantity"] as! Int
+        var quantityString = "\(quantityInt)"
+        
+        let priceDouble = orderItem.value["price"] as! Double
+        var priceString = "\(priceDouble)"
+        
+        
         //Type of cell.
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
         //Sets the text in the cell.
-        cell.textLabel?.text = self.orderArray[indexPath.row]
+        
+        cell.textLabel?.text = restaurantString
+        
+        cell.detailTextLabel?.text = (produceString + ", " + quantityString + ", " + priceString + ", ")
+            
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .greenColor()
+        cell.detailTextLabel?.textColor = UIColor .grayColor()
         //Sets the font of the text in the cell.
         cell.textLabel?.font = UIFont.boldSystemFontOfSize(20)
         //Sets the background color of the cell.
@@ -52,16 +73,30 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     
     //This method is called when a cell is tapped on the table view.
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected \(self.orderArray[indexPath.row])")
         
-        //This finds the text of what cell was tapped and sets it to an nsuserdefualt to be used in the next view.
-        NSUserDefaults .standardUserDefaults() .setObject(self.orderArray[indexPath.row], forKey: "produceType")
-        
-        //Activates the segue to transition to the next view.
-        self.performSegueWithIdentifier("toFarmResults", sender: self)
     }
 
-    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/orders")
+        
+        ref.observeEventType(.Value, withBlock: {
+            snapshot in
+            
+            var newOrder = [FDataSnapshot]()
+            
+            var orderItem = [FDataSnapshot] ()
+            
+            for item in snapshot.children{
+                newOrder.append(item as! FDataSnapshot)
+            }
+            
+            self.orders = newOrder
+            self.orderView.reloadData()
+            
+        })
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

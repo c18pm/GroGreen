@@ -189,7 +189,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-94-qf9">
-                                <rect key="frame" x="259" y="234" width="127" height="39"/>
+                                <rect key="frame" x="237" y="332" width="127" height="39"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="1CJ-en-MxJ"/>
@@ -199,9 +199,13 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="farmSignIn:" destination="bOA-t0-3pq" eventType="touchUpInside" id="8Lv-Nb-bvO"/>
+                                    <segue destination="URf-ze-Qpj" kind="show" identifier="farmerLogin" id="OSl-Ed-sSR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-sz-me6">
-                                <rect key="frame" x="259" y="363" width="127" height="39"/>
+                                <rect key="frame" x="237" y="427" width="127" height="39"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="Eh1-Nb-Fs2"/>
@@ -212,6 +216,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-gD-aIx">
+                                <rect key="frame" x="208" y="193" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-4d-nl3">
+                                <rect key="frame" x="208" y="257" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -228,6 +242,10 @@
                             <constraint firstItem="AST-mR-rCs" firstAttribute="top" secondItem="g59-Ul-4rq" secondAttribute="bottom" constant="26" id="xh8-Aw-Fw3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="yFk-4d-nl3" id="xdF-df-3FD"/>
+                        <outlet property="usernameField" destination="RmB-gD-aIx" id="afa-lm-CGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsn-xa-MUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,7 +700,8 @@
         <segue reference="Z97-3L-AJu"/>
         <segue reference="Z9x-gs-hKf"/>
         <segue reference="lVB-rO-LMZ"/>
-        <segue reference="TZL-iC-crx"/>
+        <segue reference="OSl-Ed-sSR"/>
+        <segue reference="4e1-a0-wZZ"/>
         <segue reference="ude-ca-fMK"/>
     </inferredMetricsTieBreakers>
 </document>
