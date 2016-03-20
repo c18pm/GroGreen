@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u4q-dB-aFx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="7Fx-BQ-g9R">
+            <objects>
+                <viewController id="u4q-dB-aFx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="roF-zB-5oz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qgh-Xw-Fc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ru6-yn-iPB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-03-19 at 12.34.49 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="jes-ib-Ql4">
+                                <rect key="frame" x="9" y="12" width="584" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="uaw-vR-WRH" kind="show" id="VoR-LH-cKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gr1-kY-kRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1683" y="719"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="zCE-g7-BUY">
             <objects>
@@ -18,73 +44,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iei-mk-HVN">
-                                <rect key="frame" x="230" y="280" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="KBh-Qs-z1E"/>
-                                    <constraint firstAttribute="height" constant="39" id="xXZ-xP-Py7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                <state key="normal" title="Restaurant">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TH8-Lm-kc5" kind="show" id="tXH-tx-aa6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4D-PD-n8w">
-                                <rect key="frame" x="230" y="386" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="QRW-W1-G9L"/>
-                                    <constraint firstAttribute="height" constant="39" id="a6P-En-hdN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                <state key="normal" title="Farmer">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bOA-t0-3pq" kind="show" id="b9S-XZ-88H"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please choose one below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rq-uE-q8w">
-                                <rect key="frame" x="196" y="139" width="194" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="RlD-Yv-hJL"/>
-                                    <constraint firstAttribute="height" constant="21" id="gju-xw-LWK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.26845661227172746" green="0.68827715968586389" blue="0.22577728272622824" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GreenIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gji-T5-rLy">
-                                <rect key="frame" x="135" y="28" width="299" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="299" id="3gY-G1-MyC"/>
-                                    <constraint firstAttribute="height" constant="103" id="ORQ-Pp-UTT"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="103" id="PGt-RP-m8v"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="fd9-BO-OqC"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2016-03-19 at 12.42.00 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="DUB-sM-SzT">
+                                <rect key="frame" x="90" y="28" width="391" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03ae335ccb3450be71cd781e98114435.png" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-85-GAl">
+                                <rect key="frame" x="0.0" y="434" width="175" height="166"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bb802bfaccca3a439dc5317fea0b1e32.png" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-sq-cSW">
+                                <rect key="frame" x="153" y="464" width="317" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wasted into wanted.png" translatesAutoresizingMaskIntoConstraints="NO" id="3zK-ap-RMd">
+                                <rect key="frame" x="32" y="155" width="537" height="33"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant button.png" translatesAutoresizingMaskIntoConstraints="NO" id="a9Q-Ve-fPH">
+                                <rect key="frame" x="181" y="311" width="218" height="47"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farm button.png" translatesAutoresizingMaskIntoConstraints="NO" id="cuB-AX-46K">
+                                <rect key="frame" x="208" y="371" width="171" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="choose one below.png" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-ui-8ly">
+                                <rect key="frame" x="178" y="266" width="224" height="23"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dac22e376dd6f3b196f6a78d17116240.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-Rm-7WN">
+                                <rect key="frame" x="450" y="406" width="144" height="194"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iei-mk-HVN" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="0UV-Lc-j0c"/>
-                            <constraint firstItem="Gji-T5-rLy" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="0eS-cn-k92"/>
-                            <constraint firstItem="8Rq-uE-q8w" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="1D1-nG-d2w"/>
-                            <constraint firstItem="V4D-PD-n8w" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="4Jg-fm-ntA"/>
-                            <constraint firstItem="8Rq-uE-q8w" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="IBb-Eq-T0B"/>
-                            <constraint firstItem="iei-mk-HVN" firstAttribute="top" secondItem="8Rq-uE-q8w" secondAttribute="bottom" constant="120" id="OHN-MC-7EC"/>
-                            <constraint firstItem="V4D-PD-n8w" firstAttribute="top" secondItem="iei-mk-HVN" secondAttribute="bottom" constant="67" id="dbP-ZD-kIg"/>
-                            <constraint firstItem="Gji-T5-rLy" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="8" id="nTy-fy-RQU"/>
-                            <constraint firstItem="8Rq-uE-q8w" firstAttribute="top" secondItem="Gji-T5-rLy" secondAttribute="bottom" constant="8" id="quN-d2-cCE"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="TH8-Lm-kc5" kind="show" id="gsX-wV-ARb"/>
+                        <segue destination="bOA-t0-3pq" kind="show" id="ryb-B3-cB6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOd-pZ-J3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1063" y="697"/>
+            <point key="canvasLocation" x="-975" y="725"/>
         </scene>
         <!--Restaurant Log In View Controller-->
         <scene sceneID="kwW-Uo-1iA">
@@ -247,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsn-xa-MUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="1180"/>
+            <point key="canvasLocation" x="-229" y="1044"/>
         </scene>
         <!--Farmer Home View Controller-->
         <scene sceneID="PrQ-Yh-ONm">
@@ -313,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9d-w2-EfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="1157"/>
+            <point key="canvasLocation" x="462" y="1044"/>
         </scene>
         <!--Farmer Orders View Controller-->
         <scene sceneID="6lx-GL-DtQ">
@@ -380,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbc-Hc-C2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="1157"/>
+            <point key="canvasLocation" x="1120" y="1044"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -459,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="-85"/>
+            <point key="canvasLocation" x="446" y="285"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -528,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN4-g3-pz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="259"/>
+            <point key="canvasLocation" x="1120" y="285"/>
         </scene>
         <!--Farmers View Controller-->
         <scene sceneID="lbG-Pt-NP6">
@@ -602,7 +596,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hba-Wb-wYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="300"/>
+            <point key="canvasLocation" x="1778" y="285"/>
         </scene>
         <!--Farmer Page View Controller-->
         <scene sceneID="vQ8-iG-k2E">
@@ -690,19 +684,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lo-so-G2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="387"/>
+            <point key="canvasLocation" x="2422" y="285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="03ae335ccb3450be71cd781e98114435.png" width="640" height="640"/>
         <image name="GreenIcon.png" width="2045" height="428"/>
+        <image name="Screen Shot 2016-03-19 at 12.34.49 PM.png" width="1282" height="1280"/>
+        <image name="Screen Shot 2016-03-19 at 12.42.00 PM.png" width="714" height="140"/>
+        <image name="bb802bfaccca3a439dc5317fea0b1e32.png" width="236" height="66"/>
+        <image name="choose one below.png" width="1120" height="80"/>
+        <image name="dac22e376dd6f3b196f6a78d17116240.jpeg" width="649" height="865"/>
+        <image name="farm button.png" width="410" height="158"/>
         <image name="home.png" width="512" height="512"/>
         <image name="order.png" width="512" height="512"/>
+        <image name="restaurant button.png" width="876" height="156"/>
+        <image name="wasted into wanted.png" width="1790" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SQu-Ta-hIR"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="WbD-LO-QYo"/>
-        <segue reference="vng-0F-uV5"/>
-        <segue reference="4e1-a0-wZZ"/>
+        <segue reference="VoR-LH-cKE"/>
+        <segue reference="ryb-B3-cB6"/>
+        <segue reference="gsX-wV-ARb"/>
+        <segue reference="lVB-rO-LMZ"/>
+        <segue reference="TZL-iC-crx"/>
+        <segue reference="ude-ca-fMK"/>
     </inferredMetricsTieBreakers>
 </document>
