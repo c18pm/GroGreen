@@ -35,7 +35,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         //Recieves the type of produce selected on the previous table view from NSUserDefaults.
         
-        // produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
+         produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
         
         //Sends data to FarmerPageViewController
         

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="teG-6R-WCW">
-                                <rect key="frame" x="151" y="248" width="299" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="J74-W4-HfT"/>
-                                    <constraint firstAttribute="width" constant="299" id="QQU-Eu-9Kg"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroGreen Images/Screen Shot 2016-03-19 at 12.34.49 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-pV-EnK">
+                                <rect key="frame" x="-21" y="0.0" width="654" height="614"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="teG-6R-WCW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bxG-uq-VKO"/>
-                            <constraint firstItem="teG-6R-WCW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kOI-yr-BSb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RDe-pV-EnK" secondAttribute="trailing" constant="-53" id="2VC-mE-3Zx"/>
+                            <constraint firstItem="RDe-pV-EnK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="4tO-Q3-OTJ"/>
+                            <constraint firstItem="RDe-pV-EnK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-41" id="MUH-4a-sg0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RDe-pV-EnK" secondAttribute="bottom" constant="-14" id="Uub-uc-BQu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GreenIcon.png" width="2045" height="428"/>
+        <image name="GroGreen Images/Screen Shot 2016-03-19 at 12.34.49 PM.png" width="2045" height="428"/>
     </resources>
 </document>

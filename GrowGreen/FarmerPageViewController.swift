@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class FarmerPageViewController: UIViewController {
+    
+    var produceType = String()
+    
+    var quantity = Int()
+    
+    let ref = Firebase(url: "https://grogreen.firebaseio.com")
 
     @IBOutlet weak var numLabel: UILabel!
     
@@ -20,7 +27,9 @@ class FarmerPageViewController: UIViewController {
     
     @IBAction func quantityChangeStepper(sender: UIStepper) {
         
-        numLabel.text = Int(sender.value).description
+        quantity = Int(sender.value)
+        
+        numLabel.text = quantity.description
     }
     
     @IBOutlet weak var farmEmail: UILabel!
@@ -32,12 +41,28 @@ class FarmerPageViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
+
+        let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
-        let orderItem = Item(name: farmstring, addedByUser: self.user.email, completed: false)
+        let producePrice = farmItem["price"] as! Double
+        
+        let restaurantUid = "abc"
+        
+        let farmUid = farmItem["uid"] as! String
+        
+        let farmString =
+        farmItem["name"] as! String
+        print(farmString)
+    
+        let orderRef = ref.childByAppendingPath("orders")
+    
+        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restauruantUid": restaurantUid, "farmUid": farmUid]
+        
+        let order1Ref = orderRef.childByAutoId()
+        
+        order1Ref.setValue(order)
         
     }
-    
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,19 +75,28 @@ class FarmerPageViewController: UIViewController {
         quantityStepper.autorepeat = true
         quantityStepper.maximumValue = 10
         
-       let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
        
-        let farmstring =
-            farmItem["name"] as! String
-        print(farmstring)
+        let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
-        namelabel.text = farmstring
+        let farmString =
+        farmItem["name"] as! String
+        print(farmString)
         
+
+        
+        //NSUserDefaults to get produce name
+        //var produceType defined at top of  class
+        
+        produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
+        
+        
+        namelabel.text = farmString
 //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
 //        
 //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")
         
-
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

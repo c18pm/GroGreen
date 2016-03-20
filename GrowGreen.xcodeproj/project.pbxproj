@@ -20,7 +20,6 @@
 		51B9E2431C7E649000B449DA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 51B9E2421C7E649000B449DA /* home.png */; };
 		51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */; };
 		88166F45CC960F2A98CFF86A /* Pods_GrowGreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBDAD874C7B729A1AF52F21 /* Pods_GrowGreen.framework */; };
-		DE459E541C9F063D00DEBE0A /* GroGreen Images in Resources */ = {isa = PBXBuildFile; fileRef = DE459E531C9F063D00DEBE0A /* GroGreen Images */; };
 		DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92DD1C892BAA00E130D6 /* Firebase.framework */; };
 		DE4F92E21C892C4300E130D6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E11C892C4300E130D6 /* libc++.tbd */; };
 		DE4F92E31C892C6800E130D6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */; };
@@ -28,10 +27,9 @@
 		DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E61C892C7700E130D6 /* Security.framework */; };
 		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
 		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
-		F4053FAC1C9DD84700A336F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4053FAB1C9DD84700A336F6 /* User.swift */; };
+		F40628A81C9F0C52000AF7E3 /* GroGreen Images in Resources */ = {isa = PBXBuildFile; fileRef = F40628A71C9F0C52000AF7E3 /* GroGreen Images */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
 		F49866001C94B1C500B8451A /* FirebaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49865FF1C94B1C500B8451A /* FirebaseUI.framework */; };
-		F4A54FE91C92692300E08207 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A54FE81C92692300E08207 /* Item.swift */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
 		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
 		F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */; };
@@ -55,7 +53,6 @@
 		51B9E2421C7E649000B449DA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
 		6ED828829DEA125729C0099D /* Pods-GrowGreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowGreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen.release.xcconfig"; sourceTree = "<group>"; };
-		DE459E531C9F063D00DEBE0A /* GroGreen Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "GroGreen Images"; path = "../../../GroGreen Images"; sourceTree = "<group>"; };
 		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		DE4F92E11C892C4300E130D6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -63,10 +60,9 @@
 		DE4F92E61C892C7700E130D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
-		F4053FAB1C9DD84700A336F6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F40628A71C9F0C52000AF7E3 /* GroGreen Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GroGreen Images"; sourceTree = SOURCE_ROOT; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
 		F49865FF1C94B1C500B8451A /* FirebaseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseUI.framework; path = GrowGreen/FirebaseUI.framework; sourceTree = "<group>"; };
-		F4A54FE81C92692300E08207 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
 		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
 		F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerOrdersViewController.swift; sourceTree = "<group>"; };
@@ -122,8 +118,6 @@
 				51B9E2251C7E51E100B449DA /* ViewController.swift */,
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
 				51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */,
-				F4A54FE81C92692300E08207 /* Item.swift */,
-				F4053FAB1C9DD84700A336F6 /* User.swift */,
 				F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */,
 				F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */,
 				F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */,
@@ -142,7 +136,7 @@
 		51B9E2351C7E53DA00B449DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE459E531C9F063D00DEBE0A /* GroGreen Images */,
+				F40628A71C9F0C52000AF7E3 /* GroGreen Images */,
 				51B9E2381C7E543600B449DA /* GreenIcon.png */,
 				51B9E23A1C7E57A000B449DA /* order.png */,
 				51B9E23B1C7E57A000B449DA /* signin.png */,
@@ -232,13 +226,13 @@
 			files = (
 				51B9E22E1C7E51E100B449DA /* LaunchScreen.storyboard in Resources */,
 				51B9E23E1C7E57A000B449DA /* signin.png in Resources */,
+				F40628A81C9F0C52000AF7E3 /* GroGreen Images in Resources */,
 				51B9E22B1C7E51E100B449DA /* Assets.xcassets in Resources */,
 				51B9E2391C7E543600B449DA /* GreenIcon.png in Resources */,
 				51B9E2431C7E649000B449DA /* home.png in Resources */,
 				51B9E23F1C7E57A000B449DA /* signup.png in Resources */,
 				51B9E2291C7E51E100B449DA /* Main.storyboard in Resources */,
 				51B9E23D1C7E57A000B449DA /* order.png in Resources */,
-				DE459E541C9F063D00DEBE0A /* GroGreen Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A54FE91C92692300E08207 /* Item.swift in Sources */,
 				DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */,
 				51B9E2261C7E51E100B449DA /* ViewController.swift in Sources */,
 				51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */,
@@ -307,7 +300,6 @@
 				F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */,
 				F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */,
 				51B9E2411C7E61E200B449DA /* ProduceViewController.swift in Sources */,
-				F4053FAC1C9DD84700A336F6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

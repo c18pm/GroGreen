@@ -59,12 +59,17 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     //This method is called when a cell is tapped on the table view.
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected \(self.produce[indexPath.row])")
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:
+        NSIndexPath) {
+            
+        var produceName = self.produce[indexPath.row].value["produce"] as! String
+            
+        print("You selected \(produceName)")
         
         //This finds the text of what cell was tapped and sets it to an nsuserdefualt to be used in the next view.
         
-        // NSUserDefaults .standardUserDefaults() .setObject(self.produce[indexPath.row], forKey: "produceType")
+         NSUserDefaults .standardUserDefaults() .setObject(produceName, forKey: "produceType")
+        
         
         //Activates the segue to transition to the next view. 
         self.performSegueWithIdentifier("toFarmResults", sender: self)
