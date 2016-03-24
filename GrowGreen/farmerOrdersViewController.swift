@@ -40,6 +40,7 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
         let orderItem = orders[indexPath.row]
         
         let restaurantString = orderItem.value["restaurantUid"] as! String
+        
         let produceString = orderItem.value["produce"] as! String
         
         let quantityInt = orderItem.value["quantity"] as! Int
@@ -54,9 +55,9 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
             reuseIdentifier: "cell")
         //Sets the text in the cell.
         
-        cell.textLabel?.text = restaurantString
+        cell.textLabel?.text = produceString
         
-        cell.detailTextLabel?.text = (produceString + ", " + quantityString + ", " + priceString + ", ")
+        cell.detailTextLabel?.text = ""
             
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .greenColor()

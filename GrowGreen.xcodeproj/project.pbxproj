@@ -54,7 +54,7 @@
 		51B9E2421C7E649000B449DA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
 		6ED828829DEA125729C0099D /* Pods-GrowGreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowGreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen.release.xcconfig"; sourceTree = "<group>"; };
-		DE4AB1831C9F6F3300F8FDBB /* tt_moons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tt_moons; path = ../../../Downloads/tt_moons; sourceTree = "<group>"; };
+		DE4AB1831C9F6F3300F8FDBB /* tt_moons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tt_moons; sourceTree = "<group>"; };
 		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		DE4F92E11C892C4300E130D6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };

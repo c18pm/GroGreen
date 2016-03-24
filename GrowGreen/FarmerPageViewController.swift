@@ -56,7 +56,7 @@ class FarmerPageViewController: UIViewController {
     
         let orderRef = ref.childByAppendingPath("orders")
     
-        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restauruantUid": restaurantUid, "farmUid": farmUid]
+        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restaurantUid": restaurantUid, "farmUid": farmUid]
         
         let order1Ref = orderRef.childByAutoId()
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -30,8 +30,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-In-Q4R">
-                                <rect key="frame" x="165" y="263" width="257" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-In-Q4R">
+                                <rect key="frame" x="165" y="309" width="257" height="49"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="45"/>
                                 <state key="normal" title="Restaurant">
                                     <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,8 +40,8 @@
                                     <segue destination="TH8-Lm-kc5" kind="show" id="Z9x-gs-hKf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-mc-nmQ">
-                                <rect key="frame" x="243" y="320" width="114" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-mc-nmQ">
+                                <rect key="frame" x="236" y="377" width="114" height="41"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="45"/>
                                 <state key="normal" title="Farm">
                                     <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,23 +50,16 @@
                                     <segue destination="bOA-t0-3pq" kind="show" id="Z97-3L-AJu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-fw-gZt">
-                                <rect key="frame" x="36" y="0.0" width="514" height="158"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroGreen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-fw-gZt">
+                                <rect key="frame" x="16" y="28" width="568" height="242"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="115"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="66"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Turn Wasted Food Into Wanted Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
-                                <rect key="frame" x="60" y="72" width="924" height="158"/>
-                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="25"/>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Choose one Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W65-fw-wJy">
-                                <rect key="frame" x="156" y="225" width="288" height="21"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please choose one below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W65-fw-wJy">
+                                <rect key="frame" x="160" y="278" width="363" height="30"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="21"/>
                                 <color key="textColor" red="0.83816672120418845" green="0.53265707655672112" blue="0.24479503683678866" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -74,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="526" width="600" height="74"/>
                                 <color key="backgroundColor" red="0.044257830831356003" green="0.23732002617801051" blue="6.8607450243610721e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.070822445770000006" green="0.37976521600000002" blue="0.0001097872926" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03ae335ccb3450be71cd781e98114435.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tcw-qO-kq3">
@@ -92,8 +85,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMn-rh-Kua">
                                 <rect key="frame" x="120" y="419" width="108" height="111"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF9-yJ-0u0">
-                                <rect key="frame" x="320" y="545" width="190" height="43.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF9-yJ-0u0">
+                                <rect key="frame" x="320" y="545" width="190" height="44"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="50"/>
                                 <state key="normal" title="About">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,7 +95,7 @@
                                     <segue destination="jLm-O1-tUF" kind="show" id="fPe-WB-A9E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRy-i3-Jn8">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRy-i3-Jn8">
                                 <rect key="frame" x="72" y="543" width="178" height="49"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="50"/>
                                 <state key="normal" title="Mission">
@@ -112,13 +105,50 @@
                                     <segue destination="J8v-nE-T5E" kind="show" id="vlL-rW-FXI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's Turn Wasted Food Into Wanted Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
+                                <rect key="frame" x="165" y="138" width="924" height="158"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="14"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.94117647058823528" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="top" secondItem="pt0-In-Q4R" secondAttribute="bottom" constant="24" id="TJn-jD-UI6"/>
-                            <constraint firstItem="pt0-In-Q4R" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="YMq-7C-UXy"/>
-                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="bdw-77-Fft"/>
+                            <constraint firstItem="Id1-fw-gZt" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="5GX-1N-5q9"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="7x6-xW-kOL"/>
+                            <constraint firstItem="Id1-fw-gZt" firstAttribute="top" secondItem="6pJ-bY-8Q1" secondAttribute="topMargin" constant="-30" id="BPo-kg-zYY"/>
+                            <constraint firstItem="Id1-fw-gZt" firstAttribute="leading" secondItem="6pJ-bY-8Q1" secondAttribute="leadingMargin" constant="-4" id="F1r-kb-QFu"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="110" id="Fwj-dC-UFf"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="13" id="G08-a0-zBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Id1-fw-gZt" secondAttribute="trailing" constant="-4" id="GQ2-6f-RgH"/>
+                            <constraint firstItem="XRy-i3-Jn8" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="GQg-Cu-gBJ"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="8" id="IBy-9B-e2r"/>
+                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="JmW-u1-Isc"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="85" id="MeL-9e-nYj"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="95" id="Sid-IF-WBk"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="115" id="VpS-HR-7kv"/>
+                            <constraint firstItem="G3Z-if-wEK" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="100" id="Vpk-S1-gks"/>
+                            <constraint firstItem="hF9-yJ-0u0" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="aFo-FG-nKT"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="110" id="aN5-Vu-H8J"/>
+                            <constraint firstAttribute="centerX" secondItem="Id1-fw-gZt" secondAttribute="centerX" id="f0U-Qo-QAB"/>
+                            <constraint firstItem="pt0-In-Q4R" firstAttribute="top" secondItem="W65-fw-wJy" secondAttribute="bottom" constant="25" id="m4y-ge-8Hi"/>
+                            <constraint firstItem="G3Z-if-wEK" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="mT5-lK-tRK"/>
+                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="top" secondItem="pt0-In-Q4R" secondAttribute="bottom" constant="8" id="nU7-wU-67P"/>
+                            <constraint firstItem="pt0-In-Q4R" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="qFz-uq-EGq"/>
+                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="120" id="qlp-Md-nwj"/>
+                            <constraint firstItem="Id1-fw-gZt" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="8" id="xid-Ht-YpB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fwj-dC-UFf"/>
+                                <exclude reference="IBy-9B-e2r"/>
+                                <exclude reference="Sid-IF-WBk"/>
+                                <exclude reference="VpS-HR-7kv"/>
+                                <exclude reference="aN5-Vu-H8J"/>
+                                <exclude reference="qlp-Md-nwj"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOd-pZ-J3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -128,7 +158,6 @@
         <!--View Controller-->
         <scene sceneID="cmO-Sg-5E3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iP9-0H-a3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="J8v-nE-T5E" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kER-u3-1St"/>
@@ -140,6 +169,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iP9-0H-a3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1573" y="1452"/>
         </scene>
@@ -287,7 +317,6 @@
                                 </state>
                                 <connections>
                                     <action selector="farmSignIn:" destination="bOA-t0-3pq" eventType="touchUpInside" id="8Lv-Nb-bvO"/>
-                                    <segue destination="URf-ze-Qpj" kind="show" identifier="farmerLogin" id="OSl-Ed-sSR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-sz-me6">
@@ -331,6 +360,7 @@
                     <connections>
                         <outlet property="passwordField" destination="yFk-4d-nl3" id="xdF-df-3FD"/>
                         <outlet property="usernameField" destination="RmB-gD-aIx" id="afa-lm-CGk"/>
+                        <segue destination="URf-ze-Qpj" kind="show" identifier="farmerLogin" id="Met-vs-gSM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsn-xa-MUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -780,11 +810,11 @@
         <image name="pear.png" width="272" height="278"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OSl-Ed-sSR"/>
-        <segue reference="Z97-3L-AJu"/>
-        <segue reference="Z9x-gs-hKf"/>
-        <segue reference="lVB-rO-LMZ"/>
-        <segue reference="ude-ca-fMK"/>
+        <segue reference="Met-vs-gSM"/>
+        <segue reference="SQu-Ta-hIR"/>
         <segue reference="4e1-a0-wZZ"/>
+        <segue reference="ude-ca-fMK"/>
+        <segue reference="lVB-rO-LMZ"/>
+        <segue reference="vng-0F-uV5"/>
     </inferredMetricsTieBreakers>
 </document>
