@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="TT-Moons-Thin-Italic-DEMO.otf">
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+            <string>TTMoonsThinDEMO-Italic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="zCE-g7-BUY">
@@ -18,57 +30,136 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/Screen Shot 2016-03-19 at 12.42.00 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="DUB-sM-SzT">
-                                <rect key="frame" x="90" y="28" width="391" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/03ae335ccb3450be71cd781e98114435.png" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-85-GAl">
-                                <rect key="frame" x="0.0" y="434" width="175" height="166"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="GroGreen Images/wasted into wanted.png" translatesAutoresizingMaskIntoConstraints="NO" id="3zK-ap-RMd">
-                                <rect key="frame" x="32" y="155" width="537" height="33"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/restaurant button.png" translatesAutoresizingMaskIntoConstraints="NO" id="a9Q-Ve-fPH">
-                                <rect key="frame" x="181" y="311" width="218" height="47"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/farm button.png" translatesAutoresizingMaskIntoConstraints="NO" id="cuB-AX-46K">
-                                <rect key="frame" x="208" y="371" width="171" height="48"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/choose one below.png" translatesAutoresizingMaskIntoConstraints="NO" id="D3d-ui-8ly">
-                                <rect key="frame" x="178" y="266" width="224" height="23"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/dac22e376dd6f3b196f6a78d17116240.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-Rm-7WN">
-                                <rect key="frame" x="450" y="406" width="144" height="194"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-In-Q4R">
-                                <rect key="frame" x="445" y="266" width="75" height="30"/>
-                                <state key="normal" title="Restaurant"/>
+                                <rect key="frame" x="165" y="263" width="257" height="49"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="45"/>
+                                <state key="normal" title="Restaurant">
+                                    <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="TH8-Lm-kc5" kind="show" id="Z9x-gs-hKf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-mc-nmQ">
-                                <rect key="frame" x="451" y="320" width="35" height="30"/>
-                                <state key="normal" title="Farm"/>
+                                <rect key="frame" x="243" y="320" width="114" height="41"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="45"/>
+                                <state key="normal" title="Farm">
+                                    <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="bOA-t0-3pq" kind="show" id="Z97-3L-AJu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GroGreen Images/bb802bfaccca3a439dc5317fea0b1e32.png" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-sq-cSW">
-                                <rect key="frame" x="153" y="464" width="317" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-fw-gZt">
+                                <rect key="frame" x="36" y="0.0" width="514" height="158"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="115"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Turn Wasted Food Into Wanted Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
+                                <rect key="frame" x="60" y="72" width="924" height="158"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="25"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Choose one Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W65-fw-wJy">
+                                <rect key="frame" x="156" y="225" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="25"/>
+                                <color key="textColor" red="0.83816672120418845" green="0.53265707655672112" blue="0.24479503683678866" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TL-e1-ybh">
+                                <rect key="frame" x="0.0" y="526" width="600" height="74"/>
+                                <color key="backgroundColor" red="0.044257830831356003" green="0.23732002617801051" blue="6.8607450243610721e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="0.070822445770000006" green="0.37976521600000002" blue="0.0001097872926" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03ae335ccb3450be71cd781e98114435.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tcw-qO-kq3">
+                                <rect key="frame" x="0.0" y="400" width="128" height="129"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dac22e376dd6f3b196f6a78d17116240.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-pk-ZQ6">
+                                <rect key="frame" x="226" y="400" width="103" height="123"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple and lemon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ADb-Vb-exs">
+                                <rect key="frame" x="328" y="426" width="175" height="97"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pear.png" translatesAutoresizingMaskIntoConstraints="NO" id="SwY-lm-QQF">
+                                <rect key="frame" x="504" y="421" width="91" height="102"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMn-rh-Kua">
+                                <rect key="frame" x="120" y="419" width="108" height="111"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF9-yJ-0u0">
+                                <rect key="frame" x="320" y="545" width="190" height="43.5"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="50"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jLm-O1-tUF" kind="show" id="fPe-WB-A9E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRy-i3-Jn8">
+                                <rect key="frame" x="72" y="543" width="178" height="49"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="50"/>
+                                <state key="normal" title="Mission">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J8v-nE-T5E" kind="show" id="vlL-rW-FXI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tXh-mc-nmQ" firstAttribute="top" secondItem="pt0-In-Q4R" secondAttribute="bottom" constant="24" id="TJn-jD-UI6"/>
                             <constraint firstItem="pt0-In-Q4R" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="YMq-7C-UXy"/>
                             <constraint firstItem="tXh-mc-nmQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="bdw-77-Fft"/>
-                            <constraint firstItem="pt0-In-Q4R" firstAttribute="top" secondItem="3zK-ap-RMd" secondAttribute="bottom" constant="78" id="dJ8-jP-GFf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOd-pZ-J3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-975" y="725"/>
+            <point key="canvasLocation" x="-1243" y="673"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cmO-Sg-5E3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iP9-0H-a3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="J8v-nE-T5E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kER-u3-1St"/>
+                        <viewControllerLayoutGuide type="bottom" id="QAr-Iv-VKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tLT-Nq-hNh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1573" y="1452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BYc-Qf-95s">
+            <objects>
+                <viewController id="jLm-O1-tUF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DR5-mU-r3X"/>
+                        <viewControllerLayoutGuide type="bottom" id="IMX-oX-ldI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBA-9f-pbq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Zt-5X-c8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="1452"/>
         </scene>
         <!--Restaurant Log In View Controller-->
         <scene sceneID="kwW-Uo-1iA">
@@ -82,14 +173,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-uM-fTB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-uM-fTB">
                                 <rect key="frame" x="215" y="314" width="127" height="39"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="UTD-JJ-Isv"/>
                                     <constraint firstAttribute="height" constant="39" id="oWE-kd-KWA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -97,7 +188,7 @@
                                     <action selector="signInButton:" destination="TH8-Lm-kc5" eventType="touchUpInside" id="PXM-Q1-udn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-fa-UQz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-fa-UQz">
                                 <rect key="frame" x="215" y="442" width="127" height="39"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -109,34 +200,29 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-fv-5uu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-fv-5uu">
                                 <rect key="frame" x="186" y="174" width="185" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-I3-WJv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-I3-WJv">
                                 <rect key="frame" x="186" y="235" width="185" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GreenIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jT9-gK-sl1">
-                                <rect key="frame" x="129" y="33" width="299" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="299" id="2lY-5h-94X"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="PuJ-nm-xt4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="103" id="ebv-k7-ha2"/>
-                                    <constraint firstAttribute="height" constant="103" id="xyT-04-H5G"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr1-Bz-Dan">
+                                <rect key="frame" x="148" y="20" width="305" height="158"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="115"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="w4l-fv-5uu" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="O1C-bG-beB"/>
                             <constraint firstItem="Qhf-uM-fTB" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="aLm-y1-wjV"/>
-                            <constraint firstItem="jT9-gK-sl1" firstAttribute="top" secondItem="KIm-V2-f6B" secondAttribute="bottom" constant="13" id="bnq-tM-dXv"/>
                             <constraint firstItem="Gr4-I3-WJv" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="cIU-lf-kBH"/>
-                            <constraint firstItem="jT9-gK-sl1" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="fqF-lB-EBm"/>
-                            <constraint firstItem="w4l-fv-5uu" firstAttribute="top" secondItem="jT9-gK-sl1" secondAttribute="bottom" constant="38" id="lyy-Az-WaR"/>
                             <constraint firstItem="Qhf-uM-fTB" firstAttribute="top" secondItem="Gr4-I3-WJv" secondAttribute="bottom" constant="50" id="nez-Ax-3fF"/>
                             <constraint firstItem="pNn-fa-UQz" firstAttribute="top" secondItem="Qhf-uM-fTB" secondAttribute="bottom" constant="88" id="qQy-DF-Ljh"/>
                             <constraint firstItem="pNn-fa-UQz" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="s8X-8q-ZQ1"/>
@@ -151,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ot7-FS-Pob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237" y="285"/>
+            <point key="canvasLocation" x="-257" y="285"/>
         </scene>
         <!--Farmer Login View Controller-->
         <scene sceneID="4jT-Mk-vq6">
@@ -684,24 +770,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="03ae335ccb3450be71cd781e98114435.png" width="640" height="640"/>
         <image name="GreenIcon.png" width="2045" height="428"/>
-        <image name="GroGreen Images/03ae335ccb3450be71cd781e98114435.png" width="2045" height="428"/>
-        <image name="GroGreen Images/Screen Shot 2016-03-19 at 12.42.00 PM.png" width="2045" height="428"/>
-        <image name="GroGreen Images/bb802bfaccca3a439dc5317fea0b1e32.png" width="2045" height="428"/>
-        <image name="GroGreen Images/choose one below.png" width="2045" height="428"/>
-        <image name="GroGreen Images/dac22e376dd6f3b196f6a78d17116240.jpeg" width="2045" height="428"/>
-        <image name="GroGreen Images/farm button.png" width="2045" height="428"/>
-        <image name="GroGreen Images/restaurant button.png" width="2045" height="428"/>
-        <image name="GroGreen Images/wasted into wanted.png" width="2045" height="428"/>
+        <image name="apple and lemon.png" width="560" height="236"/>
+        <image name="apple.png" width="258" height="248"/>
+        <image name="dac22e376dd6f3b196f6a78d17116240.jpeg" width="649" height="865"/>
         <image name="home.png" width="512" height="512"/>
         <image name="order.png" width="512" height="512"/>
+        <image name="pear.png" width="272" height="278"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OSl-Ed-sSR"/>
         <segue reference="Z97-3L-AJu"/>
         <segue reference="Z9x-gs-hKf"/>
         <segue reference="lVB-rO-LMZ"/>
-        <segue reference="OSl-Ed-sSR"/>
-        <segue reference="4e1-a0-wZZ"/>
         <segue reference="ude-ca-fMK"/>
+        <segue reference="4e1-a0-wZZ"/>
     </inferredMetricsTieBreakers>
 </document>

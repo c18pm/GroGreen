@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="TT-Moons-Thin-Italic-DEMO.otf">
+            <string>TTMoonsThinDEMO-Italic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
@@ -18,25 +23,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroGreen Images/Screen Shot 2016-03-19 at 12.34.49 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-pV-EnK">
-                                <rect key="frame" x="-21" y="0.0" width="654" height="614"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyed fruits.png" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-CP-Z8e">
+                                <rect key="frame" x="6" y="7" width="585" height="585"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKi-qq-bBk">
+                                <rect key="frame" x="41" y="214" width="514" height="158"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="115"/>
+                                <color key="textColor" red="0.060101249417486013" green="0.32227585078534027" blue="9.3167545754810184e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="RDe-pV-EnK" secondAttribute="trailing" constant="-53" id="2VC-mE-3Zx"/>
-                            <constraint firstItem="RDe-pV-EnK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="4tO-Q3-OTJ"/>
-                            <constraint firstItem="RDe-pV-EnK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-41" id="MUH-4a-sg0"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="RDe-pV-EnK" secondAttribute="bottom" constant="-14" id="Uub-uc-BQu"/>
-                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-9" y="203"/>
         </scene>
     </scenes>
     <resources>
-        <image name="GroGreen Images/Screen Shot 2016-03-19 at 12.34.49 PM.png" width="2045" height="428"/>
+        <image name="greyed fruits.png" width="1282" height="1282"/>
     </resources>
 </document>
