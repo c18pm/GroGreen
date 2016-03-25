@@ -13,9 +13,10 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     
     let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
     
-    var produce = [FDataSnapshot]()
+    var produce = [String]()
     
     var items = [FDataSnapshot]()
+    
 
     //This is the outlet for the table view.
     @IBOutlet var tableView: UITableView!
@@ -38,14 +39,14 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         let produceItem = produce[indexPath.row]
-        print(produceItem.value["produce"] as! String)
+        print(produceItem)
         
         //Type of cell.
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
             
         //Sets the text in the cell.
-        cell.textLabel?.text = produceItem.value["produce"] as! String
+        cell.textLabel?.text = produceItem
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .greenColor()
         //Sets the font of the text in the cell.
@@ -62,7 +63,7 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:
         NSIndexPath) {
             
-        var produceName = self.produce[indexPath.row].value["produce"] as! String
+        var produceName = self.produce[indexPath.row]
             
         print("You selected \(produceName)")
         
@@ -79,14 +80,13 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
         
-        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/farmers")
         
         //1
         ref.observeEventType(.Value, withBlock: { snapshot in
             //2
             var newProduce = [FDataSnapshot]()
-            
-            var farmItem = [FDataSnapshot]()
+            var produceList = [String]()
+            var produceListU = [String]()
         
             
             for item in snapshot.children {
@@ -94,10 +94,23 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
             }
             
             
-                self.produce = newProduce
+            //CREATE produceListU ---> ARRAY OF UNIQUE PRODUCE TYPES
+             for item2 in newProduce{
+                    produceList.append(item2.value["produce"] as! String)
+                }
+            
+            for var i=0; i<produceList.count; i++ {
+                
+                if (!produceListU.contains(produceList[i]))
+                {
+                produceListU.append(produceList[i])
+                }
+            }
+            
+                self.produce = produceListU
                 self.tableView.reloadData()
             
-            })
+                       })
     }
     
    

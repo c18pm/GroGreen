@@ -44,9 +44,11 @@ class FarmerPageViewController: UIViewController {
 
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
+        let restUser = NSUserDefaults . standardUserDefaults() .objectForKey("restUser")!
+        
         let producePrice = farmItem["price"] as! Double
         
-        let restaurantUid = "abc"
+        let restaurantUid = restUser["uid"] as! String
         
         let farmUid = farmItem["uid"] as! String
         
@@ -78,8 +80,7 @@ class FarmerPageViewController: UIViewController {
        
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
-        let farmString =
-        farmItem["name"] as! String
+        let farmString = farmItem
         print(farmString)
         
 
@@ -90,7 +91,7 @@ class FarmerPageViewController: UIViewController {
         produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
         
         
-        namelabel.text = farmString
+        namelabel.text = farmString as! String
 //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
 //        
 //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")

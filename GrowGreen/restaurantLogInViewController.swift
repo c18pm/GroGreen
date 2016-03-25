@@ -11,7 +11,29 @@ import Firebase
 
 class restaurantLogInViewController: ViewController {
 
-    let ref = Firebase(url: "https://grogreen.firebaseio.com")
+//    //
+    
+    
+    //FROM PREVIOUS VIEW CONTROLLER 
+    //NSUserDefaults .standardUserDefaults() .setObject(farmItem.value, forKey: "farmChosen")
+//    
+//    let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
+//    
+//    let farmString =
+//    farmItem["name"] as! String
+//    print(farmString)
+//    
+//    //
+    
+    
+
+    
+    
+    var rests = [FDataSnapshot]()
+    var restUser = FDataSnapshot()
+    
+    
+    let ref = Firebase(url: "https://grogreen.firebaseio.com/restaurants")
     
     @IBOutlet weak var usernameField: UITextField!
     
@@ -23,7 +45,23 @@ class restaurantLogInViewController: ViewController {
             if(error == nil)
             {
                 print("Login Successful")
-
+                
+                
+                //SAVES RESTAURANT USER
+                for var i=0; i<self.rests.count; i++
+                {
+                    var restEmail = self.rests[i].value["email"] as! String
+                    
+                    if (restEmail == self.usernameField.text!)
+                    {
+                        self.restUser = self.rests[i]
+                        
+                        print(self.restUser.value["name"] as! String)
+                        NSUserDefaults .standardUserDefaults() .setObject(self.restUser.value, forKey: "restUser")
+                        
+                    }
+                }
+                    
                 self.performSegueWithIdentifier("loginToRestaurantHome", sender: nil)
                 
             }
@@ -49,21 +87,27 @@ class restaurantLogInViewController: ViewController {
     }
     
     
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        
-//        // 1
-//        ref.observeAuthEventWithBlock { (authData) -> Void in
-//            // 2
-//            print("uid")
-//           // print(authData)
-//            if authData != nil {
-//                // 3
-//                self.performSegueWithIdentifier("loginToRestaurantHome", sender: nil)
-//            }
-//        }
-//    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/restaurants")
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            
+            var newRests = [FDataSnapshot]()
+            
+            var restItem = [FDataSnapshot]()
+            
+            
+            for item in snapshot.children {
+                newRests.append(item as! FDataSnapshot)
+            }
+            
+            self.rests = newRests
+        
+            
+        })
+    }
 
     
 }

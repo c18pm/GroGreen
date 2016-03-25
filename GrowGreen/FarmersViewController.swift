@@ -15,7 +15,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     //firebase reference
     let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
 
-    var farms = [FDataSnapshot]()
+    var farms = [String]()
     
     // your firebase reference as a property
     
@@ -63,12 +63,12 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
 //        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell!
         let farmItem = farms[indexPath.row]
-        print(farmItem.value["name"] as! String)
+        print(farmItem)
         
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
    
-        cell.textLabel?.text = farmItem.value["name"] as! String
+        cell.textLabel?.text = farmItem
         cell.textLabel?.textColor = UIColor .greenColor()
         cell.textLabel?.font = UIFont.boldSystemFontOfSize(20)
         cell.backgroundColor = UIColor .clearColor()
@@ -80,11 +80,11 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let farmItem = farms[indexPath.row]
         
-        var name = farmItem.value["name"] as! String
-
+        var name = farmItem
+        
         print("You selected \(name)")
         
-        NSUserDefaults .standardUserDefaults() .setObject(farmItem.value, forKey: "farmChosen")
+        NSUserDefaults .standardUserDefaults() .setObject(farmItem, forKey: "farmChosen")
         
         self.performSegueWithIdentifier("tofarmerpage", sender: self)
         
@@ -95,19 +95,35 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        // 1
         ref.observeEventType(.Value, withBlock: { snapshot in
             
-            // 2
-            var newfarms = [FDataSnapshot]()
+            var newFarms = [FDataSnapshot]()
             
-            // 3
+            var sortedFarms = [String]()
+            
             for item in snapshot.children {
-                newfarms.append(item as! FDataSnapshot)
+                newFarms.append(item as! FDataSnapshot)
             }
             
-            // 5
-            self.farms = newfarms
+            for var i=0; i<newFarms.count; i++ {
+                
+                let produceName = newFarms[i].value["produce"] as! String
+                
+                let farmName = newFarms[i].value["name"] as! String
+                
+                if (produceName == self.produceType)
+                {
+                    sortedFarms.append(farmName)
+                }
+            
+            }
+            
+            
+            
+           // produceType is name selected
+            
+            
+            self.farms = sortedFarms
             self.tableView.reloadData()
         })
     }
