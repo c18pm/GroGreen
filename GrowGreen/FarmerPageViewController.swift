@@ -32,7 +32,6 @@ class FarmerPageViewController: UIViewController {
         numLabel.text = quantity.description
     }
     
-    @IBOutlet weak var farmEmail: UILabel!
     
     
     @IBAction func submitOrder(sender: AnyObject) {
@@ -44,11 +43,14 @@ class FarmerPageViewController: UIViewController {
 
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
+        
         let restUser = NSUserDefaults . standardUserDefaults() .objectForKey("restUser")!
         
         let producePrice = farmItem["price"] as! Double
         
         let restaurantUid = restUser["uid"] as! String
+        
+        let restaurantName = restUser["name"] as! String
         
         let farmUid = farmItem["uid"] as! String
         
@@ -58,7 +60,7 @@ class FarmerPageViewController: UIViewController {
     
         let orderRef = ref.childByAppendingPath("orders")
     
-        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restaurantUid": restaurantUid, "farmUid": farmUid]
+        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restaurantUid": restaurantUid, "farmUid": farmUid, "restaurantName":restaurantName]
         
         let order1Ref = orderRef.childByAutoId()
         
@@ -80,7 +82,7 @@ class FarmerPageViewController: UIViewController {
        
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
-        let farmString = farmItem
+        let farmString = farmItem["name"] as! String
         print(farmString)
         
 
@@ -91,7 +93,7 @@ class FarmerPageViewController: UIViewController {
         produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
         
         
-        namelabel.text = farmString as! String
+        namelabel.text = farmString
 //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
 //        
 //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")

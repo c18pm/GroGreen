@@ -11,7 +11,11 @@ import Firebase
 
 class farmerLoginViewController: UIViewController {
 
-    let ref = Firebase(url: "https://grogreen.firebaseio.com")
+    var farms = [FDataSnapshot]()
+    var farmUser = FDataSnapshot()
+
+    
+    let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
     
     @IBOutlet weak var usernameField: UITextField!
     
@@ -24,6 +28,21 @@ class farmerLoginViewController: UIViewController {
             {
                 print("Login Successful")
                 
+                
+                //SAVES FARMER USER
+                for var i=0; i<self.farms.count; i++
+                {
+                    let farmEmail = self.farms[i].value["email"] as! String
+                    
+                    if (farmEmail == self.usernameField.text!)
+                    {
+                        self.farmUser = self.farms[i]
+                        
+                        print(self.farmUser.value["name"] as! String)
+                        NSUserDefaults .standardUserDefaults() .setObject(self.farmUser.value, forKey: "farmUser")
+                        
+                    }
+                }
                 self.performSegueWithIdentifier("farmerLogin", sender: nil)
                 
             }
@@ -44,6 +63,25 @@ class farmerLoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            
+            var newFarms = [FDataSnapshot]()
+            
+            
+            for item in snapshot.children {
+                newFarms.append(item as! FDataSnapshot)
+            }
+            
+            self.farms = newFarms
+            
+            
+        })
+    }
+
     
 
     /*

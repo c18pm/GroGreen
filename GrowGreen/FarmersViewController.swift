@@ -16,6 +16,10 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     let ref = Firebase(url: "https://grogreen.firebaseio.com/farmers")
 
     var farms = [String]()
+    var sortedFarms = [FDataSnapshot]()
+    
+    var farmItem = FDataSnapshot()
+    
     
     // your firebase reference as a property
     
@@ -55,20 +59,26 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return farms.count;
+        return sortedFarms.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
 //        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell!
-        let farmItem = farms[indexPath.row]
-        print(farmItem)
+        
+        //farmItem is FDataSnapshot
+        farmItem = sortedFarms[indexPath.row]
+        
+        //farmItemName is String
+        let farmItemName = farms[indexPath.row]
+        
+        print(farmItemName)
         
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
    
-        cell.textLabel?.text = farmItem
+        cell.textLabel?.text = farmItemName
         cell.textLabel?.textColor = UIColor .greenColor()
         cell.textLabel?.font = UIFont.boldSystemFontOfSize(20)
         cell.backgroundColor = UIColor .clearColor()
@@ -78,15 +88,18 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let farmItem = farms[indexPath.row]
         
-        var name = farmItem
+        //farmItem is FDataSnapshot
+        farmItem = sortedFarms[indexPath.row]
         
-        print("You selected \(name)")
+        //farmItemName is String
+        let farmItemName = farms[indexPath.row]
         
-        NSUserDefaults .standardUserDefaults() .setObject(farmItem, forKey: "farmChosen")
+        print("You selected \(farmItemName)")
         
-        self.performSegueWithIdentifier("tofarmerpage", sender: self)
+        NSUserDefaults .standardUserDefaults() .setObject(farmItem.value, forKey: "farmChosen")
+        
+        self.performSegueWithIdentifier("toFarmerPage", sender: self)
         
         //method called when tapped cell
         
@@ -97,9 +110,8 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         ref.observeEventType(.Value, withBlock: { snapshot in
             
+            var sortedFarmsString = [String]()
             var newFarms = [FDataSnapshot]()
-            
-            var sortedFarms = [String]()
             
             for item in snapshot.children {
                 newFarms.append(item as! FDataSnapshot)
@@ -107,23 +119,23 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             for var i=0; i<newFarms.count; i++ {
                 
+                //each farm has one produce type
                 let produceName = newFarms[i].value["produce"] as! String
                 
-                let farmName = newFarms[i].value["name"] as! String
-                
+                // produceType is name selected by NSUserDefaults
                 if (produceName == self.produceType)
                 {
-                    sortedFarms.append(farmName)
+                    self.sortedFarms.append(newFarms[i])
                 }
             
             }
             
+            for var i=0; i<self.sortedFarms.count; i++ {
+                sortedFarmsString.append(self.sortedFarms[i].value["name"] as! String)
+            }
             
             
-           // produceType is name selected
-            
-            
-            self.farms = sortedFarms
+            self.farms = sortedFarmsString
             self.tableView.reloadData()
         })
     }

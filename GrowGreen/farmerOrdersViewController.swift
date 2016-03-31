@@ -16,8 +16,12 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     
      let ref = Firebase(url: "https://grogreen.firebaseio.com/orders")
     
-    var orders = [FDataSnapshot]()
+    var orders = [String]()
     var items = [FDataSnapshot]()
+    
+    
+    var sortedOrders = [FDataSnapshot]()
+    var orderItem = FDataSnapshot()
 
     
     override func viewDidLoad() {
@@ -29,34 +33,28 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     //set # of cells in table view
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.orders.count;
-        
+        return self.sortedOrders.count;
+
     }
     
     //This sets up the table view cell.
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.orderView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
-        let orderItem = orders[indexPath.row]
         
-        let restaurantString = orderItem.value["restaurantUid"] as! String
+        let orderItem = sortedOrders[indexPath.row]
         
-        let produceString = orderItem.value["produce"] as! String
-        
-        let quantityInt = orderItem.value["quantity"] as! Int
-        var quantityString = "\(quantityInt)"
-        
-        let priceDouble = orderItem.value["price"] as! Double
-        var priceString = "\(priceDouble)"
-        
+        let restaurantString = orderItem.value["restaurantName"] as! String
         
         //Type of cell.
+        
+
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
         //Sets the text in the cell.
         
-        cell.textLabel?.text = produceString
-        
+        cell.textLabel?.text = restaurantString
+
         cell.detailTextLabel?.text = ""
             
         //Sets the color of the text in the cell.
@@ -80,20 +78,39 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/orders")
+        let farmUser = NSUserDefaults . standardUserDefaults() .objectForKey("farmUser")!
+        
+        let farmUid = farmUser["uid"] as! String
+        
         
         ref.observeEventType(.Value, withBlock: {
             snapshot in
             
-            var newOrder = [FDataSnapshot]()
-            
-            var orderItem = [FDataSnapshot] ()
+            var newOrders = [FDataSnapshot]()
+            var sortedOrdersString = [String]()
+           
             
             for item in snapshot.children{
-                newOrder.append(item as! FDataSnapshot)
+                newOrders.append(item as! FDataSnapshot)
             }
             
-            self.orders = newOrder
+            for var i=0; i<newOrders.count; i++ {
+            
+                if(farmUid == newOrders[i].value["farmUid"]as! String)
+                {
+                    self.sortedOrders.append(newOrders[i])
+                }
+                
+            }
+            
+            for var i=0; i<self.sortedOrders.count; i++ {
+                sortedOrdersString.append(self.sortedOrders[i].value["restaurantName"] as! String)
+                
+            }
+            
+        
+            
+            self.orders = sortedOrdersString
             self.orderView.reloadData()
             
         })

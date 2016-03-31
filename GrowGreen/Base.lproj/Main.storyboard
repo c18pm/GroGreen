@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -280,7 +280,7 @@
                                 <rect key="frame" x="186" y="290" width="185" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr1-Bz-Dan">
                                 <rect key="frame" x="148" y="20" width="305" height="158"/>
@@ -351,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ot7-FS-Pob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="285"/>
+            <point key="canvasLocation" x="-525" y="265"/>
         </scene>
         <!--Farmer Login View Controller-->
         <scene sceneID="4jT-Mk-vq6">
@@ -376,7 +376,7 @@
                                     <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uaw-vR-WRH" kind="show" id="j7b-nq-fxE"/>
+                                    <segue destination="uaw-vR-WRH" kind="show" id="q0G-kv-x3O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-sz-me6">
@@ -401,7 +401,7 @@
                                 <rect key="frame" x="208" y="310" width="185" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gN-MS-XLn">
                                 <rect key="frame" x="125" y="38" width="305" height="158"/>
@@ -491,6 +491,9 @@
                                 <state key="normal" title="view orders">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EsP-xE-Urv" kind="show" id="8H7-N4-UVE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwQ-0P-ovL">
                                 <rect key="frame" x="176" y="445" width="186" height="46"/>
@@ -535,7 +538,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OYh-CY-WHy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OYh-CY-WHy">
                                 <rect key="frame" x="30" y="80" width="550" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -553,6 +556,9 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="URf-ze-Qpj" kind="show" id="6Ib-r1-iqK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-wK-bIa">
                                 <rect key="frame" x="233" y="18" width="135" height="54"/>
@@ -563,9 +569,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="AQ6-hb-Mou" firstAttribute="top" secondItem="OYh-CY-WHy" secondAttribute="bottom" constant="53" id="1IH-lk-FnM"/>
                             <constraint firstItem="5ae-wK-bIa" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" constant="18" id="9Qg-nt-77F"/>
+                            <constraint firstItem="OYh-CY-WHy" firstAttribute="trailing" secondItem="SLS-wd-C0b" secondAttribute="trailingMargin" id="F36-ov-m8E"/>
                             <constraint firstItem="5ae-wK-bIa" firstAttribute="centerX" secondItem="SLS-wd-C0b" secondAttribute="centerX" id="ICl-Tu-UcZ"/>
+                            <constraint firstItem="OYh-CY-WHy" firstAttribute="leading" secondItem="SLS-wd-C0b" secondAttribute="leadingMargin" constant="10" id="Kdj-v9-xCZ"/>
                             <constraint firstItem="U4H-dp-aYf" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" id="T9m-TQ-3Cl"/>
+                            <constraint firstItem="OYh-CY-WHy" firstAttribute="top" secondItem="5ae-wK-bIa" secondAttribute="bottom" constant="8" id="alv-xZ-QrD"/>
                             <constraint firstItem="U4H-dp-aYf" firstAttribute="leading" secondItem="SLS-wd-C0b" secondAttribute="leadingMargin" constant="-21" id="t1J-zA-ozu"/>
                         </constraints>
                     </view>
@@ -645,7 +655,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="285"/>
+            <point key="canvasLocation" x="156" y="291"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -684,7 +694,7 @@
                                     <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="PlH-zw-hyV"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="YoV-gm-8zg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -701,11 +711,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="kBo-Ma-1bW" id="pL1-fk-mwb"/>
+                        <segue destination="U4q-du-bRy" kind="show" identifier="toFarmResults" id="jWw-VS-koL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN4-g3-pz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="285"/>
+            <point key="canvasLocation" x="828" y="277"/>
         </scene>
         <!--Farmers View Controller-->
         <scene sceneID="lbG-Pt-NP6">
@@ -722,9 +733,6 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-Lq-gH6">
                                 <rect key="frame" x="507" y="25" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="o2S-wS-wls" kind="show" identifier="tofarmerpage" id="1BN-an-tYu"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-IG-uvM">
                                 <rect key="frame" x="20" y="74" width="560" height="506"/>
@@ -744,6 +752,9 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hkq-ko-ZMY" kind="show" id="6Z8-JS-L4Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Farms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrC-ms-BCa">
                                 <rect key="frame" x="229" y="17" width="142" height="46"/>
@@ -765,11 +776,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="gyV-IG-uvM" id="qek-0Z-idc"/>
+                        <segue destination="o2S-wS-wls" kind="show" identifier="toFarmerPage" id="AOq-Dd-Z1z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hba-Wb-wYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="285"/>
+            <point key="canvasLocation" x="1690" y="285"/>
         </scene>
         <!--Farmer Page View Controller-->
         <scene sceneID="vQ8-iG-k2E">
@@ -828,9 +840,6 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="U4q-du-bRy" kind="show" id="TZL-iC-crx"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quantity (lbs):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siD-0g-aCo">
                                 <rect key="frame" x="83" y="293" width="232" height="50"/>
@@ -848,6 +857,9 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="U4q-du-bRy" kind="show" id="qzp-sb-DnB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -892,9 +904,12 @@
         <image name="pear.png" width="272" height="278"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j7b-nq-fxE"/>
+        <segue reference="lVB-rO-LMZ"/>
+        <segue reference="2YK-fx-Q4f"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="q0G-kv-x3O"/>
         <segue reference="QuL-V4-qiY"/>
-        <segue reference="Z9x-gs-hKf"/>
-        <segue reference="PlH-zw-hyV"/>
+        <segue reference="6Ib-r1-iqK"/>
+        <segue reference="qzp-sb-DnB"/>
     </inferredMetricsTieBreakers>
 </document>

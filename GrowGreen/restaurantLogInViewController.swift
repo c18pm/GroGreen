@@ -11,23 +11,6 @@ import Firebase
 
 class restaurantLogInViewController: ViewController {
 
-//    //
-    
-    
-    //FROM PREVIOUS VIEW CONTROLLER 
-    //NSUserDefaults .standardUserDefaults() .setObject(farmItem.value, forKey: "farmChosen")
-//    
-//    let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
-//    
-//    let farmString =
-//    farmItem["name"] as! String
-//    print(farmString)
-//    
-//    //
-    
-    
-
-    
     
     var rests = [FDataSnapshot]()
     var restUser = FDataSnapshot()
@@ -50,7 +33,7 @@ class restaurantLogInViewController: ViewController {
                 //SAVES RESTAURANT USER
                 for var i=0; i<self.rests.count; i++
                 {
-                    var restEmail = self.rests[i].value["email"] as! String
+                    let restEmail = self.rests[i].value["email"] as! String
                     
                     if (restEmail == self.usernameField.text!)
                     {
@@ -89,15 +72,11 @@ class restaurantLogInViewController: ViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let itemRef = Firebase(url: "https://grogreen.firebaseio.com/restaurants")
+    
         
         ref.observeEventType(.Value, withBlock: { snapshot in
             
             var newRests = [FDataSnapshot]()
-            
-            var restItem = [FDataSnapshot]()
-            
             
             for item in snapshot.children {
                 newRests.append(item as! FDataSnapshot)
