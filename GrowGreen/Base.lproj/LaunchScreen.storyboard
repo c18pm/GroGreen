@@ -5,11 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="TT-Moons-Thin-Italic-DEMO.otf">
-            <string>TTMoonsThinDEMO-Italic</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,34 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GroGreen Images\greyed fruits.png" translatesAutoresizingMaskIntoConstraints="NO" id="wcS-nC-lsh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen " translatesAutoresizingMaskIntoConstraints="NO" id="wcS-nC-lsh">
                                 <rect key="frame" x="7" y="5" width="587" height="587"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="587" id="I4J-F8-gAW"/>
                                     <constraint firstAttribute="width" constant="587" id="mgC-13-swn"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-qi-TCj">
-                                <rect key="frame" x="79" y="222" width="443" height="153"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-qi-TCj">
+                                <rect key="frame" x="79" y="222" width="353" height="153"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="153" id="dna-ej-84d"/>
                                     <constraint firstAttribute="width" constant="443" id="pfs-gl-f1A"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="80"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZW2-qi-TCj" secondAttribute="bottom" constant="225" id="3QH-dm-agX"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wcS-nC-lsh" secondAttribute="bottom" constant="8" id="8uZ-JX-0Hs"/>
-                            <constraint firstItem="ZW2-qi-TCj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="202" id="EMw-Qn-oga"/>
-                            <constraint firstItem="ZW2-qi-TCj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="59" id="VlD-fW-Qt3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wcS-nC-lsh" secondAttribute="trailing" constant="-15" id="bUI-Da-lsw"/>
-                            <constraint firstItem="wcS-nC-lsh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="8" id="d8g-WO-vWu"/>
-                            <constraint firstItem="wcS-nC-lsh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-12" id="gyj-9g-kyG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZW2-qi-TCj" secondAttribute="trailing" constant="58" id="qaz-dk-6Cz"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wcS-nC-lsh" secondAttribute="bottom" constant="8" id="4o7-9V-wQT"/>
+                            <constraint firstItem="ZW2-qi-TCj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="202" id="9UA-at-yEp"/>
+                            <constraint firstItem="wcS-nC-lsh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-13" id="Cdr-3N-I37"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wcS-nC-lsh" secondAttribute="trailing" constant="-14" id="E9q-bx-T5i"/>
+                            <constraint firstItem="wcS-nC-lsh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="5" id="Id9-Kn-mCP"/>
+                            <constraint firstItem="ZW2-qi-TCj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="K0N-lp-Yuj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -60,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GroGreen Images\greyed fruits.png" width="1282" height="1282"/>
+        <image name="launch screen " width="76" height="76"/>
     </resources>
 </document>
