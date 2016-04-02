@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:tt_moons">
-   </FileRef>
-   <FileRef
       location = "group:GrowGreen.xcodeproj">
    </FileRef>
    <FileRef
