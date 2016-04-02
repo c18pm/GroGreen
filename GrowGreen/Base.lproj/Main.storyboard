@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -630,7 +630,7 @@
                     </view>
                     <connections>
                         <outlet property="orderView" destination="OYh-CY-WHy" id="9jS-MF-6qj"/>
-                        <segue destination="Ddy-0Q-nIS" kind="show" id="agA-hk-eKh"/>
+                        <segue destination="Ddy-0Q-nIS" kind="show" identifier="toOrderInfo" id="agA-hk-eKh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbc-Hc-C2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -648,6 +648,15 @@
                     <view key="view" contentMode="scaleToFill" id="ddE-7b-eMC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-Om-LhS">
+                                <rect key="frame" x="142" y="377" width="95" height="30"/>
+                                <state key="normal" title="Archive Order"/>
+                                <connections>
+                                    <action selector="archiveOrder:" destination="Ddy-0Q-nIS" eventType="touchUpInside" id="2tO-r6-Yrk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -975,12 +984,12 @@
         <image name="yellow pear" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YoV-gm-8zg"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="jWw-VS-koL"/>
+        <segue reference="Z9x-gs-hKf"/>
         <segue reference="SBw-dV-Arv"/>
         <segue reference="Z97-3L-AJu"/>
-        <segue reference="Z9x-gs-hKf"/>
         <segue reference="Met-vs-gSM"/>
+        <segue reference="qzp-sb-DnB"/>
+        <segue reference="YoV-gm-8zg"/>
+        <segue reference="xBp-l1-vtG"/>
     </inferredMetricsTieBreakers>
 </document>

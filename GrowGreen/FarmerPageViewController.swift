@@ -16,7 +16,7 @@ class FarmerPageViewController: UIViewController {
     var quantity = Int()
     
     let ref = Firebase(url: "https://grogreen.firebaseio.com")
-
+    
     @IBOutlet weak var numLabel: UILabel!
     
     @IBOutlet weak var quantityStepper: UIStepper!
@@ -40,7 +40,7 @@ class FarmerPageViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
-
+        
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
         
@@ -55,12 +55,12 @@ class FarmerPageViewController: UIViewController {
         let farmUid = farmItem["uid"] as! String
         
         let farmString =
-        farmItem["name"] as! String
+            farmItem["name"] as! String
         print(farmString)
-    
+        
         let orderRef = ref.childByAppendingPath("orders")
-    
-        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restaurantUid": restaurantUid, "farmUid": farmUid, "restaurantName":restaurantName]
+        
+        let order = ["produce": produceType, "quantity": quantity, "price": producePrice, "restaurantUid": restaurantUid, "farmUid": farmUid, "restaurantName":restaurantName, "isDone": false]
         
         let order1Ref = orderRef.childByAutoId()
         
@@ -79,13 +79,13 @@ class FarmerPageViewController: UIViewController {
         quantityStepper.autorepeat = true
         quantityStepper.maximumValue = 10
         
-       
+        
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
         
         let farmString = farmItem["name"] as! String
         print(farmString)
         
-
+        
         
         //NSUserDefaults to get produce name
         //var produceType defined at top of  class
@@ -94,9 +94,9 @@ class FarmerPageViewController: UIViewController {
         
         
         namelabel.text = farmString
-//        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
-//        
-//        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")
+        //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
+        //
+        //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")
         
         
         
@@ -108,21 +108,21 @@ class FarmerPageViewController: UIViewController {
     }
     
     
- 
     
     
     
     
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
