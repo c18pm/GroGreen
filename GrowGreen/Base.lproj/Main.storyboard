@@ -275,10 +275,13 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uaw-vR-WRH" kind="show" id="vTr-iz-pPB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ed-luB">
                                 <rect key="frame" x="169" y="28" width="263" height="88"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="75"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -985,8 +988,8 @@
         <image name="yellow pear" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vTr-iz-pPB"/>
         <segue reference="Z9x-gs-hKf"/>
-        <segue reference="SBw-dV-Arv"/>
         <segue reference="Z97-3L-AJu"/>
         <segue reference="Met-vs-gSM"/>
         <segue reference="qzp-sb-DnB"/>

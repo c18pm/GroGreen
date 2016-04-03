@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 51B9E21B1C7E51E000B449DA /* Build configuration list for PBXProject "GrowGreen" */;
+			buildConfigurationList = 51B9E21B1C7E51E000B449DA /* Build configuration list for PBXProject "GroGreen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -403,7 +403,7 @@
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Priya-Mital.GrowGreen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GrowGreen;
 			};
 			name = Debug;
 		};
@@ -421,14 +421,14 @@
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Priya-Mital.GrowGreen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GrowGreen;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51B9E21B1C7E51E000B449DA /* Build configuration list for PBXProject "GrowGreen" */ = {
+		51B9E21B1C7E51E000B449DA /* Build configuration list for PBXProject "GroGreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51B9E2301C7E51E100B449DA /* Debug */,
