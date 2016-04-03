@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -173,12 +173,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-8T-pK7">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-8T-pK7">
                                 <rect key="frame" x="0.0" y="0.0" width="59" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="WN4-Xq-ETQ"/>
-                                    <constraint firstAttribute="width" constant="59" id="j4m-id-Aqs"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="⬅︎">
                                     <color key="titleColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,33 +184,27 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="potato" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-y1-p5u">
-                                <rect key="frame" x="0.0" y="296" width="175" height="154"/>
+                                <rect key="frame" x="0.0" y="359" width="100" height="88"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-2e-i0H">
-                                <rect key="frame" x="143" y="230" width="191" height="181"/>
+                                <rect key="frame" x="78" y="240" width="156" height="147"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Thats too bad, we taste so good! If only there was an app that could save us!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="omz-Ka-QqN">
-                                <rect key="frame" x="166" y="249" width="145" height="82"/>
+                                <rect key="frame" x="100" y="256" width="113" height="69"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech bubble" translatesAutoresizingMaskIntoConstraints="NO" id="bo2-fu-zEu">
-                                <rect key="frame" x="397" y="230" width="155" height="167"/>
+                                <rect key="frame" x="230" y="243" width="141" height="147"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No fear! Just get the app called GroGreen!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-2D-Dkh">
-                                <rect key="frame" x="429" y="242" width="90" height="83"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oLM-md-OJK">
+                                <rect key="frame" x="112" y="406" width="376" height="160.5"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">It is time to realize that "ugly" produce items are not in any way “unhealthy” just because of their appearance. While in a supermarket, a customer directly buys produce, in a restaruant, they do not actually see the food directly, but rather view the end product, or the finished meal. Let's start judging food as it should be;by taste and not appearance.</string>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lets turn wasted food into wanted food together!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oLM-md-OJK">
-                                <rect key="frame" x="0.0" y="475" width="600" height="147"/>
-                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF7-jZ-7f9">
@@ -228,22 +218,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-RS-JiI">
-                                <rect key="frame" x="133" y="104" width="363" height="130"/>
+                                <rect key="frame" x="149" y="104" width="347" height="131"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Every year, approximately 6 billion pounds of produce gets thrown out because it is "ugly" and therefore is not being sold to supermarkets to be bought. While these fruits and vegetables may not be visually appealing, they are perfectly fine to taste. </string>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green pear" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-N6-cTi">
-                                <rect key="frame" x="277" y="291" width="137" height="163"/>
+                                <rect key="frame" x="149" y="337" width="105" height="110"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No fear! Just get the app called GroGreen!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-2D-Dkh">
+                                <rect key="frame" x="248" y="259" width="105" height="64"/>
+                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="QAr-Iv-VKO" firstAttribute="top" secondItem="oLM-md-OJK" secondAttribute="bottom" constant="35" id="0Sd-n9-jij"/>
                             <constraint firstItem="tF7-jZ-7f9" firstAttribute="top" secondItem="kER-u3-1St" secondAttribute="bottom" constant="8" id="Ayd-Tb-BJ3"/>
+                            <constraint firstItem="xNh-8T-pK7" firstAttribute="leading" secondItem="tLT-Nq-hNh" secondAttribute="leadingMargin" constant="-15" id="ItQ-Uj-rso"/>
                             <constraint firstItem="vgL-RS-JiI" firstAttribute="centerX" secondItem="tLT-Nq-hNh" secondAttribute="centerX" id="QaG-Br-htg"/>
+                            <constraint firstItem="xNh-8T-pK7" firstAttribute="top" secondItem="tLT-Nq-hNh" secondAttribute="topMargin" constant="3" id="Rnl-jO-b9Q"/>
                             <constraint firstItem="tF7-jZ-7f9" firstAttribute="centerX" secondItem="tLT-Nq-hNh" secondAttribute="centerX" id="hLb-De-YXm"/>
+                            <constraint firstItem="oLM-md-OJK" firstAttribute="centerX" secondItem="tLT-Nq-hNh" secondAttribute="centerX" id="hWC-xp-0fL"/>
                             <constraint firstItem="vgL-RS-JiI" firstAttribute="top" secondItem="tF7-jZ-7f9" secondAttribute="bottom" constant="1" id="mvk-Z0-HsF"/>
                         </constraints>
                     </view>
