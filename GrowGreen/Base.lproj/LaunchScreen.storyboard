@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,21 +21,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch screen " highlightedImage="launch screen " highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KmW-cv-onU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GrowGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-Iw-Sz7">
-                                <rect key="frame" x="80" y="227" width="355" height="146"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroGreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-Iw-Sz7">
+                                <rect key="frame" x="123" y="227" width="369" height="146"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="70"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QUm-Iw-Sz7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ASm-il-KjC"/>
+                            <constraint firstItem="QUm-Iw-Sz7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4SU-ks-cI2"/>
                             <constraint firstItem="KmW-cv-onU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Jdh-3h-CcY"/>
                             <constraint firstItem="KmW-cv-onU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Mae-oU-ufT"/>
-                            <constraint firstItem="QUm-Iw-Sz7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="207" id="QP6-7t-cfK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KmW-cv-onU" secondAttribute="trailing" constant="-20" id="o1e-6u-s7w"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KmW-cv-onU" secondAttribute="bottom" id="rpA-8R-MrZ"/>
+                            <constraint firstItem="QUm-Iw-Sz7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="207" id="wpT-fS-KY6"/>
                         </constraints>
                     </view>
                 </viewController>

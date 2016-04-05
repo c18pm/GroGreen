@@ -31,10 +31,6 @@
             <string>TTMoonsThinDEMO-Italic</string>
             <string>TTMoonsThinDEMO-Italic</string>
             <string>TTMoonsThinDEMO-Italic</string>
-            <string>TTMoonsThinDEMO-Italic</string>
-            <string>TTMoonsThinDEMO-Italic</string>
-            <string>TTMoonsThinDEMO-Italic</string>
-            <string>TTMoonsThinDEMO-Italic</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -253,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="-1573" y="1452"/>
         </scene>
-        <!--View Controller-->
+        <!--About Page View Controller-->
         <scene sceneID="BYc-Qf-95s">
             <objects>
-                <viewController id="jLm-O1-tUF" sceneMemberID="viewController">
+                <viewController id="jLm-O1-tUF" customClass="aboutPageViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DR5-mU-r3X"/>
                         <viewControllerLayoutGuide type="bottom" id="IMX-oX-ldI"/>
@@ -268,8 +264,8 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-f2-EXi">
                                 <rect key="frame" x="5" y="11" width="59" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="Igo-f3-1Mf"/>
-                                    <constraint firstAttribute="width" constant="59" id="zs2-Cd-dtS"/>
+                                    <constraint firstAttribute="height" constant="41" id="Ha1-4X-wVx"/>
+                                    <constraint firstAttribute="width" constant="59" id="gq5-s7-8GV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="⬅︎">
@@ -279,8 +275,60 @@
                                     <segue destination="uaw-vR-WRH" kind="show" id="vTr-iz-pPB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ed-luB">
-                                <rect key="frame" x="169" y="28" width="263" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mF2-0I-276">
+                                <rect key="frame" x="45" y="358" width="111" height="30"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <state key="normal" title="Priya Mittal">
+                                    <color key="titleColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="priyaButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="ZDZ-cw-aWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxL-kS-HTv">
+                                <rect key="frame" x="210" y="358" width="147" height="30"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <state key="normal" title="Rachel Sterneck">
+                                    <color key="titleColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rachelButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="UGt-7c-Cj2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-D8-jYT">
+                                <rect key="frame" x="117" y="553" width="186" height="47"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <state key="normal" title="Alexandra Qin">
+                                    <color key="titleColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="alexButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="YBL-b5-VyX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="priya selfie" translatesAutoresizingMaskIntoConstraints="NO" id="XwE-ml-PZp">
+                                <rect key="frame" x="25" y="193" width="136" height="166"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rachel selfie" translatesAutoresizingMaskIntoConstraints="NO" id="D0d-Od-bIr">
+                                <rect key="frame" x="204" y="193" width="153" height="167"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alex selfie" translatesAutoresizingMaskIntoConstraints="NO" id="JBT-wW-YTZ">
+                                <rect key="frame" x="149" y="396" width="123" height="166"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-7f-0uW">
+                                <rect key="frame" x="49" y="110" width="462" height="21"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="GroGreen was built for the 2016 Technovation Competition" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="euW-26-b9e">
+                                <rect key="frame" x="89" y="125" width="183" height="49"/>
+                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ed-luB">
+                                <rect key="frame" x="72" y="35" width="263" height="88"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="75"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -288,10 +336,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mOe-ed-luB" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="FxM-0I-OFB"/>
-                            <constraint firstItem="Gom-f2-EXi" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="-20" id="GhC-In-OuB"/>
-                            <constraint firstItem="Gom-f2-EXi" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" id="S4W-7L-YxP"/>
-                            <constraint firstItem="mOe-ed-luB" firstAttribute="top" secondItem="DR5-mU-r3X" secondAttribute="bottom" constant="45" id="uzG-m4-ReE"/>
+                            <constraint firstItem="Gom-f2-EXi" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" constant="5" id="29O-dW-kaB"/>
+                            <constraint firstItem="Gom-f2-EXi" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="-15" id="zLN-ep-Ur1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -318,7 +364,7 @@
                                     <constraint firstAttribute="width" constant="127" id="F8A-Ei-8C9"/>
                                     <constraint firstAttribute="height" constant="39" id="Iq0-Lo-3Qx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -326,13 +372,13 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-fv-5uu">
                                 <rect key="frame" x="186" y="233" width="185" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-I3-WJv">
                                 <rect key="frame" x="186" y="290" width="185" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr1-Bz-Dan">
@@ -369,7 +415,7 @@
                                     <constraint firstAttribute="width" constant="127" id="UTD-JJ-Isv"/>
                                     <constraint firstAttribute="height" constant="39" id="oWE-kd-KWA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -981,9 +1027,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alex selfie" width="644" height="858"/>
         <image name="apple" width="76" height="76"/>
         <image name="green pear" width="76" height="76"/>
         <image name="potato" width="76" height="76"/>
+        <image name="priya selfie" width="297" height="347"/>
+        <image name="rachel selfie" width="282" height="304"/>
         <image name="speech bubble" width="76" height="76"/>
         <image name="yellow pear" width="76" height="76"/>
     </resources>
