@@ -14,7 +14,6 @@
 		51B9E22E1C7E51E100B449DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B9E22C1C7E51E100B449DA /* LaunchScreen.storyboard */; };
 		51B9E2411C7E61E200B449DA /* ProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2401C7E61E200B449DA /* ProduceViewController.swift */; };
 		51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */; };
-		88166F45CC960F2A98CFF86A /* Pods_GrowGreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBDAD874C7B729A1AF52F21 /* Pods_GrowGreen.framework */; };
 		DE2C23671CB35CB80054A79D /* aboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C23661CB35CB80054A79D /* aboutPageViewController.swift */; };
 		DE49FDD31CB07194001533A7 /* OrderInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49FDD21CB07194001533A7 /* OrderInfoViewController.swift */; };
 		DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92DD1C892BAA00E130D6 /* Firebase.framework */; };
@@ -25,15 +24,12 @@
 		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
 		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
-		F49866001C94B1C500B8451A /* FirebaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49865FF1C94B1C500B8451A /* FirebaseUI.framework */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
 		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
 		F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E0F7D33DD024C50B813B7E7 /* Pods-GrowGreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowGreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen.debug.xcconfig"; sourceTree = "<group>"; };
-		4CBDAD874C7B729A1AF52F21 /* Pods_GrowGreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowGreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B9E2201C7E51E100B449DA /* GrowGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B9E2231C7E51E100B449DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B9E2251C7E51E100B449DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +39,6 @@
 		51B9E22F1C7E51E100B449DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B9E2401C7E61E200B449DA /* ProduceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceViewController.swift; sourceTree = "<group>"; };
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
-		6ED828829DEA125729C0099D /* Pods-GrowGreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowGreen.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen.release.xcconfig"; sourceTree = "<group>"; };
 		DE2C23661CB35CB80054A79D /* aboutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutPageViewController.swift; sourceTree = "<group>"; };
 		DE49FDD21CB07194001533A7 /* OrderInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfoViewController.swift; sourceTree = "<group>"; };
 		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
@@ -54,7 +49,6 @@
 		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
-		F49865FF1C94B1C500B8451A /* FirebaseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseUI.framework; path = GrowGreen/FirebaseUI.framework; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
 		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
 		F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerOrdersViewController.swift; sourceTree = "<group>"; };
@@ -65,14 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49866001C94B1C500B8451A /* FirebaseUI.framework in Frameworks */,
 				DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */,
 				DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */,
 				DE4F92E51C892C7200E130D6 /* CFNetwork.framework in Frameworks */,
 				DE4F92E31C892C6800E130D6 /* libicucore.tbd in Frameworks */,
 				DE4F92E21C892C4300E130D6 /* libc++.tbd in Frameworks */,
 				DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */,
-				88166F45CC960F2A98CFF86A /* Pods_GrowGreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +74,6 @@
 		51B9E2171C7E51E000B449DA = {
 			isa = PBXGroup;
 			children = (
-				F49865FF1C94B1C500B8451A /* FirebaseUI.framework */,
 				DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */,
 				DE4F92E61C892C7700E130D6 /* Security.framework */,
 				DE4F92E41C892C7200E130D6 /* CFNetwork.framework */,
@@ -90,7 +81,6 @@
 				DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */,
 				51B9E2221C7E51E100B449DA /* GrowGreen */,
 				51B9E2211C7E51E100B449DA /* Products */,
-				645ADE18BD21DE7391734B29 /* Pods */,
 				653C0462FF2498287B5032DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -134,19 +124,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		645ADE18BD21DE7391734B29 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E0F7D33DD024C50B813B7E7 /* Pods-GrowGreen.debug.xcconfig */,
-				6ED828829DEA125729C0099D /* Pods-GrowGreen.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		653C0462FF2498287B5032DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CBDAD874C7B729A1AF52F21 /* Pods_GrowGreen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,12 +138,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51B9E2321C7E51E100B449DA /* Build configuration list for PBXNativeTarget "GrowGreen" */;
 			buildPhases = (
-				E933B67899A32E762774140A /* Check Pods Manifest.lock */,
 				51B9E21C1C7E51E100B449DA /* Sources */,
 				51B9E21D1C7E51E100B449DA /* Frameworks */,
 				51B9E21E1C7E51E100B449DA /* Resources */,
-				665AD9282832267DB39E3D11 /* Embed Pods Frameworks */,
-				7A36BB4B7757904DB5365DE9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,54 +197,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		665AD9282832267DB39E3D11 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A36BB4B7757904DB5365DE9 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrowGreen/Pods-GrowGreen-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E933B67899A32E762774140A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51B9E21C1C7E51E100B449DA /* Sources */ = {
@@ -395,7 +324,6 @@
 		};
 		51B9E2331C7E51E100B449DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E0F7D33DD024C50B813B7E7 /* Pods-GrowGreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -413,7 +341,6 @@
 		};
 		51B9E2341C7E51E100B449DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ED828829DEA125729C0099D /* Pods-GrowGreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

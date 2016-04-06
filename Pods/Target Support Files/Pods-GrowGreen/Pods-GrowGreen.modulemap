@@ -1,6 +1,0 @@
-framework module Pods_GrowGreen {
-  umbrella header "Pods-GrowGreen-umbrella.h"
-
-  export *
-  module * { export * }
-}
