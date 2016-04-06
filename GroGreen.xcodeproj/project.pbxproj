@@ -96,6 +96,7 @@
 		51B9E2221C7E51E100B449DA /* GrowGreen */ = {
 			isa = PBXGroup;
 			children = (
+				51B9E2271C7E51E100B449DA /* Main.storyboard */,
 				51B9E2231C7E51E100B449DA /* AppDelegate.swift */,
 				51B9E2251C7E51E100B449DA /* ViewController.swift */,
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
@@ -104,7 +105,6 @@
 				F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */,
 				F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */,
 				F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */,
-				51B9E2271C7E51E100B449DA /* Main.storyboard */,
 				DE2C23661CB35CB80054A79D /* aboutPageViewController.swift */,
 				DE49FDD21CB07194001533A7 /* OrderInfoViewController.swift */,
 				DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */,

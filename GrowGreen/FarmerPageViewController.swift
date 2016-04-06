@@ -21,7 +21,8 @@ class FarmerPageViewController: UIViewController {
     
     @IBOutlet weak var quantityStepper: UIStepper!
     
-    @IBOutlet weak var namelabel:UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     var farmstring = String()
     
@@ -77,7 +78,7 @@ class FarmerPageViewController: UIViewController {
         
         quantityStepper.wraps = true
         quantityStepper.autorepeat = true
-        quantityStepper.maximumValue = 10
+        quantityStepper.maximumValue = 25
         
         
         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
@@ -85,7 +86,7 @@ class FarmerPageViewController: UIViewController {
         let farmString = farmItem["name"] as! String
         print(farmString)
         
-        
+        let priceString = farmItem["price"] as! Double
         
         //NSUserDefaults to get produce name
         //var produceType defined at top of  class
@@ -93,7 +94,10 @@ class FarmerPageViewController: UIViewController {
         produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
         
         
-        namelabel.text = farmString
+        nameLabel.text = "Farm name: \(farmString)"
+        priceLabel.text = "Price per pound $\(priceString)"
+        
+        
         //        NSUserDefaults .standardUserDefaults() .setObject(namelabel.text, forKey: "someonesname")
         //
         //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")

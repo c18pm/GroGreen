@@ -12,12 +12,24 @@ import Firebase
 class ViewController: UIViewController {
     
     
-    let segueRef = Firebase(url: "https://grogreen.firebaseio.com")
+    let segueRef = Firebase(url: "https://grogreen.firebaseio.com/restaurants")
   
+    
+   
+    @IBOutlet weak var welcomeLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+         let restUser = NSUserDefaults . standardUserDefaults() .objectForKey("restUser")!
+        
+        let restName = restUser["name"] as! String
+        
+        print(restName)
+        
+        //welcomeLabel.text = "Welcome + \(restName)"
+        
         
     }
 
