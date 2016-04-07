@@ -1,15 +1,15 @@
 //
-//  farmerOrdersViewController.swift
+//  FarmerHistoryViewController.swift
 //  GrowGreen
 //
 //  Created by Rachel Sterneck on 2/27/16.
-//  Copyright © 2016 Mitchell Sweet. All rights reserved.
+//  Copyright © 2016 Rachel Sterneck. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var orderView: UITableView!
     
@@ -46,6 +46,7 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
         
         let restaurantString = orderItem.value["restaurantName"] as! String
         
+        
         //Type of cell.
         
         
@@ -53,15 +54,14 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
                                reuseIdentifier: "cell")
         //Sets the text in the cell.
         
-        cell.textLabel?.text = restaurantString
+        cell.textLabel!.text = restaurantString
         
-        cell.detailTextLabel?.text = ""
         
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .greenColor()
         cell.detailTextLabel?.textColor = UIColor .grayColor()
         //Sets the font of the text in the cell.
-         cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)
+        cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)
         //Sets the background color of the cell.
         cell.backgroundColor = UIColor .clearColor()
         //Adds the little arrow on the right of the cell.
@@ -109,8 +109,9 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
             
             for item in snapshot.children{
                 
-                if ((item.value["isDone"] as! Bool) == false)
+                if ((item.value["isDone"] as! Bool) == true)
                 {
+                    
                     newOrders.append(item as! FDataSnapshot)
                 }
             }

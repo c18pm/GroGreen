@@ -67,6 +67,8 @@ class FarmerPageViewController: UIViewController {
         
         order1Ref.setValue(order)
         
+        self.performSegueWithIdentifier("orderComplete", sender: nil)
+        
     }
     
     override func viewDidLoad() {

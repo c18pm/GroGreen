@@ -80,7 +80,7 @@ class FarmersViewController: UIViewController, UITableViewDelegate, UITableViewD
    
         cell.textLabel?.text = farmItemName
         cell.textLabel?.textColor = UIColor .greenColor()
-        cell.textLabel?.font = UIFont.boldSystemFontOfSize(20)
+         cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)
         cell.backgroundColor = UIColor .clearColor()
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         

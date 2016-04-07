@@ -11,17 +11,39 @@ import Firebase
 
 class OrderInfoViewController: ViewController {
     
+    let ref = Firebase(url: "https://grogreen.firebaseio.com/orders")
+    
+    @IBOutlet weak var name: UILabel!
+    
+    @IBOutlet weak var produce: UILabel!
+    
+    @IBOutlet weak var quantity: UILabel!
+    
+    @IBOutlet weak var profit: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let orderItem = NSUserDefaults .standardUserDefaults() .objectForKey("orderChosen")!
         
+        let nameText = orderItem["restaurantName"] as! String
+        let produceText = orderItem["produce"] as! String
+        let quantityVal = orderItem["quantity"] as! Double
+        let quantityText = orderItem["quantity"] as! Int
+        let price = orderItem["price"] as! Double
+        let profitText = quantityVal*price
+        
+        name.text = "Restaurant name: \(nameText)"
+        produce.text = "Item: \(produceText)"
+        quantity.text = "Quantity: \(quantityText)"
+        profit.text = "Profit: $\(profitText)"
+
         
     }
     
     @IBAction func archiveOrder(sender: AnyObject) {
         
-        let orderItem = NSUserDefaults .standardUserDefaults() .objectForKey("orderChosen")!
+        //let orderItem = NSUserDefaults .standardUserDefaults() .objectForKey("orderChosen")!
         
         let orderItemKey = NSUserDefaults .standardUserDefaults() .objectForKey("orderChosenKey")!
         

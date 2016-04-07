@@ -9,7 +9,6 @@
         <mutableArray key="TT-Moons-Thin-Italic-DEMO.otf">
             <string>TTMoonsThinDEMO-Italic</string>
             <string>TTMoonsThinDEMO-Italic</string>
-            <string>TTMoonsThinDEMO-Italic</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -571,7 +570,7 @@
                                     <constraint firstAttribute="width" constant="127" id="L2b-kp-oJg"/>
                                     <constraint firstAttribute="height" constant="39" id="bh6-Do-TPM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
                                 <state key="normal" title="Current orders">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -585,20 +584,6 @@
                                     <segue destination="EsP-xE-Urv" kind="show" id="8H7-N4-UVE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We0-sI-AYQ">
-                                <rect key="frame" x="155" y="359" width="246" height="60"/>
-                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="4To-fj-S59"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="246" id="5rx-Rd-jQ3"/>
-                                    <constraint firstAttribute="width" constant="127" id="lr3-V5-WEF"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="zI4-46-PCJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
-                                <state key="normal" title="Order history">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwQ-0P-ovL">
                                 <rect key="frame" x="155" y="445" width="246" height="60"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -608,7 +593,7 @@
                                     <constraint firstAttribute="height" constant="60" id="ADG-cj-Ic4"/>
                                     <constraint firstAttribute="height" constant="39" id="ZxM-9g-zDh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -622,12 +607,39 @@
                                     <segue destination="bOA-t0-3pq" kind="show" id="QuL-V4-qiY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We0-sI-AYQ">
+                                <rect key="frame" x="155" y="359" width="246" height="60"/>
+                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="4To-fj-S59"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="246" id="5rx-Rd-jQ3"/>
+                                    <constraint firstAttribute="width" constant="246" id="Tcj-ng-aHi"/>
+                                    <constraint firstAttribute="width" constant="127" id="lr3-V5-WEF"/>
+                                    <constraint firstAttribute="height" constant="60" id="rJe-7u-OfM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="zI4-46-PCJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
+                                <state key="normal" title="Order history">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4To-fj-S59"/>
+                                        <exclude reference="5rx-Rd-jQ3"/>
+                                        <exclude reference="lr3-V5-WEF"/>
+                                        <exclude reference="zI4-46-PCJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="tw2-m5-ebu" kind="show" id="3A8-lw-ZZI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lIF-SD-LOv" firstAttribute="centerX" secondItem="vyu-bq-5lX" secondAttribute="centerX" id="298-2E-hFd"/>
                             <constraint firstItem="u3G-5F-Qjl" firstAttribute="centerX" secondItem="vyu-bq-5lX" secondAttribute="centerX" id="4x9-Dh-93e"/>
-                            <constraint firstItem="u3G-5F-Qjl" firstAttribute="top" secondItem="dTw-I9-ZiV" secondAttribute="bottom" constant="100" id="8fA-ph-jSV"/>
+                            <constraint firstItem="u3G-5F-Qjl" firstAttribute="top" secondItem="dTw-I9-ZiV" secondAttribute="bottom" constant="85" id="8fA-ph-jSV"/>
                             <constraint firstItem="We0-sI-AYQ" firstAttribute="top" secondItem="lIF-SD-LOv" secondAttribute="bottom" constant="29" id="POF-Gl-k9X"/>
                             <constraint firstItem="lIF-SD-LOv" firstAttribute="top" secondItem="u3G-5F-Qjl" secondAttribute="bottom" constant="200" id="YvO-in-EqY"/>
                             <constraint firstItem="DwQ-0P-ovL" firstAttribute="centerX" secondItem="vyu-bq-5lX" secondAttribute="centerX" id="as5-Th-n9L"/>
@@ -659,14 +671,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OYh-CY-WHy">
-                                <rect key="frame" x="30" y="80" width="550" height="467"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="EsP-xE-Urv" id="re7-i0-mxf"/>
-                                    <outlet property="delegate" destination="EsP-xE-Urv" id="LIz-Id-JdC"/>
-                                </connections>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4H-dp-aYf">
                                 <rect key="frame" x="20" y="18" width="46" height="33"/>
                                 <constraints>
@@ -683,19 +687,27 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-wK-bIa">
                                 <rect key="frame" x="233" y="18" width="135" height="54"/>
-                                <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="40"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OYh-CY-WHy">
+                                <rect key="frame" x="30" y="80" width="550" height="467"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EsP-xE-Urv" id="re7-i0-mxf"/>
+                                    <outlet property="delegate" destination="EsP-xE-Urv" id="LIz-Id-JdC"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="AQ6-hb-Mou" firstAttribute="top" secondItem="OYh-CY-WHy" secondAttribute="bottom" constant="53" id="1IH-lk-FnM"/>
-                            <constraint firstItem="5ae-wK-bIa" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" constant="18" id="9Qg-nt-77F"/>
+                            <constraint firstItem="5ae-wK-bIa" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" constant="25" id="9Qg-nt-77F"/>
                             <constraint firstItem="OYh-CY-WHy" firstAttribute="trailing" secondItem="SLS-wd-C0b" secondAttribute="trailingMargin" id="F36-ov-m8E"/>
                             <constraint firstItem="5ae-wK-bIa" firstAttribute="centerX" secondItem="SLS-wd-C0b" secondAttribute="centerX" id="ICl-Tu-UcZ"/>
                             <constraint firstItem="OYh-CY-WHy" firstAttribute="leading" secondItem="SLS-wd-C0b" secondAttribute="leadingMargin" constant="10" id="Kdj-v9-xCZ"/>
-                            <constraint firstItem="U4H-dp-aYf" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" id="T9m-TQ-3Cl"/>
+                            <constraint firstItem="U4H-dp-aYf" firstAttribute="top" secondItem="SLS-wd-C0b" secondAttribute="topMargin" constant="20" id="T9m-TQ-3Cl"/>
                             <constraint firstItem="OYh-CY-WHy" firstAttribute="top" secondItem="5ae-wK-bIa" secondAttribute="bottom" constant="8" id="alv-xZ-QrD"/>
                             <constraint firstItem="U4H-dp-aYf" firstAttribute="leading" secondItem="SLS-wd-C0b" secondAttribute="leadingMargin" constant="-21" id="t1J-zA-ozu"/>
                         </constraints>
@@ -709,6 +721,66 @@
             </objects>
             <point key="canvasLocation" x="1180" y="1076"/>
         </scene>
+        <!--Farmer History View Controller-->
+        <scene sceneID="XoK-qG-yWw">
+            <objects>
+                <viewController id="tw2-m5-ebu" customClass="FarmerHistoryViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lka-9v-AMM"/>
+                        <viewControllerLayoutGuide type="bottom" id="re7-X9-U88"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JzU-KT-AMx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B9a-xq-rR9">
+                                <rect key="frame" x="25" y="113" width="550" height="467"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EsP-xE-Urv" id="uio-lC-p7o"/>
+                                    <outlet property="delegate" destination="EsP-xE-Urv" id="L2O-nd-dKb"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Order History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8O-n7-A6N">
+                                <rect key="frame" x="175" y="44" width="250" height="55"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="40"/>
+                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6D7-me-poF">
+                                <rect key="frame" x="20" y="44" width="46" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="PdZ-7p-W6m"/>
+                                    <constraint firstAttribute="height" constant="41" id="Rdh-YL-Sta"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="⬅︎">
+                                    <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="URf-ze-Qpj" kind="show" id="OER-sZ-1Lz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="re7-X9-U88" firstAttribute="top" secondItem="B9a-xq-rR9" secondAttribute="bottom" constant="53" id="8Ze-Oc-O4h"/>
+                            <constraint firstItem="m8O-n7-A6N" firstAttribute="top" secondItem="lka-9v-AMM" secondAttribute="bottom" constant="25" id="N4J-Gt-M9z"/>
+                            <constraint firstItem="6D7-me-poF" firstAttribute="top" secondItem="lka-9v-AMM" secondAttribute="bottom" constant="20" id="OiI-HB-9C7"/>
+                            <constraint firstItem="m8O-n7-A6N" firstAttribute="centerX" secondItem="JzU-KT-AMx" secondAttribute="centerX" id="W7L-1B-32J"/>
+                            <constraint firstItem="6D7-me-poF" firstAttribute="leading" secondItem="JzU-KT-AMx" secondAttribute="leadingMargin" constant="-21" id="bhE-Iy-abO"/>
+                            <constraint firstItem="B9a-xq-rR9" firstAttribute="leading" secondItem="JzU-KT-AMx" secondAttribute="leadingMargin" constant="10" id="mba-99-lrr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B9a-xq-rR9" secondAttribute="trailing" id="qsi-JI-6Cf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderView" destination="B9a-xq-rR9" id="ywu-KJ-kp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyN-TV-Qiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="1780"/>
+        </scene>
         <!--Order Info View Controller-->
         <scene sceneID="bcS-nW-cJf">
             <objects>
@@ -721,16 +793,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-Om-LhS">
-                                <rect key="frame" x="142" y="377" width="95" height="30"/>
-                                <state key="normal" title="Archive Order"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE9-Om-LhS">
+                                <rect key="frame" x="205" y="451" width="191" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.90727215511608794" blue="0.72770842922558643" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="41N-k7-7j5"/>
+                                    <constraint firstAttribute="height" constant="48" id="5hQ-5C-4Fg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <state key="normal" title="Archive Order">
+                                    <color key="titleColor" red="0.13367137085360886" green="0.34799679487179491" blue="0.11447368270674171" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="archiveOrder:" destination="Ddy-0Q-nIS" eventType="touchUpInside" id="2tO-r6-Yrk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Order Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG0-D4-BP3">
+                                <rect key="frame" x="199" y="68" width="202" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="28"/>
+                                <color key="textColor" red="0.16615046689166335" green="0.43255208333333328" blue="0.14228817814222158" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-26-IaH">
+                                <rect key="frame" x="62" y="213" width="275" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" red="0.16905134799999999" green="0.44010416670000002" blue="0.14477243889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkC-6N-393">
+                                <rect key="frame" x="62" y="286" width="275" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" red="0.16905134799999999" green="0.44010416670000002" blue="0.14477243889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8P-jK-bHt">
+                                <rect key="frame" x="62" y="359" width="275" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" red="0.16905134799999999" green="0.44010416670000002" blue="0.14477243889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6w-5J-4on">
+                                <rect key="frame" x="62" y="146" width="275" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                                <color key="textColor" red="0.16905134801138536" green="0.44010416666666663" blue="0.14477243892856981" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-xZ-fQR">
+                                <rect key="frame" x="20" y="35" width="46" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1js-rW-cdP"/>
+                                    <constraint firstAttribute="width" constant="59" id="y3c-6K-MRX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="⬅︎">
+                                    <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qkC-6N-393" firstAttribute="top" secondItem="5Cl-26-IaH" secondAttribute="bottom" constant="45" id="0UV-gl-Ude"/>
+                            <constraint firstItem="5Cl-26-IaH" firstAttribute="leading" secondItem="ddE-7b-eMC" secondAttribute="leadingMargin" constant="42" id="3RP-Ev-5UM"/>
+                            <constraint firstItem="nh4-xZ-fQR" firstAttribute="leading" secondItem="ddE-7b-eMC" secondAttribute="leadingMargin" constant="-21" id="6R7-Pp-yVP"/>
+                            <constraint firstItem="g6w-5J-4on" firstAttribute="leading" secondItem="ddE-7b-eMC" secondAttribute="leadingMargin" constant="42" id="9sq-RX-Bgx"/>
+                            <constraint firstItem="g6w-5J-4on" firstAttribute="top" secondItem="AG0-D4-BP3" secondAttribute="bottom" constant="65" id="CVM-op-2JC"/>
+                            <constraint firstItem="qkC-6N-393" firstAttribute="leading" secondItem="ddE-7b-eMC" secondAttribute="leadingMargin" constant="42" id="JqF-GL-ABL"/>
+                            <constraint firstItem="vE9-Om-LhS" firstAttribute="centerX" secondItem="ddE-7b-eMC" secondAttribute="centerX" id="KCD-hk-SuZ"/>
+                            <constraint firstItem="5mf-MZ-i8p" firstAttribute="top" secondItem="vE9-Om-LhS" secondAttribute="bottom" constant="101" id="YRa-RD-oT4"/>
+                            <constraint firstItem="nh4-xZ-fQR" firstAttribute="top" secondItem="XEm-Fh-brE" secondAttribute="bottom" constant="20" id="bO9-oX-hA9"/>
+                            <constraint firstItem="a8P-jK-bHt" firstAttribute="leading" secondItem="ddE-7b-eMC" secondAttribute="leadingMargin" constant="42" id="cIZ-WV-HEa"/>
+                            <constraint firstItem="a8P-jK-bHt" firstAttribute="top" secondItem="qkC-6N-393" secondAttribute="bottom" constant="45" id="csc-wL-o0W"/>
+                            <constraint firstItem="AG0-D4-BP3" firstAttribute="top" secondItem="XEm-Fh-brE" secondAttribute="bottom" constant="48" id="m5F-9w-zLu"/>
+                            <constraint firstItem="5Cl-26-IaH" firstAttribute="top" secondItem="g6w-5J-4on" secondAttribute="bottom" constant="39" id="ohm-UC-hu0"/>
+                            <constraint firstItem="AG0-D4-BP3" firstAttribute="centerX" secondItem="ddE-7b-eMC" secondAttribute="centerX" id="uDN-Sj-ooi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="g6w-5J-4on" id="6B0-zc-68x"/>
+                        <outlet property="produce" destination="5Cl-26-IaH" id="VGC-5r-Wff"/>
+                        <outlet property="profit" destination="a8P-jK-bHt" id="NZI-EQ-iIw"/>
+                        <outlet property="quantity" destination="qkC-6N-393" id="NgZ-rw-XT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0a4-gW-Gjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -835,7 +978,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="265"/>
+            <point key="canvasLocation" x="160" y="255"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -859,7 +1002,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="View Produce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-Gf-IXa">
                                 <rect key="frame" x="110" y="16" width="330" height="59"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="42"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -884,7 +1027,7 @@
                             <constraint firstItem="qJZ-Gf-IXa" firstAttribute="centerX" secondItem="QJt-uC-acN" secondAttribute="centerX" id="FTP-Fs-sIm"/>
                             <constraint firstItem="kBo-Ma-1bW" firstAttribute="trailing" secondItem="QJt-uC-acN" secondAttribute="trailingMargin" id="VLu-uN-cZ9"/>
                             <constraint firstItem="BcT-pp-kk7" firstAttribute="leading" secondItem="QJt-uC-acN" secondAttribute="leadingMargin" constant="-20" id="bSw-LG-OOq"/>
-                            <constraint firstItem="qJZ-Gf-IXa" firstAttribute="top" secondItem="QJt-uC-acN" secondAttribute="topMargin" constant="15" id="fkY-3X-W6V"/>
+                            <constraint firstItem="qJZ-Gf-IXa" firstAttribute="top" secondItem="QJt-uC-acN" secondAttribute="topMargin" constant="25" id="fkY-3X-W6V"/>
                             <constraint firstItem="kBo-Ma-1bW" firstAttribute="leading" secondItem="QJt-uC-acN" secondAttribute="leadingMargin" id="kDV-dI-fYq"/>
                             <constraint firstItem="mbi-BA-ct3" firstAttribute="top" secondItem="kBo-Ma-1bW" secondAttribute="bottom" constant="20" id="n6r-ki-dzH"/>
                         </constraints>
@@ -916,7 +1059,7 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-IG-uvM">
                                 <rect key="frame" x="20" y="74" width="560" height="506"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="U4q-du-bRy" id="hoI-pc-auG"/>
                                     <outlet property="delegate" destination="U4q-du-bRy" id="Pk6-kh-0pG"/>
@@ -948,7 +1091,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HrC-ms-BCa" firstAttribute="top" secondItem="NIs-a5-v2n" secondAttribute="topMargin" constant="15" id="0yS-VP-j7D"/>
+                            <constraint firstItem="HrC-ms-BCa" firstAttribute="top" secondItem="NIs-a5-v2n" secondAttribute="topMargin" constant="25" id="0yS-VP-j7D"/>
                             <constraint firstItem="gyV-IG-uvM" firstAttribute="leading" secondItem="NIs-a5-v2n" secondAttribute="leadingMargin" id="4e1-LE-fO7"/>
                             <constraint firstItem="HrC-ms-BCa" firstAttribute="centerX" secondItem="NIs-a5-v2n" secondAttribute="centerX" id="TfZ-ap-sHI"/>
                             <constraint firstItem="HYx-Qn-PSZ" firstAttribute="top" secondItem="gyV-IG-uvM" secondAttribute="bottom" constant="20" id="jIe-KP-KH9"/>
@@ -1005,6 +1148,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="suz-EL-YSZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="orderComplete" id="n3n-ey-YzD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv7-TP-3c5">
@@ -1106,10 +1250,10 @@
     <inferredMetricsTieBreakers>
         <segue reference="6Ib-r1-iqK"/>
         <segue reference="QuL-V4-qiY"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="YoV-gm-8zg"/>
-        <segue reference="2YK-fx-Q4f"/>
-        <segue reference="83u-ln-TJu"/>
         <segue reference="qzp-sb-DnB"/>
+        <segue reference="n3n-ey-YzD"/>
+        <segue reference="2YK-fx-Q4f"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="83u-ln-TJu"/>
     </inferredMetricsTieBreakers>
 </document>
