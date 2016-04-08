@@ -34,7 +34,6 @@ class FarmerPageViewController: UIViewController {
     }
     
     
-    
     @IBAction func submitOrder(sender: AnyObject) {
         
         let alertController = UIAlertController(title: "GroGreen", message: "Order complete!", preferredStyle: UIAlertControllerStyle.Alert)

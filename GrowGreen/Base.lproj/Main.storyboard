@@ -1248,30 +1248,19 @@
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RwO-u2-y23">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RwO-u2-y23">
                                 <rect key="frame" x="147" y="406" width="94" height="29"/>
                                 <color key="tintColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="quantityChangeStepper:" destination="o2S-wS-wls" eventType="valueChanged" id="jPk-sE-KAi"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtR-Za-SPN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtR-Za-SPN">
                                 <rect key="frame" x="182" y="351" width="24" height="36"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh2-Qr-EgC">
-                                <rect key="frame" x="86" y="493" width="227" height="53"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
-                                <state key="normal" title="Submit order!">
-                                    <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="suz-EL-YSZ"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="orderComplete" id="n3n-ey-YzD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv7-TP-3c5">
                                 <rect key="frame" x="8" y="20" width="59" height="41"/>
                                 <constraints>
@@ -1283,7 +1272,7 @@
                                     <color key="titleColor" red="0.41176470590000003" green="0.92156862750000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quantity (lbs):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siD-0g-aCo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Quantity (lbs):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siD-0g-aCo">
                                 <rect key="frame" x="83" y="293" width="232" height="50"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -1309,29 +1298,47 @@
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-zC-tMb">
+                                <rect key="frame" x="85" y="469" width="219" height="60"/>
+                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="DdB-sa-8qO"/>
+                                    <constraint firstAttribute="width" constant="127" id="WhX-i7-6a1"/>
+                                    <constraint firstAttribute="width" constant="215" id="qk3-76-jzS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
+                                <state key="normal" title="Submit Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WhX-i7-6a1"/>
+                                        <exclude reference="DdB-sa-8qO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="EYO-pP-Qda"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="orderComplete" id="Np8-X6-CEr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RwO-u2-y23" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="0nG-hF-N4u"/>
                             <constraint firstItem="RwO-u2-y23" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="2eF-oJ-dg3"/>
-                            <constraint firstItem="yh2-Qr-EgC" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="3P2-qT-j6V"/>
                             <constraint firstItem="WtR-Za-SPN" firstAttribute="top" secondItem="siD-0g-aCo" secondAttribute="bottom" constant="8" id="4p6-MH-hXu"/>
-                            <constraint firstItem="XG6-AU-z29" firstAttribute="top" secondItem="yh2-Qr-EgC" secondAttribute="bottom" constant="54" id="4xl-k9-Lxk"/>
                             <constraint firstItem="fs8-oO-Z2S" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="8tn-bg-i3K"/>
                             <constraint firstItem="WtR-Za-SPN" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="Bs4-a6-aY5"/>
                             <constraint firstItem="Qo8-gF-7lh" firstAttribute="top" secondItem="IDO-vC-MWw" secondAttribute="topMargin" constant="20" id="HWT-jY-H3I"/>
-                            <constraint firstItem="yh2-Qr-EgC" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="Nen-QI-f10"/>
                             <constraint firstItem="WtR-Za-SPN" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="QWO-I2-8Zx"/>
                             <constraint firstItem="siD-0g-aCo" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="Qbo-8D-MHc"/>
                             <constraint firstItem="RwO-u2-y23" firstAttribute="top" secondItem="WtR-Za-SPN" secondAttribute="bottom" constant="20" id="ThL-MX-EWt"/>
                             <constraint firstItem="fs8-oO-Z2S" firstAttribute="top" secondItem="Qo8-gF-7lh" secondAttribute="bottom" constant="55" id="ZKt-0d-YBN"/>
                             <constraint firstItem="RwO-u2-y23" firstAttribute="top" secondItem="WtR-Za-SPN" secondAttribute="bottom" constant="19" id="f2j-J2-mPF"/>
                             <constraint firstItem="siD-0g-aCo" firstAttribute="centerX" secondItem="IDO-vC-MWw" secondAttribute="centerX" id="i9D-UC-W8c"/>
-                            <constraint firstItem="yh2-Qr-EgC" firstAttribute="top" secondItem="RwO-u2-y23" secondAttribute="bottom" constant="65" id="jPM-ZW-a8n"/>
                             <constraint firstItem="NyG-ke-SBe" firstAttribute="top" secondItem="fs8-oO-Z2S" secondAttribute="bottom" constant="16" id="kAt-Be-Mad"/>
                             <constraint firstItem="NyG-ke-SBe" firstAttribute="leading" secondItem="IDO-vC-MWw" secondAttribute="leadingMargin" constant="16" id="kwa-NT-d6L"/>
                             <constraint firstItem="fs8-oO-Z2S" firstAttribute="leading" secondItem="IDO-vC-MWw" secondAttribute="leadingMargin" constant="16" id="mmW-zL-BSI"/>
-                            <constraint firstItem="yh2-Qr-EgC" firstAttribute="top" secondItem="RwO-u2-y23" secondAttribute="bottom" constant="58" id="s8R-e9-pMd"/>
                             <constraint firstItem="WtR-Za-SPN" firstAttribute="top" secondItem="siD-0g-aCo" secondAttribute="bottom" constant="8" id="uAf-BC-bhd"/>
                             <constraint firstItem="Qo8-gF-7lh" firstAttribute="leading" secondItem="IDO-vC-MWw" secondAttribute="leadingMargin" constant="-20" id="wAi-eq-mRL"/>
                             <constraint firstItem="fs8-oO-Z2S" firstAttribute="top" secondItem="Qo8-gF-7lh" secondAttribute="bottom" constant="50" id="x0z-DN-P1z"/>
@@ -1371,11 +1378,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="6Ib-r1-iqK"/>
         <segue reference="QuL-V4-qiY"/>
-        <segue reference="lVB-rO-LMZ"/>
+        <segue reference="Np8-X6-CEr"/>
+        <segue reference="qzp-sb-DnB"/>
         <segue reference="2YK-fx-Q4f"/>
+        <segue reference="xBp-l1-vtG"/>
         <segue reference="qaK-J5-Kbi"/>
         <segue reference="vTr-iz-pPB"/>
-        <segue reference="qzp-sb-DnB"/>
-        <segue reference="6Z8-JS-L4Q"/>
     </inferredMetricsTieBreakers>
 </document>
