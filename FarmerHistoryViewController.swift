@@ -58,7 +58,7 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         
         
         //Sets the color of the text in the cell.
-        cell.textLabel?.textColor = UIColor .greenColor()
+        cell.textLabel?.textColor = UIColor .blackColor()
         cell.detailTextLabel?.textColor = UIColor .grayColor()
         //Sets the font of the text in the cell.
         cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)

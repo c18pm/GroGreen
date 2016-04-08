@@ -48,7 +48,7 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
         //Sets the text in the cell.
         cell.textLabel?.text = produceItem
         //Sets the color of the text in the cell.
-        cell.textLabel?.textColor = UIColor .greenColor()
+        cell.textLabel?.textColor = UIColor .blackColor()
         
         //Sets the font of the text in the cell.
         cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)
