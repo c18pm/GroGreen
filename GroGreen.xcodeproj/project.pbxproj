@@ -23,6 +23,7 @@
 		DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E61C892C7700E130D6 /* Security.framework */; };
 		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
 		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
+		DE73B9601CB7429600C99AFB /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73B95F1CB7429600C99AFB /* signUpViewController.swift */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
 		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
@@ -49,6 +50,7 @@
 		DE4F92E61C892C7700E130D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
+		DE73B95F1CB7429600C99AFB /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
 		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				51B9E2271C7E51E100B449DA /* Main.storyboard */,
+				DE73B95F1CB7429600C99AFB /* signUpViewController.swift */,
 				51B9E2231C7E51E100B449DA /* AppDelegate.swift */,
 				DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */,
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
@@ -211,6 +214,7 @@
 				51B9E2261C7E51E100B449DA /* ViewController.swift in Sources */,
 				51B9E2451C7E6A6B00B449DA /* FarmersViewController.swift in Sources */,
 				F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */,
+				DE73B9601CB7429600C99AFB /* signUpViewController.swift in Sources */,
 				51B9E2241C7E51E100B449DA /* AppDelegate.swift in Sources */,
 				F4FEC00F1CB6B626002FB28B /* FarmerHistoryViewController.swift in Sources */,
 				F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */,
