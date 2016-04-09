@@ -11,7 +11,7 @@ import UIKit
 class aboutPageViewController: ViewController {
     
     @IBAction func priyaButton(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Hi! My name is Priya Mittal", message: "I am 16 years old, live in NYC and go to the Dalton School!", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Hi! My name is Priya Mittal", message: "I am 16 years old, live in NYC and go to The Dalton School!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
