@@ -22,17 +22,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-         let restUser = NSUserDefaults . standardUserDefaults() .objectForKey("restUser")!
         
-        let restName = restUser["name"] as! String
-        
-        print(restName)
-        
-        // App crashes without if-statement
-        if let label = welcomeLabel{
-            label.text = "Welcome \(restName)"
+        if (NSUserDefaults.standardUserDefaults().objectForKey("restUser") != nil) {
+            
+            let restUser = NSUserDefaults . standardUserDefaults() .objectForKey("restUser")!
+            
+            let restName = restUser["name"] as! String
+            
+            print(restName)
+            
+            // App crashes without if-statement
+            if let label = welcomeLabel{
+                label.text = "Welcome \(restName)"
+            }
+
         }
-        
         
     }
 
