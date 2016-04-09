@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -82,8 +82,8 @@
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="yellow pear" translatesAutoresizingMaskIntoConstraints="NO" id="45X-d7-mMk">
-                                <rect key="frame" x="234" y="463" width="132" height="129"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="eggplant" translatesAutoresizingMaskIntoConstraints="NO" id="45X-d7-mMk">
+                                <rect key="frame" x="212" y="460" width="176" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="3S3-zi-Ku8"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="XPf-F6-5PS"/>
@@ -261,7 +261,7 @@
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="GroGreen was built for the 2016 Technovation Competition. Click on our names to learn more about us!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="euW-26-b9e">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="GroGreen was built for the 2016 Technovation Competition. Click on our names to learn more about us!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="euW-26-b9e">
                                 <rect key="frame" x="105" y="96" width="183" height="89"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -1415,20 +1415,20 @@
     <resources>
         <image name="alex selfie" width="644" height="858"/>
         <image name="apple" width="76" height="76"/>
+        <image name="eggplant" width="76" height="76"/>
         <image name="green pear" width="76" height="76"/>
         <image name="potato" width="76" height="76"/>
         <image name="priya selfie" width="320" height="426"/>
         <image name="rachel selfie" width="250" height="444"/>
         <image name="speech bubble" width="76" height="76"/>
-        <image name="yellow pear" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kr6-VA-Jvg"/>
-        <segue reference="OER-sZ-1Lz"/>
+        <segue reference="6Ib-r1-iqK"/>
         <segue reference="8H7-N4-UVE"/>
-        <segue reference="oFW-ip-ZRn"/>
         <segue reference="xBp-l1-vtG"/>
         <segue reference="yhL-z8-6hZ"/>
         <segue reference="qzp-sb-DnB"/>
+        <segue reference="vTr-iz-pPB"/>
+        <segue reference="oFW-ip-ZRn"/>
     </inferredMetricsTieBreakers>
 </document>
