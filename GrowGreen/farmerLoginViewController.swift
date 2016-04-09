@@ -30,7 +30,7 @@ class farmerLoginViewController: UIViewController {
                 
                 
                 //SAVES FARMER USER
-                for var i=0; i<self.farms.count; i++
+                for i in 0 ..< self.farms.count
                 {
                     let farmEmail = self.farms[i].value["email"] as! String
                     

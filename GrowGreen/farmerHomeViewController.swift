@@ -10,10 +10,21 @@ import UIKit
 
 class farmerHomeViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let farmUser = NSUserDefaults . standardUserDefaults() .objectForKey("farmUser")!
+        
+        let farmName = farmUser["name"] as! String
+        
+        print(farmName)
+        
+        // App crashes without if-statement
+        if let label = welcomeLabel{
+            label.text = "Welcome \(farmName)"
+        }
     }
 
     override func didReceiveMemoryWarning() {

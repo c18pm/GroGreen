@@ -43,7 +43,7 @@
 		51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmersViewController.swift; sourceTree = "<group>"; };
 		DE2C23661CB35CB80054A79D /* aboutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutPageViewController.swift; sourceTree = "<group>"; };
 		DE49FDD21CB07194001533A7 /* OrderInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfoViewController.swift; sourceTree = "<group>"; };
-		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		DE4F92DD1C892BAA00E130D6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = GrowGreen/Firebase.framework; sourceTree = "<group>"; };
 		DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		DE4F92E11C892C4300E130D6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DE4F92E41C892C7200E130D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -78,11 +78,6 @@
 		51B9E2171C7E51E000B449DA = {
 			isa = PBXGroup;
 			children = (
-				DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */,
-				DE4F92E61C892C7700E130D6 /* Security.framework */,
-				DE4F92E41C892C7200E130D6 /* CFNetwork.framework */,
-				DE4F92E11C892C4300E130D6 /* libc++.tbd */,
-				DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */,
 				51B9E2221C7E51E100B449DA /* GrowGreen */,
 				51B9E2211C7E51E100B449DA /* Products */,
 				653C0462FF2498287B5032DB /* Frameworks */,
@@ -117,7 +112,6 @@
 				51B9E22A1C7E51E100B449DA /* Assets.xcassets */,
 				51B9E22C1C7E51E100B449DA /* LaunchScreen.storyboard */,
 				51B9E22F1C7E51E100B449DA /* Info.plist */,
-				DE4F92DD1C892BAA00E130D6 /* Firebase.framework */,
 				51B9E2351C7E53DA00B449DA /* Supporting Files */,
 			);
 			path = GrowGreen;
@@ -133,6 +127,12 @@
 		653C0462FF2498287B5032DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE4F92E11C892C4300E130D6 /* libc++.tbd */,
+				DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */,
+				DE4F92E41C892C7200E130D6 /* CFNetwork.framework */,
+				DE4F92E61C892C7700E130D6 /* Security.framework */,
+				DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */,
+				DE4F92DD1C892BAA00E130D6 /* Firebase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

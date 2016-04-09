@@ -37,7 +37,9 @@ class FarmerPageViewController: UIViewController {
     @IBAction func submitOrder(sender: AnyObject) {
         
         let alertController = UIAlertController(title: "GroGreen", message: "Order complete!", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
+        
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:        { action in self.performSegueWithIdentifier("orderComplete", sender: nil)}
+            ))
         
         self.presentViewController(alertController, animated: true, completion: nil)
         
@@ -66,7 +68,6 @@ class FarmerPageViewController: UIViewController {
         
         order1Ref.setValue(order)
         
-        self.performSegueWithIdentifier("orderComplete", sender: nil)
         
     }
     

@@ -28,7 +28,10 @@ class ViewController: UIViewController {
         
         print(restName)
         
-        //welcomeLabel.text = "Welcome + \(restName)"
+        // App crashes without if-statement
+        if let label = welcomeLabel{
+            label.text = "Welcome \(restName)"
+        }
         
         
     }

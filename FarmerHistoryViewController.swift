@@ -11,8 +11,8 @@ import Firebase
 
 class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var orderView: UITableView!
     
+    @IBOutlet weak var orderView: UITableView!
     
     let ref = Firebase(url: "https://grogreen.firebaseio.com/orders")
     
@@ -46,7 +46,6 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         
         let restaurantString = orderItem.value["restaurantName"] as! String
         
-        
         //Type of cell.
         
         
@@ -54,8 +53,9 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
                                reuseIdentifier: "cell")
         //Sets the text in the cell.
         
-        cell.textLabel!.text = restaurantString
+        cell.textLabel?.text = restaurantString
         
+        cell.detailTextLabel?.text = ""
         
         //Sets the color of the text in the cell.
         cell.textLabel?.textColor = UIColor .blackColor()
@@ -64,33 +64,10 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
         cell.textLabel?.font = UIFont(name: "Iowan Old Style", size: 20)
         //Sets the background color of the cell.
         cell.backgroundColor = UIColor .clearColor()
-        //Adds the little arrow on the right of the cell.
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
     }
     
-    
-    
-    //This method is called when a cell is tapped on the table view.
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let orderItem = sortedOrders[indexPath.row]
-        
-        let orderItemName = orders[indexPath.row]
-        
-        print("You selected \(orderItemName)")
-        
-        NSUserDefaults .standardUserDefaults() .setObject(orderItem.value, forKey: "orderChosen")
-        
-        NSUserDefaults .standardUserDefaults() .setObject(orderItem.key, forKey: "orderChosenKey")
-        
-        self.performSegueWithIdentifier("toOrderInfo", sender: self)
-        
-        
-        
-        
-    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -111,12 +88,11 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
                 
                 if ((item.value["isDone"] as! Bool) == true)
                 {
-                    
                     newOrders.append(item as! FDataSnapshot)
                 }
             }
             
-            for var i=0; i<newOrders.count; i++ {
+            for i in 0 ..< newOrders.count {
                 
                 
                 if(farmUid == newOrders[i].value["farmUid"]as! String)
@@ -126,7 +102,7 @@ class FarmerHistoryViewController: UIViewController, UITableViewDelegate, UITabl
                 
             }
             
-            for var i=0; i<self.sortedOrders.count; i++ {
+            for i in 0 ..< self.sortedOrders.count {
                 sortedOrdersString.append(self.sortedOrders[i].value["restaurantName"] as! String)
                 
             }

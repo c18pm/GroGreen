@@ -51,6 +51,8 @@ class OrderInfoViewController: ViewController {
         
         ref.setValue(true)
         
+        self.performSegueWithIdentifier("archive", sender: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {

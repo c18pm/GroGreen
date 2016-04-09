@@ -3,7 +3,7 @@
 //  GrowGreen
 //
 //  Created by Rachel Sterneck on 2/27/16.
-//  Copyright © 2016 Mitchell Sweet. All rights reserved.
+//  Copyright © 2016 Rachel Sterneck. All rights reserved.
 //
 
 import UIKit
@@ -115,7 +115,7 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
                 }
             }
             
-            for var i=0; i<newOrders.count; i++ {
+            for i in 0 ..< newOrders.count {
                 
                 
                 if(farmUid == newOrders[i].value["farmUid"]as! String)
@@ -125,7 +125,7 @@ class farmerOrdersViewController: UIViewController, UITableViewDelegate, UITable
                 
             }
             
-            for var i=0; i<self.sortedOrders.count; i++ {
+            for i in 0 ..< self.sortedOrders.count {
                 sortedOrdersString.append(self.sortedOrders[i].value["restaurantName"] as! String)
                 
             }
