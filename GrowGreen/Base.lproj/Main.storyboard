@@ -762,7 +762,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp6-3A-cgt">
                                 <rect key="frame" x="155" y="39" width="207" height="36"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1106,7 +1106,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-wK-bGc">
                                 <rect key="frame" x="99" y="75" width="207" height="36"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1423,12 +1423,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6Ib-r1-iqK"/>
-        <segue reference="8H7-N4-UVE"/>
-        <segue reference="xBp-l1-vtG"/>
+        <segue reference="cY2-iY-OyH"/>
+        <segue reference="TRF-tc-b84"/>
+        <segue reference="TtQ-Kc-wJh"/>
         <segue reference="yhL-z8-6hZ"/>
         <segue reference="qzp-sb-DnB"/>
-        <segue reference="vTr-iz-pPB"/>
+        <segue reference="xBp-l1-vtG"/>
         <segue reference="oFW-ip-ZRn"/>
     </inferredMetricsTieBreakers>
 </document>
