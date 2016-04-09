@@ -40,7 +40,7 @@ class ProduceViewController: UIViewController, UITableViewDataSource, UITableVie
         var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         let produceItem = produce[indexPath.row]
         print(produceItem)
-        
+            
         //Type of cell.
         cell = UITableViewCell(style: UITableViewCellStyle.Default,
             reuseIdentifier: "cell")
