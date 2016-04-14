@@ -20,7 +20,7 @@ class aboutPageViewController: ViewController {
     
     
     @IBAction func rachelButton(sender: AnyObject) {
-            let alertController = UIAlertController(title: "Hi! My name is Rachel Sterneck", message: "I am 17 years old, live in Long Island and go Roslyn High School!", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Hi! My name is Rachel Sterneck", message: "I am 17 years old, live on Long Island and go Roslyn High School!", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)

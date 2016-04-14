@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -163,22 +163,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-2e-i0H">
                                 <rect key="frame" x="78" y="240" width="156" height="147"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Thats too bad, we taste so good! If only there was an app that could save us!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="omz-Ka-QqN">
-                                <rect key="frame" x="100" y="256" width="113" height="69"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="That's too bad, we taste so good! If only there were an app that could save us..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="omz-Ka-QqN">
+                                <rect key="frame" x="102" y="254" width="114" height="69.5"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech bubble" translatesAutoresizingMaskIntoConstraints="NO" id="bo2-fu-zEu">
                                 <rect key="frame" x="230" y="243" width="141" height="147"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oLM-md-OJK">
-                                <rect key="frame" x="112" y="406" width="376" height="160.5"/>
+                                <rect key="frame" x="115" y="406" width="379" height="160.5"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">It is time to realize that "ugly" produce items are not in any way “unhealthy” just because of their appearance. While in a supermarket, a customer directly buys produce, in a restaruant, they do not actually see the food directly, but rather view the end product, or the finished meal. Let's start judging food as it should be;by taste and not appearance.</string>
+                                <string key="text">It is time to realize that "ugly" produce is not in any way unhealthy or unpalatable. Unlike supermarkets, where customers directly buy produce, restaurants prepare their meals in such a way that customers do not see the raw produce, only the end product. Let's start judging food as it should be: by taste and not appearance.</string>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF7-jZ-7f9">
@@ -191,22 +191,22 @@
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-RS-JiI">
-                                <rect key="frame" x="149" y="104" width="347" height="131"/>
-                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Every year, approximately 6 billion pounds of produce gets thrown out because it is "ugly" and therefore is not being sold to supermarkets to be bought. While these fruits and vegetables may not be visually appealing, they are perfectly fine to taste. </string>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green pear" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-N6-cTi">
                                 <rect key="frame" x="149" y="337" width="105" height="110"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No fear! Just get the app called GroGreen!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-2D-Dkh">
-                                <rect key="frame" x="248" y="259" width="105" height="64"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No fear! Just download the GroGreen app!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-2D-Dkh">
+                                <rect key="frame" x="253" y="259" width="105" height="65.5"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-RS-JiI">
+                                <rect key="frame" x="102" y="104" width="364.5" height="118.5"/>
+                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Each year in the United States, approximately 6 billion pounds of produce is thrown out because consumers avoid produce that looks "ugly." Although these fruits and vegetables may not be visually appealing, they are perfectly edible. </string>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iP9-0H-a3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2463" y="1632"/>
+            <point key="canvasLocation" x="-2261" y="1344"/>
         </scene>
         <!--About Page View Controller-->
         <scene sceneID="BYc-Qf-95s">
@@ -239,8 +239,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-D8-jYT">
-                                <rect key="frame" x="133" y="561" width="155" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-D8-jYT">
+                                <rect key="frame" x="203" y="550" width="155" height="39"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
                                 <state key="normal" title="Alexandra Qin">
                                     <color key="titleColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,24 +249,32 @@
                                     <action selector="alexButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="YBL-b5-VyX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="priya selfie" translatesAutoresizingMaskIntoConstraints="NO" id="XwE-ml-PZp">
-                                <rect key="frame" x="20" y="193" width="127" height="172"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="priya selfie" translatesAutoresizingMaskIntoConstraints="NO" id="XwE-ml-PZp">
+                                <rect key="frame" x="27" y="193" width="127" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="DZ5-hb-cL5"/>
+                                    <constraint firstAttribute="width" constant="127" id="HBF-8x-t0v"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-7f-0uW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-7f-0uW">
                                 <rect key="frame" x="49" y="110" width="462" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="GroGreen was built for the 2016 Technovation Competition. Click on our names to learn more about us!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="euW-26-b9e">
-                                <rect key="frame" x="105" y="96" width="183" height="89"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="GroGreen was built for the 2016 Technovation Competition. Click our names to learn more about us!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="euW-26-b9e">
+                                <rect key="frame" x="149" y="110" width="274" height="70"/>
                                 <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Bo3-kv-Buz"/>
+                                    <constraint firstAttribute="width" constant="274" id="jBw-zB-ZXu"/>
+                                </constraints>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ed-luB">
-                                <rect key="frame" x="76" y="28" width="263" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-ed-luB">
+                                <rect key="frame" x="180" y="14" width="263" height="88"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="75"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -285,11 +293,15 @@
                                     <segue destination="uaw-vR-WRH" kind="show" id="vTr-iz-pPB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alex selfie" translatesAutoresizingMaskIntoConstraints="NO" id="JBT-wW-YTZ">
-                                <rect key="frame" x="149" y="417" width="111" height="151"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="alex selfie" translatesAutoresizingMaskIntoConstraints="NO" id="JBT-wW-YTZ">
+                                <rect key="frame" x="231" y="402" width="111" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="Ch7-KD-ljk"/>
+                                    <constraint firstAttribute="width" constant="111" id="ycK-D1-L2r"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmA-6v-k48">
-                                <rect key="frame" x="203" y="358" width="155" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmA-6v-k48">
+                                <rect key="frame" x="423" y="360" width="155" height="39"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
                                 <state key="normal" title="Rachel Sterneck">
                                     <color key="titleColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -298,25 +310,25 @@
                                     <action selector="rachelButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="g0D-dt-ENF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mentor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-YK-JBK">
-                                <rect key="frame" x="180" y="394" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mentor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-YK-JBK">
+                                <rect key="frame" x="259" y="373" width="55" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-jp-iOh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-jp-iOh">
                                 <rect key="frame" x="58" y="168" width="55" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jls-h6-Upi">
-                                <rect key="frame" x="244" y="168" width="55" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jls-h6-Upi">
+                                <rect key="frame" x="473" y="168" width="55" height="21"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
                                 <color key="textColor" red="0.83816672120000002" green="0.53265707659999995" blue="0.2447950368" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-In-tfb">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-In-tfb">
                                 <rect key="frame" x="8" y="360" width="155" height="36"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
                                 <state key="normal" title="Priya Mittal">
@@ -326,15 +338,123 @@
                                     <action selector="priyaButton:" destination="jLm-O1-tUF" eventType="touchUpInside" id="dHn-eP-uqk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rachel selfie" translatesAutoresizingMaskIntoConstraints="NO" id="D0d-Od-bIr">
-                                <rect key="frame" x="227" y="193" width="105" height="172"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rachel selfie" translatesAutoresizingMaskIntoConstraints="NO" id="D0d-Od-bIr">
+                                <rect key="frame" x="448" y="193" width="105" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Gke-JS-kI8"/>
+                                    <constraint firstAttribute="width" constant="105" id="ssH-Sc-OwC"/>
+                                    <constraint firstAttribute="height" constant="172" id="umP-hl-Xdv"/>
+                                    <constraint firstAttribute="height" constant="172" id="v0s-xC-cjw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gke-JS-kI8"/>
+                                        <exclude reference="umP-hl-Xdv"/>
+                                    </mask>
+                                </variation>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="produce photo credits: Woolworths &quot;Odd Bunch Campaign&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t0j-Er-OA6">
+                                <rect key="frame" x="468" y="554" width="132" height="46"/>
+                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Byl-W6-Qgk"/>
+                                    <constraint firstAttribute="height" constant="46" id="Djs-Xf-Hf7"/>
+                                    <constraint firstAttribute="width" constant="274" id="JPF-sc-ROB"/>
+                                    <constraint firstAttribute="width" constant="132" id="m9H-5A-x1R"/>
+                                </constraints>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="8"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Byl-W6-Qgk"/>
+                                        <exclude reference="JPF-sc-ROB"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Gom-f2-EXi" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" constant="20" id="29O-dW-kaB"/>
+                            <constraint firstItem="IMX-oX-ldI" firstAttribute="top" secondItem="t0j-Er-OA6" secondAttribute="bottom" id="54W-Io-fft"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="centerY" secondItem="JBA-9f-pbq" secondAttribute="centerY" id="59j-9h-XoV"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="74W-JO-jjk"/>
+                            <constraint firstItem="wmA-6v-k48" firstAttribute="top" secondItem="jls-h6-Upi" secondAttribute="bottom" constant="171" id="7Vi-hg-oHN"/>
+                            <constraint firstItem="jls-h6-Upi" firstAttribute="top" secondItem="Dhz-7f-0uW" secondAttribute="bottom" constant="37" id="984-dh-3m2"/>
+                            <constraint firstItem="mOe-ed-luB" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" constant="14" id="AzV-dU-sBz"/>
+                            <constraint firstItem="YOC-In-tfb" firstAttribute="top" secondItem="6Sb-jp-iOh" secondAttribute="bottom" constant="171" id="EXk-ug-UKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t0j-Er-OA6" secondAttribute="trailing" constant="-20" id="HYK-ke-uPh"/>
+                            <constraint firstItem="XwE-ml-PZp" firstAttribute="centerY" secondItem="JBA-9f-pbq" secondAttribute="centerY" id="Ifx-gK-5gm"/>
+                            <constraint firstItem="XwE-ml-PZp" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="7" id="IpC-WP-MrU"/>
+                            <constraint firstItem="wmA-6v-k48" firstAttribute="top" secondItem="jls-h6-Upi" secondAttribute="bottom" constant="171" id="JH7-CO-xAi"/>
+                            <constraint firstItem="NUY-D8-jYT" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="Jxi-qY-9X8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jls-h6-Upi" secondAttribute="trailing" constant="52" id="Jxz-SZ-05Q"/>
+                            <constraint firstItem="XwE-ml-PZp" firstAttribute="top" secondItem="6Sb-jp-iOh" secondAttribute="bottom" constant="4" id="LYw-a4-ysG"/>
+                            <constraint firstItem="jls-h6-Upi" firstAttribute="leading" secondItem="euW-26-b9e" secondAttribute="trailing" constant="50" id="Lxt-fS-ZRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wmA-6v-k48" secondAttribute="trailing" constant="2" id="O55-BV-R9Y"/>
+                            <constraint firstItem="IMX-oX-ldI" firstAttribute="top" secondItem="NUY-D8-jYT" secondAttribute="bottom" constant="11" id="O8d-WP-ZJ6"/>
+                            <constraint firstItem="XwE-ml-PZp" firstAttribute="top" secondItem="6Sb-jp-iOh" secondAttribute="bottom" constant="4" id="Pu6-tR-krD"/>
+                            <constraint firstItem="jls-h6-Upi" firstAttribute="top" secondItem="Dhz-7f-0uW" secondAttribute="bottom" constant="37" id="QjN-rP-wZl"/>
+                            <constraint firstItem="mOe-ed-luB" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" constant="14" id="Rdv-t6-uoF"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="top" secondItem="jls-h6-Upi" secondAttribute="bottom" constant="4" id="Scd-hn-Ena"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="leading" secondItem="6Sb-jp-iOh" secondAttribute="trailing" constant="36" id="Tkx-ZK-cPT"/>
+                            <constraint firstItem="mOe-ed-luB" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="Vw0-MG-uwB"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="leading" secondItem="6Sb-jp-iOh" secondAttribute="trailing" constant="36" id="WAH-xS-PwJ"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="top" secondItem="jls-h6-Upi" secondAttribute="bottom" constant="4" id="Woh-8B-I8e"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="XP6-TN-N6b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wmA-6v-k48" secondAttribute="trailing" constant="18" id="XhT-cN-r4J"/>
+                            <constraint firstItem="XwE-ml-PZp" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="7" id="Y2O-8r-kip"/>
+                            <constraint firstItem="jls-h6-Upi" firstAttribute="leading" secondItem="euW-26-b9e" secondAttribute="trailing" constant="50" id="anO-hg-U9c"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="top" secondItem="DR5-mU-r3X" secondAttribute="bottom" constant="76" id="bY3-39-c8c"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="top" secondItem="DR5-mU-r3X" secondAttribute="bottom" constant="76" id="d6q-55-T2A"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="top" secondItem="Dhz-7f-0uW" secondAttribute="bottom" constant="62" id="efe-gM-cmG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D0d-Od-bIr" secondAttribute="trailing" constant="27" id="hHD-nB-Vds"/>
+                            <constraint firstItem="IMX-oX-ldI" firstAttribute="top" secondItem="JBT-wW-YTZ" secondAttribute="bottom" constant="47" id="hLc-2N-obW"/>
+                            <constraint firstItem="wmA-6v-k48" firstAttribute="top" secondItem="jls-h6-Upi" secondAttribute="bottom" constant="171" id="hNQ-TB-8l8"/>
+                            <constraint firstItem="JBT-wW-YTZ" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="iHE-25-oWy"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="top" secondItem="JBA-9f-pbq" secondAttribute="topMargin" constant="96" id="jNA-fe-d1E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jls-h6-Upi" secondAttribute="trailing" constant="52" id="kqF-1B-efv"/>
+                            <constraint firstItem="wmA-6v-k48" firstAttribute="leading" secondItem="XwE-ml-PZp" secondAttribute="trailing" constant="269" id="l3o-pn-NI9"/>
+                            <constraint firstItem="e8b-YK-JBK" firstAttribute="centerX" secondItem="JBA-9f-pbq" secondAttribute="centerX" id="lot-yK-Xwh"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="leading" secondItem="XwE-ml-PZp" secondAttribute="leading" id="p8s-7G-PQ3"/>
+                            <constraint firstItem="6Sb-jp-iOh" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="38" id="qo2-hb-HfD"/>
+                            <constraint firstItem="D0d-Od-bIr" firstAttribute="leading" secondItem="YOC-In-tfb" secondAttribute="trailing" constant="285" id="rBc-SV-SGc"/>
+                            <constraint firstItem="IMX-oX-ldI" firstAttribute="top" secondItem="wmA-6v-k48" secondAttribute="bottom" constant="201" id="s5F-EV-3Kw"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="top" secondItem="DR5-mU-r3X" secondAttribute="bottom" constant="96" id="tCB-GD-yfL"/>
+                            <constraint firstItem="euW-26-b9e" firstAttribute="top" secondItem="DR5-mU-r3X" secondAttribute="bottom" constant="76" id="uoI-kg-DXm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D0d-Od-bIr" secondAttribute="trailing" constant="27" id="uq1-cg-pZQ"/>
+                            <constraint firstItem="JBT-wW-YTZ" firstAttribute="top" secondItem="e8b-YK-JBK" secondAttribute="bottom" constant="8" id="xYV-S9-L6L"/>
+                            <constraint firstItem="YOC-In-tfb" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="22" id="xuK-ZF-U40"/>
                             <constraint firstItem="Gom-f2-EXi" firstAttribute="leading" secondItem="JBA-9f-pbq" secondAttribute="leadingMargin" constant="-15" id="zLN-ep-Ur1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AzV-dU-sBz"/>
+                                <exclude reference="74W-JO-jjk"/>
+                                <exclude reference="Tkx-ZK-cPT"/>
+                                <exclude reference="WAH-xS-PwJ"/>
+                                <exclude reference="bY3-39-c8c"/>
+                                <exclude reference="d6q-55-T2A"/>
+                                <exclude reference="jNA-fe-d1E"/>
+                                <exclude reference="uoI-kg-DXm"/>
+                                <exclude reference="Y2O-8r-kip"/>
+                                <exclude reference="Scd-hn-Ena"/>
+                                <exclude reference="efe-gM-cmG"/>
+                                <exclude reference="hHD-nB-Vds"/>
+                                <exclude reference="p8s-7G-PQ3"/>
+                                <exclude reference="rBc-SV-SGc"/>
+                                <exclude reference="984-dh-3m2"/>
+                                <exclude reference="Lxt-fS-ZRc"/>
+                                <exclude reference="QjN-rP-wZl"/>
+                                <exclude reference="anO-hg-U9c"/>
+                                <exclude reference="kqF-1B-efv"/>
+                                <exclude reference="7Vi-hg-oHN"/>
+                                <exclude reference="O55-BV-R9Y"/>
+                                <exclude reference="hNQ-TB-8l8"/>
+                                <exclude reference="l3o-pn-NI9"/>
+                                <exclude reference="s5F-EV-3Kw"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zt-5X-c8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1423,12 +1543,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cY2-iY-OyH"/>
+        <segue reference="SBw-dV-Arv"/>
+        <segue reference="oFW-ip-ZRn"/>
         <segue reference="TRF-tc-b84"/>
-        <segue reference="TtQ-Kc-wJh"/>
+        <segue reference="cY2-iY-OyH"/>
+        <segue reference="xBp-l1-vtG"/>
         <segue reference="yhL-z8-6hZ"/>
         <segue reference="qzp-sb-DnB"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="oFW-ip-ZRn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -31,7 +31,10 @@ class OrderInfoViewController: ViewController {
         let quantityVal = orderItem["quantity"] as! Double
         let quantityText = orderItem["quantity"] as! Int
         let price = orderItem["price"] as! Double
-        let profitText = quantityVal*price
+        
+        let profitVal = 0.96*(quantityVal*price)
+        
+        let profitText = Double(round(100*profitVal)/100)
         
         name.text = "Restaurant name: \(nameText)"
         produce.text = "Item: \(produceText)"
