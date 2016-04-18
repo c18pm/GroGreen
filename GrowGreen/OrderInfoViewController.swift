@@ -32,7 +32,7 @@ class OrderInfoViewController: ViewController {
         let quantityText = orderItem["quantity"] as! Int
         let price = orderItem["price"] as! Double
         
-        let profitVal = 0.94*(quantityVal*price)
+        let profitVal = 0.60*(quantityVal*price)
         
         let profitText = Double(round(100*profitVal)/100)
         
