@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -708,7 +708,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Please enter your email" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c3S-zR-Xu2">
                                 <rect key="frame" x="101" y="327" width="231" height="71"/>
-                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -756,13 +756,13 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Please enter the name of your organization" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a4f-60-JKr">
                                 <rect key="frame" x="34" y="174" width="364" height="71"/>
-                                <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98002246240000002" green="1" blue="0.94410232770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a4f-60-JKr" firstAttribute="centerX" secondItem="Sz0-SR-sGr" secondAttribute="centerX" id="4Cc-C2-DaS"/>
                             <constraint firstItem="T4K-fZ-NqF" firstAttribute="top" secondItem="Sz0-SR-sGr" secondAttribute="topMargin" constant="20" id="72s-k0-tU1"/>
@@ -1018,7 +1018,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="B9a-xq-rR9" firstAttribute="top" secondItem="m8O-n7-A6N" secondAttribute="bottom" constant="14" id="8Ye-1T-Klf"/>
                             <constraint firstItem="re7-X9-U88" firstAttribute="top" secondItem="B9a-xq-rR9" secondAttribute="bottom" constant="53" id="8Ze-Oc-O4h"/>
@@ -1543,12 +1543,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SBw-dV-Arv"/>
-        <segue reference="oFW-ip-ZRn"/>
-        <segue reference="TRF-tc-b84"/>
-        <segue reference="cY2-iY-OyH"/>
-        <segue reference="xBp-l1-vtG"/>
         <segue reference="yhL-z8-6hZ"/>
         <segue reference="qzp-sb-DnB"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="TRF-tc-b84"/>
+        <segue reference="nWd-aE-VRZ"/>
+        <segue reference="oFW-ip-ZRn"/>
+        <segue reference="OER-sZ-1Lz"/>
     </inferredMetricsTieBreakers>
 </document>
