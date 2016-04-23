@@ -3,7 +3,7 @@
 //  GrowGreen
 //
 //  Created by MITTAL on 3/3/16.
-//  Copyright © 2016 Mitchell Sweet. All rights reserved.
+//  Copyright © 2016 Rachel Sterneck & Priya Mittal. All rights reserved.
 //
 
 import UIKit

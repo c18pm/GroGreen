@@ -3,7 +3,7 @@
 //  GrowGreen
 //
 //  Created by Rachel Sterneck on 2/27/16.
-//  Copyright © 2016 Mitchell Sweet. All rights reserved.
+//  Copyright © 2016 Rachel Sterneck & Priya Mittal. All rights reserved.
 //
 
 import UIKit
