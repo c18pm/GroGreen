@@ -9,9 +9,13 @@ GroGreen was built using Swift, Xcode, and Firebase.
 Demo accounts for judging purposes:
 
 Restaurant
+
 username: brunopizza@gmail.com
+
 password: test
 
 Farm
+
 username: northbrooklynfarms@gmail.com
+
 password: test
