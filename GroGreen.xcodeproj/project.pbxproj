@@ -24,7 +24,10 @@
 		DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */; };
 		DE4F92EB1C892F6500E130D6 /* restaurantLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */; };
 		DE73B9601CB7429600C99AFB /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73B95F1CB7429600C99AFB /* signUpViewController.swift */; };
+		F40C7D7B1D19F7AD0041E094 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40C7D7A1D19F7AD0041E094 /* Stripe.framework */; };
 		F46A67061C7FE56D00198A2E /* FarmerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */; };
+		F4B93E6D1D18F188001AF479 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B93E6C1D18F188001AF479 /* PaymentViewController.swift */; };
+		F4B93E6F1D18F374001AF479 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B93E6E1D18F374001AF479 /* Stripe.framework */; };
 		F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */; };
 		F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */; };
 		F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */; };
@@ -51,7 +54,10 @@
 		DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantLogInViewController.swift; sourceTree = "<group>"; };
 		DE73B95F1CB7429600C99AFB /* signUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		F40C7D7A1D19F7AD0041E094 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = GrowGreen/Stripe.framework; sourceTree = "<group>"; };
 		F46A67051C7FE56D00198A2E /* FarmerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmerPageViewController.swift; sourceTree = "<group>"; };
+		F4B93E6C1D18F188001AF479 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		F4B93E6E1D18F374001AF479 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
 		F4E35EE81C82521B000E70A6 /* farmerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerLoginViewController.swift; sourceTree = "<group>"; };
 		F4E35EEA1C825240000E70A6 /* farmerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerHomeViewController.swift; sourceTree = "<group>"; };
 		F4E35EEC1C825259000E70A6 /* farmerOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = farmerOrdersViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 				DE4F92E91C892C8600E130D6 /* SystemConfiguration.framework in Frameworks */,
 				DE4F92E71C892C7700E130D6 /* Security.framework in Frameworks */,
 				DE4F92E51C892C7200E130D6 /* CFNetwork.framework in Frameworks */,
+				F40C7D7B1D19F7AD0041E094 /* Stripe.framework in Frameworks */,
+				F4B93E6F1D18F374001AF479 /* Stripe.framework in Frameworks */,
 				DE4F92E31C892C6800E130D6 /* libicucore.tbd in Frameworks */,
 				DE4F92E21C892C4300E130D6 /* libc++.tbd in Frameworks */,
 				DE4F92DE1C892BAA00E130D6 /* Firebase.framework in Frameworks */,
@@ -98,6 +106,7 @@
 				51B9E2271C7E51E100B449DA /* Main.storyboard */,
 				DE73B95F1CB7429600C99AFB /* signUpViewController.swift */,
 				51B9E2231C7E51E100B449DA /* AppDelegate.swift */,
+				F4B93E6C1D18F188001AF479 /* PaymentViewController.swift */,
 				DE4F92EA1C892F6500E130D6 /* restaurantLogInViewController.swift */,
 				51B9E2401C7E61E200B449DA /* ProduceViewController.swift */,
 				51B9E2441C7E6A6B00B449DA /* FarmersViewController.swift */,
@@ -129,6 +138,8 @@
 			children = (
 				DE4F92E11C892C4300E130D6 /* libc++.tbd */,
 				DE4F92DF1C892C0F00E130D6 /* libicucore.tbd */,
+				F4B93E6E1D18F374001AF479 /* Stripe.framework */,
+				F40C7D7A1D19F7AD0041E094 /* Stripe.framework */,
 				DE4F92E41C892C7200E130D6 /* CFNetwork.framework */,
 				DE4F92E61C892C7700E130D6 /* Security.framework */,
 				DE4F92E81C892C8600E130D6 /* SystemConfiguration.framework */,
@@ -216,6 +227,7 @@
 				F4E35EEB1C825240000E70A6 /* farmerHomeViewController.swift in Sources */,
 				DE73B9601CB7429600C99AFB /* signUpViewController.swift in Sources */,
 				51B9E2241C7E51E100B449DA /* AppDelegate.swift in Sources */,
+				F4B93E6D1D18F188001AF479 /* PaymentViewController.swift in Sources */,
 				F4FEC00F1CB6B626002FB28B /* FarmerHistoryViewController.swift in Sources */,
 				F4E35EED1C825259000E70A6 /* farmerOrdersViewController.swift in Sources */,
 				F4E35EE91C82521B000E70A6 /* farmerLoginViewController.swift in Sources */,
@@ -333,34 +345,40 @@
 		51B9E2331C7E51E100B449DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GrowGreen",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Priya-Mital.GrowGreen";
 				PRODUCT_NAME = GrowGreen;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		51B9E2341C7E51E100B449DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GrowGreen",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GrowGreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Priya-Mital.GrowGreen";
 				PRODUCT_NAME = GrowGreen;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

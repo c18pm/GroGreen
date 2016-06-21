@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -1466,6 +1466,13 @@
                                     <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="EYO-pP-Qda"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-2F-Ecv">
+                                <rect key="frame" x="285" y="195" width="30" height="30"/>
+                                <state key="normal" title="test"/>
+                                <connections>
+                                    <segue destination="dlq-ht-Zj3" kind="show" id="hNj-Ah-BGQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1531,6 +1538,33 @@
             </objects>
             <point key="canvasLocation" x="2448" y="181"/>
         </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="nfp-0j-Pg8">
+            <objects>
+                <viewController id="dlq-ht-Zj3" customClass="PaymentViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gck-Nc-GWU"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9v-rY-tO9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PcB-o7-oRX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-J9-mzx">
+                                <rect key="frame" x="208" y="377" width="32" height="30"/>
+                                <state key="normal" title="save"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="Km6-J9-mzx" id="eeX-ZM-x6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kv-SZ-5Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3251" y="176"/>
+        </scene>
     </scenes>
     <resources>
         <image name="alex selfie" width="644" height="858"/>
@@ -1543,12 +1577,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yhL-z8-6hZ"/>
-        <segue reference="qzp-sb-DnB"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="TRF-tc-b84"/>
         <segue reference="nWd-aE-VRZ"/>
         <segue reference="oFW-ip-ZRn"/>
         <segue reference="OER-sZ-1Lz"/>
+        <segue reference="TRF-tc-b84"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="YoV-gm-8zg"/>
+        <segue reference="jWw-VS-koL"/>
     </inferredMetricsTieBreakers>
 </document>
