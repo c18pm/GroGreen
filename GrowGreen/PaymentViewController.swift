@@ -20,10 +20,12 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     let paymentTextField = STPPaymentCardTextField()
 
     @IBOutlet weak var saveButton: UIButton!
+    
     @IBAction func submitOrder(sender: AnyObject) {
+        
         let alertController = UIAlertController(title: "GroGreen", message: "Order complete!", preferredStyle: UIAlertControllerStyle.Alert)
         
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler:        { action in self.performSegueWithIdentifier("submitOrder", sender: nil)}
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: { action in self.performSegueWithIdentifier("submitOrder", sender: nil)}
             ))
         
         self.presentViewController(alertController, animated: true, completion: nil)
@@ -52,7 +54,7 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         let order1Ref = orderRef.childByAutoId()
         
         order1Ref.setValue(order)
-
+    
     }
     
     
@@ -67,7 +69,7 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad();
-        paymentTextField.frame = CGRectMake(15, 15, CGRectGetWidth(self.view.frame) - 30, 44)
+        paymentTextField.frame = CGRectMake(15, 160, CGRectGetWidth(self.view.frame) - 30, 44)
         paymentTextField.delegate = self
         view.addSubview(paymentTextField)
         
