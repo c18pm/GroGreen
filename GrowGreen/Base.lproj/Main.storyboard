@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -1268,7 +1268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="231"/>
+            <point key="canvasLocation" x="158" y="259"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -1470,7 +1470,7 @@
                                     <constraint firstAttribute="width" constant="215" id="qk3-76-jzS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
-                                <state key="normal" title="Submit Order">
+                                <state key="normal" title="Pay now!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -1481,14 +1481,8 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="EYO-pP-Qda"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-2F-Ecv">
-                                <rect key="frame" x="285" y="195" width="30" height="30"/>
-                                <state key="normal" title="test"/>
-                                <connections>
-                                    <segue destination="dlq-ht-Zj3" kind="show" id="hNj-Ah-BGQ"/>
+                                    <action selector="payNow:" destination="o2S-wS-wls" eventType="touchUpInside" id="IIs-nl-T2f"/>
+                                    <segue destination="dlq-ht-Zj3" kind="show" id="xIp-bI-i4g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1549,7 +1543,6 @@
                         <outlet property="numLabel" destination="WtR-Za-SPN" id="4AZ-ha-XcJ"/>
                         <outlet property="priceLabel" destination="NyG-ke-SBe" id="I1L-BE-log"/>
                         <outlet property="quantityStepper" destination="RwO-u2-y23" id="hJO-bm-7jk"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="orderComplete" id="yhL-z8-6hZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lo-so-G2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1568,15 +1561,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-J9-mzx">
-                                <rect key="frame" x="208" y="377" width="32" height="30"/>
-                                <state key="normal" title="save"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-hM-Bb4">
+                                <rect key="frame" x="159" y="252" width="232" height="60"/>
+                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="1SW-oo-P7e"/>
+                                    <constraint firstAttribute="height" constant="39" id="bG1-5T-XW0"/>
+                                    <constraint firstAttribute="width" constant="232" id="fau-tX-da1"/>
+                                    <constraint firstAttribute="width" constant="215" id="j3m-cv-gf7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
+                                <state key="normal" title="Submit Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bG1-5T-XW0"/>
+                                        <exclude reference="1SW-oo-P7e"/>
+                                        <exclude reference="j3m-cv-gf7"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="Oes-KV-ptG"/>
+                                    <action selector="submitOrder:" destination="dlq-ht-Zj3" eventType="touchUpInside" id="RXX-jy-86j"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="submitOrder" id="xtP-dH-EOy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dcm-hM-Bb4" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="Fhc-Ja-C0L"/>
+                            <constraint firstItem="dcm-hM-Bb4" firstAttribute="centerY" secondItem="PcB-o7-oRX" secondAttribute="centerY" id="rJu-vG-efF"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="saveButton" destination="Km6-J9-mzx" id="eeX-ZM-x6G"/>
+                        <outlet property="saveButton" destination="dcm-hM-Bb4" id="48t-hY-rZd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kv-SZ-5Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1595,12 +1614,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TRF-tc-b84"/>
-        <segue reference="OER-sZ-1Lz"/>
         <segue reference="qaK-J5-Kbi"/>
-        <segue reference="83u-ln-TJu"/>
-        <segue reference="lVB-rO-LMZ"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="jWw-VS-koL"/>
+        <segue reference="TtQ-Kc-wJh"/>
+        <segue reference="xtP-dH-EOy"/>
+        <segue reference="qzp-sb-DnB"/>
+        <segue reference="6Z8-JS-L4Q"/>
+        <segue reference="OER-sZ-1Lz"/>
+        <segue reference="TRF-tc-b84"/>
     </inferredMetricsTieBreakers>
 </document>
