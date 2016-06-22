@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -550,13 +550,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-X2-Oyb">
                                 <rect key="frame" x="227" y="271" width="74" height="24"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
                                 <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-g5-gmn">
                                 <rect key="frame" x="224" y="216" width="81" height="17"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
                                 <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -629,14 +629,14 @@
                                     <segue destination="5jh-Qc-V5c" kind="show" identifier="signUpViewController" id="oFW-ip-ZRn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-gD-aIx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-gD-aIx">
                                 <rect key="frame" x="208" y="263" width="156" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-4d-nl3">
-                                <rect key="frame" x="208" y="310" width="156" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-4d-nl3">
+                                <rect key="frame" x="208" y="318" width="156" height="30"/>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -677,13 +677,28 @@
                                     <segue destination="uaw-vR-WRH" kind="show" id="q0G-kv-x3O"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-wo-qjL">
+                                <rect key="frame" x="249" y="244" width="75" height="20"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bb-ab-bqA">
+                                <rect key="frame" x="249" y="301" width="75" height="14"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="XR8-wo-qjL" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="0Uq-UI-FHa"/>
+                            <constraint firstItem="yFk-4d-nl3" firstAttribute="top" secondItem="0Bb-ab-bqA" secondAttribute="bottom" constant="3" id="80e-VF-MV4"/>
                             <constraint firstItem="4rY-94-qf9" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="8ax-3J-3cB"/>
                             <constraint firstItem="oWG-sz-me6" firstAttribute="top" secondItem="4rY-94-qf9" secondAttribute="bottom" constant="25" id="Aau-vD-KMk"/>
                             <constraint firstItem="4rY-94-qf9" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="HJh-Uh-deP"/>
                             <constraint firstItem="0gN-MS-XLn" firstAttribute="top" secondItem="g59-Ul-4rq" secondAttribute="bottom" constant="10" id="Rfd-Ph-V5o"/>
+                            <constraint firstItem="0Bb-ab-bqA" firstAttribute="top" secondItem="XR8-wo-qjL" secondAttribute="bottom" constant="32" id="YFU-sQ-CHY"/>
                             <constraint firstItem="nzf-LA-Wqh" firstAttribute="top" secondItem="eDv-ri-POF" secondAttribute="topMargin" constant="20" id="cWI-fy-tyb"/>
                             <constraint firstItem="yFk-4d-nl3" firstAttribute="top" secondItem="RmB-gD-aIx" secondAttribute="bottom" constant="27" id="cwp-ew-DKO"/>
                             <constraint firstItem="oWG-sz-me6" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="dDn-9v-W1M"/>
@@ -693,6 +708,7 @@
                             <constraint firstItem="yFk-4d-nl3" firstAttribute="width" secondItem="RmB-gD-aIx" secondAttribute="width" id="kuh-IJ-aKb"/>
                             <constraint firstItem="4rY-94-qf9" firstAttribute="top" secondItem="yFk-4d-nl3" secondAttribute="bottom" constant="60" id="raj-AH-aAQ"/>
                             <constraint firstItem="0gN-MS-XLn" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="vf7-2F-zyh"/>
+                            <constraint firstItem="0Bb-ab-bqA" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="vgN-Yt-56v"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1576,8 +1592,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="bG1-5T-XW0"/>
                                         <exclude reference="1SW-oo-P7e"/>
+                                        <exclude reference="bG1-5T-XW0"/>
                                         <exclude reference="j3m-cv-gf7"/>
                                     </mask>
                                 </variation>
@@ -1614,12 +1630,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qaK-J5-Kbi"/>
-        <segue reference="TtQ-Kc-wJh"/>
         <segue reference="xtP-dH-EOy"/>
         <segue reference="qzp-sb-DnB"/>
         <segue reference="6Z8-JS-L4Q"/>
-        <segue reference="OER-sZ-1Lz"/>
-        <segue reference="TRF-tc-b84"/>
+        <segue reference="q0G-kv-x3O"/>
+        <segue reference="oFW-ip-ZRn"/>
+        <segue reference="Met-vs-gSM"/>
+        <segue reference="8H7-N4-UVE"/>
     </inferredMetricsTieBreakers>
 </document>
