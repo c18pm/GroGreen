@@ -38,7 +38,7 @@ class OrderInfoViewController: ViewController {
         
         name.text = "Restaurant name: \(nameText)"
         produce.text = "Item: \(produceText)"
-        quantity.text = "Quantity: \(quantityText)"
+        quantity.text = "Quantity (lbs): \(quantityText)"
         profit.text = "Profit: $\(profitText)"
 
         
