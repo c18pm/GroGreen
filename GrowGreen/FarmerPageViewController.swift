@@ -26,11 +26,15 @@ class FarmerPageViewController: UIViewController {
     
     var farmstring = String()
     
+    
     @IBAction func quantityChangeStepper(sender: UIStepper) {
         
         quantity = Int(sender.value)
         
         numLabel.text = quantity.description
+        
+        NSUserDefaults .standardUserDefaults() .setInteger(quantity, forKey: "stepperQuantity")
+        
     }
     
     
@@ -66,9 +70,6 @@ class FarmerPageViewController: UIViewController {
         
         nameLabel.text = "Farm name: \(farmString)"
         priceLabel.text = "Price per pound $\(priceString)"
-        
-        NSUserDefaults .standardUserDefaults() .setInteger(quantity, forKey: "stepperQuantity")
-        
 
         //
         //        namelabel.text = NSUserDefaults .standardUserDefaults() .stringForKey("someonesname")
