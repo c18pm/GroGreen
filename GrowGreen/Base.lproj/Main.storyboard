@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -1284,7 +1284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="259"/>
+            <point key="canvasLocation" x="164" y="227"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -1600,7 +1600,6 @@
                                 <connections>
                                     <action selector="submitOrder:" destination="o2S-wS-wls" eventType="touchUpInside" id="Oes-KV-ptG"/>
                                     <action selector="submitOrder:" destination="dlq-ht-Zj3" eventType="touchUpInside" id="RXX-jy-86j"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="submitOrder" id="xtP-dH-EOy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-g9-jAp">
@@ -1628,6 +1627,7 @@
                     </view>
                     <connections>
                         <outlet property="saveButton" destination="dcm-hM-Bb4" id="48t-hY-rZd"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="submitOrder" id="oBs-5T-kl3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kv-SZ-5Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1646,13 +1646,13 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q0G-kv-x3O"/>
-        <segue reference="oFW-ip-ZRn"/>
         <segue reference="Met-vs-gSM"/>
-        <segue reference="8H7-N4-UVE"/>
-        <segue reference="qzp-sb-DnB"/>
+        <segue reference="TtQ-Kc-wJh"/>
+        <segue reference="oBs-5T-kl3"/>
         <segue reference="aQG-hh-Sqs"/>
-        <segue reference="xtP-dH-EOy"/>
-        <segue reference="6Z8-JS-L4Q"/>
+        <segue reference="qzp-sb-DnB"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="oFW-ip-ZRn"/>
+        <segue reference="8H7-N4-UVE"/>
     </inferredMetricsTieBreakers>
 </document>
