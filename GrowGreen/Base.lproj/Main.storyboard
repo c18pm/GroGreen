@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -12,10 +12,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="zCE-g7-BUY">
             <objects>
-                <viewController id="uaw-vR-WRH" sceneMemberID="viewController">
+                <viewController id="uaw-vR-WRH" customClass="homeViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B8R-bI-j8u"/>
                         <viewControllerLayoutGuide type="bottom" id="vjh-Pp-KX4"/>
@@ -24,22 +24,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-mc-nmQ">
-                                <rect key="frame" x="220" y="300" width="114" height="41"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="45"/>
-                                <state key="normal" title="Farm">
-                                    <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bOA-t0-3pq" kind="show" id="Z97-3L-AJu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please choose one below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W65-fw-wJy">
-                                <rect key="frame" x="149" y="206" width="363" height="29"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="21"/>
-                                <color key="textColor" red="0.83816672120418845" green="0.53265707655672112" blue="0.24479503683678866" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRy-i3-Jn8">
                                 <rect key="frame" x="20" y="540" width="178" height="49"/>
                                 <fontDescription key="fontDescription" name="TTMoonsThinDEMO-Italic" family="TT Moons Thin DEMO" pointSize="50"/>
@@ -48,22 +32,12 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's Turn Wasted Food Into Wanted Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
-                                <rect key="frame" x="-185" y="-6" width="924" height="158"/>
+                                <rect key="frame" x="154" y="36" width="924" height="158"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-In-Q4R">
-                                <rect key="frame" x="149" y="243" width="257" height="49"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="45"/>
-                                <state key="normal" title="Restaurant">
-                                    <color key="titleColor" red="0.90471613219895286" green="0.55486716423690197" blue="0.35299330429360737" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TH8-Lm-kc5" kind="show" id="Z9x-gs-hKf"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="8nN-yi-0m9">
                                 <rect key="frame" x="5" y="472" width="138" height="128"/>
                                 <constraints>
@@ -76,7 +50,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroGreen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-fw-gZt">
-                                <rect key="frame" x="16" y="28" width="568" height="241"/>
+                                <rect key="frame" x="26" y="20" width="568" height="124"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="66"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +68,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28w-KR-BNN">
-                                <rect key="frame" x="194" y="409" width="127" height="43"/>
+                                <rect key="frame" x="349" y="397" width="127" height="43"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="CzR-oG-jEu"/>
@@ -105,12 +79,79 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="signInButton:" destination="TH8-Lm-kc5" eventType="touchUpInside" id="KiL-By-u7g"/>
                                     <segue destination="jLm-O1-tUF" kind="show" id="gdV-Od-ejS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-oR-kDg">
+                                <rect key="frame" x="349" y="323" width="127" height="43"/>
+                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="9ub-eR-iB1"/>
+                                    <constraint firstAttribute="width" constant="127" id="Ihp-W2-CKe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5jh-Qc-V5c" kind="show" id="7ca-Oy-WmR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EEN-c1-pOB">
+                                <rect key="frame" x="188" y="190" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="244" id="0z8-FX-FWF"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="244" id="3iz-7Z-jgG"/>
+                                    <constraint firstAttribute="width" constant="185" id="S3A-xE-YgW"/>
+                                    <constraint firstAttribute="width" constant="156" id="c3h-M8-JhH"/>
+                                </constraints>
+                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="S3A-xE-YgW"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-iF-aaQ">
+                                <rect key="frame" x="270" y="228" width="74" height="24"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-K3-zVt">
+                                <rect key="frame" x="267" y="173" width="81" height="17"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-Ok-NQS">
+                                <rect key="frame" x="188" y="248" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="0Ne-6P-RPg"/>
+                                </constraints>
+                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-tE-PcJ">
+                                <rect key="frame" x="117" y="323" width="127" height="43"/>
+                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="f8y-h9-4aF"/>
+                                    <constraint firstAttribute="height" constant="39" id="ym3-lp-7Xy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="uaw-vR-WRH" eventType="touchUpInside" id="wmo-dd-7No"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEE-We-FJP">
-                                <rect key="frame" x="46" y="409" width="127" height="43"/>
+                                <rect key="frame" x="117" y="397" width="127" height="43"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="ctV-uy-Zfn"/>
@@ -121,29 +162,44 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="signInButton:" destination="TH8-Lm-kc5" eventType="touchUpInside" id="pCc-AD-xVT"/>
                                     <segue destination="J8v-nE-T5E" kind="show" id="idl-Zx-KuL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9960181580265518" blue="0.96620443246088161" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="W65-fw-wJy" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="0Pf-xo-U2W"/>
-                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="top" secondItem="pt0-In-Q4R" secondAttribute="bottom" constant="8" id="7fA-uw-MKC"/>
+                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="6Ev-Zm-zoH"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="100" id="9XV-9F-H0h"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="28" id="AaC-fE-xmC"/>
                             <constraint firstItem="G3Z-if-wEK" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="Flh-nj-it8"/>
+                            <constraint firstItem="EEN-c1-pOB" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="H19-OI-0op"/>
                             <constraint firstItem="Id1-fw-gZt" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="10" id="IoK-mX-tJA"/>
-                            <constraint firstItem="W65-fw-wJy" firstAttribute="top" secondItem="G3Z-if-wEK" secondAttribute="bottom" constant="54" id="J0T-Ej-825"/>
+                            <constraint firstItem="vLv-oR-kDg" firstAttribute="top" secondItem="hY2-tE-PcJ" secondAttribute="bottom" constant="25" id="J3a-SR-B9M"/>
+                            <constraint firstItem="hY2-tE-PcJ" firstAttribute="top" secondItem="TC9-Ok-NQS" secondAttribute="bottom" constant="60" id="PJo-hr-pqy"/>
                             <constraint firstItem="Id1-fw-gZt" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="RFx-fD-gGR"/>
-                            <constraint firstItem="tXh-mc-nmQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="YKr-VJ-LOx"/>
-                            <constraint firstItem="pt0-In-Q4R" firstAttribute="top" secondItem="W65-fw-wJy" secondAttribute="bottom" constant="8" id="ZGL-fb-09c"/>
-                            <constraint firstItem="pt0-In-Q4R" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="nth-pF-dtd"/>
+                            <constraint firstItem="hY2-tE-PcJ" firstAttribute="leading" secondItem="6pJ-bY-8Q1" secondAttribute="leadingMargin" constant="134" id="SOU-R9-JZt"/>
+                            <constraint firstItem="hY2-tE-PcJ" firstAttribute="top" secondItem="3GX-iF-aaQ" secondAttribute="bottom" constant="90" id="YOh-hk-R8U"/>
+                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="8" id="YyR-KJ-XNc"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="aQC-jn-yIe"/>
+                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="8" id="aRO-HF-FFl"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="27" id="gON-vy-B9x"/>
+                            <constraint firstItem="EEN-c1-pOB" firstAttribute="top" secondItem="tyn-K3-zVt" secondAttribute="bottom" id="mr8-U6-x1e"/>
+                            <constraint firstItem="tyn-K3-zVt" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="p9b-bb-KHT"/>
+                            <constraint firstItem="tyn-K3-zVt" firstAttribute="top" secondItem="Id1-fw-gZt" secondAttribute="bottom" constant="21" id="qgc-yG-C9p"/>
                             <constraint firstItem="G3Z-if-wEK" firstAttribute="top" secondItem="6pJ-bY-8Q1" secondAttribute="topMargin" constant="110" id="skb-7s-uBu"/>
+                            <constraint firstItem="EEN-c1-pOB" firstAttribute="top" secondItem="tyn-K3-zVt" secondAttribute="bottom" constant="-50" id="sp4-1J-cjw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="TC9-Ok-NQS" id="kjO-SO-Zzh"/>
+                        <outlet property="usernameField" destination="EEN-c1-pOB" id="jra-ic-EWY"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="restaurantLogin" id="9aq-hH-NXF"/>
+                        <segue destination="URf-ze-Qpj" kind="show" identifier="farmerLogin" id="kKd-jt-T5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOd-pZ-J3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1514" y="674"/>
+            <point key="canvasLocation" x="-746" y="836"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cmO-Sg-5E3">
@@ -235,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iP9-0H-a3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2261" y="1344"/>
+            <point key="canvasLocation" x="-1689" y="1096"/>
         </scene>
         <!--About Page View Controller-->
         <scene sceneID="BYc-Qf-95s">
@@ -469,267 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zt-5X-c8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1045" y="2368"/>
-        </scene>
-        <!--Restaurant Log In View Controller-->
-        <scene sceneID="kwW-Uo-1iA">
-            <objects>
-                <viewController id="TH8-Lm-kc5" customClass="restaurantLogInViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KIm-V2-f6B"/>
-                        <viewControllerLayoutGuide type="bottom" id="0gB-Jv-LZl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5tw-Xk-l6i">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-fa-UQz">
-                                <rect key="frame" x="215" y="442" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="F8A-Ei-8C9"/>
-                                    <constraint firstAttribute="height" constant="39" id="Iq0-Lo-3Qx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5jh-Qc-V5c" kind="show" identifier="signUpViewController" id="qaK-J5-Kbi"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-fv-5uu">
-                                <rect key="frame" x="145" y="233" width="244" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="Edp-Xe-Rm0"/>
-                                    <constraint firstAttribute="width" constant="185" id="nL5-gW-NjH"/>
-                                </constraints>
-                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="nL5-gW-NjH"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-tb-PgV">
-                                <rect key="frame" x="10" y="9" width="59" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="CYc-pn-w7T"/>
-                                    <constraint firstAttribute="height" constant="41" id="iqo-6R-aDW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="⬅︎">
-                                    <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uaw-vR-WRH" kind="show" id="83u-ln-TJu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-uM-fTB">
-                                <rect key="frame" x="215" y="378" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="UTD-JJ-Isv"/>
-                                    <constraint firstAttribute="height" constant="39" id="oWE-kd-KWA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="22"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="signInButton:" destination="TH8-Lm-kc5" eventType="touchUpInside" id="PXM-Q1-udn"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr1-Bz-Dan">
-                                <rect key="frame" x="186" y="28" width="305" height="158"/>
-                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="60"/>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-X2-Oyb">
-                                <rect key="frame" x="227" y="271" width="74" height="24"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
-                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-g5-gmn">
-                                <rect key="frame" x="224" y="216" width="81" height="17"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
-                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Gr4-I3-WJv">
-                                <rect key="frame" x="145" y="291" width="244" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="D5j-Ev-4S7"/>
-                                </constraints>
-                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Gr4-I3-WJv" firstAttribute="top" secondItem="w4l-fv-5uu" secondAttribute="bottom" constant="100" id="7nM-WX-4ch"/>
-                            <constraint firstItem="Qhf-uM-fTB" firstAttribute="top" secondItem="Gr4-I3-WJv" secondAttribute="bottom" constant="60" id="7w5-dQ-Hee"/>
-                            <constraint firstItem="2Cr-X2-Oyb" firstAttribute="top" secondItem="w4l-fv-5uu" secondAttribute="bottom" constant="8" id="Ip4-2b-pQa"/>
-                            <constraint firstItem="4cQ-tb-PgV" firstAttribute="top" secondItem="5tw-Xk-l6i" secondAttribute="topMargin" constant="20" id="J87-7i-b5p"/>
-                            <constraint firstItem="w4l-fv-5uu" firstAttribute="top" secondItem="MdZ-g5-gmn" secondAttribute="bottom" constant="-50" id="LJW-X9-hDD"/>
-                            <constraint firstItem="MdZ-g5-gmn" firstAttribute="top" secondItem="vr1-Bz-Dan" secondAttribute="bottom" constant="30" id="MR4-zs-nZN"/>
-                            <constraint firstItem="MdZ-g5-gmn" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="Mtg-zx-bzk"/>
-                            <constraint firstItem="2Cr-X2-Oyb" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="SI2-Mz-zuB"/>
-                            <constraint firstItem="Qhf-uM-fTB" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="UGw-GG-YDs"/>
-                            <constraint firstItem="pNn-fa-UQz" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="bVi-5J-Cad"/>
-                            <constraint firstItem="4cQ-tb-PgV" firstAttribute="leading" secondItem="5tw-Xk-l6i" secondAttribute="leadingMargin" constant="-20" id="crl-ES-TEr"/>
-                            <constraint firstItem="Gr4-I3-WJv" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="iu0-a9-YfG"/>
-                            <constraint firstItem="w4l-fv-5uu" firstAttribute="top" secondItem="vr1-Bz-Dan" secondAttribute="bottom" constant="100" id="mX9-4F-RSD"/>
-                            <constraint firstItem="w4l-fv-5uu" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="nXc-73-nj7"/>
-                            <constraint firstItem="vr1-Bz-Dan" firstAttribute="top" secondItem="KIm-V2-f6B" secondAttribute="bottom" constant="8" id="odS-Ns-XSi"/>
-                            <constraint firstItem="vr1-Bz-Dan" firstAttribute="top" secondItem="KIm-V2-f6B" secondAttribute="bottom" constant="10" id="omF-KS-6nW"/>
-                            <constraint firstItem="vr1-Bz-Dan" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="rgw-k2-yTT"/>
-                            <constraint firstItem="pNn-fa-UQz" firstAttribute="top" secondItem="Qhf-uM-fTB" secondAttribute="bottom" constant="25" id="s1T-6Y-f5R"/>
-                            <constraint firstItem="Gr4-I3-WJv" firstAttribute="top" secondItem="w4l-fv-5uu" secondAttribute="bottom" constant="27" id="uaj-cF-OBk"/>
-                            <constraint firstItem="vr1-Bz-Dan" firstAttribute="centerX" secondItem="5tw-Xk-l6i" secondAttribute="centerX" id="ucB-8T-vbk"/>
-                            <constraint firstItem="Qhf-uM-fTB" firstAttribute="top" secondItem="2Cr-X2-Oyb" secondAttribute="bottom" constant="90" id="wFp-Z9-j1X"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="omF-KS-6nW"/>
-                                <exclude reference="rgw-k2-yTT"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="passwordField" destination="Gr4-I3-WJv" id="0GQ-6K-6JI"/>
-                        <outlet property="usernameField" destination="w4l-fv-5uu" id="VgP-fj-4Pu"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginToRestaurantHome" id="lVB-rO-LMZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ot7-FS-Pob" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-525" y="265"/>
-        </scene>
-        <!--Farmer Login View Controller-->
-        <scene sceneID="4jT-Mk-vq6">
-            <objects>
-                <viewController id="bOA-t0-3pq" customClass="farmerLoginViewController" customModule="GrowGreen" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g59-Ul-4rq"/>
-                        <viewControllerLayoutGuide type="bottom" id="hBj-BS-aZh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eDv-ri-POF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWG-sz-me6">
-                                <rect key="frame" x="237" y="427" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="Eh1-Nb-Fs2"/>
-                                    <constraint firstAttribute="width" constant="127" id="wGF-eQ-sMK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="18"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5jh-Qc-V5c" kind="show" identifier="signUpViewController" id="oFW-ip-ZRn"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RmB-gD-aIx">
-                                <rect key="frame" x="173" y="263" width="233" height="30"/>
-                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gN-MS-XLn">
-                                <rect key="frame" x="125" y="38" width="305" height="158"/>
-                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="60"/>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-94-qf9">
-                                <rect key="frame" x="237" y="374" width="127" height="39"/>
-                                <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="1CJ-en-MxJ"/>
-                                    <constraint firstAttribute="height" constant="39" id="a8c-IN-Cye"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="18"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="farmSignIn:" destination="bOA-t0-3pq" eventType="touchUpInside" id="8Lv-Nb-bvO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzf-LA-Wqh">
-                                <rect key="frame" x="0.0" y="20" width="59" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="0LS-2v-0qd"/>
-                                    <constraint firstAttribute="width" constant="59" id="WNi-5R-AOO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="⬅︎">
-                                    <color key="titleColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uaw-vR-WRH" kind="show" id="q0G-kv-x3O"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-wo-qjL">
-                                <rect key="frame" x="249" y="244" width="75" height="20"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
-                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bb-ab-bqA">
-                                <rect key="frame" x="249" y="301" width="75" height="14"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
-                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-4d-nl3">
-                                <rect key="frame" x="173" y="318" width="233" height="30"/>
-                                <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="XR8-wo-qjL" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="0Uq-UI-FHa"/>
-                            <constraint firstItem="yFk-4d-nl3" firstAttribute="top" secondItem="0Bb-ab-bqA" secondAttribute="bottom" constant="3" id="80e-VF-MV4"/>
-                            <constraint firstItem="4rY-94-qf9" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="8ax-3J-3cB"/>
-                            <constraint firstItem="oWG-sz-me6" firstAttribute="top" secondItem="4rY-94-qf9" secondAttribute="bottom" constant="25" id="Aau-vD-KMk"/>
-                            <constraint firstItem="4rY-94-qf9" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="HJh-Uh-deP"/>
-                            <constraint firstItem="0gN-MS-XLn" firstAttribute="top" secondItem="g59-Ul-4rq" secondAttribute="bottom" constant="10" id="Rfd-Ph-V5o"/>
-                            <constraint firstItem="0Bb-ab-bqA" firstAttribute="top" secondItem="XR8-wo-qjL" secondAttribute="bottom" constant="32" id="YFU-sQ-CHY"/>
-                            <constraint firstItem="nzf-LA-Wqh" firstAttribute="top" secondItem="eDv-ri-POF" secondAttribute="topMargin" constant="20" id="cWI-fy-tyb"/>
-                            <constraint firstItem="yFk-4d-nl3" firstAttribute="top" secondItem="RmB-gD-aIx" secondAttribute="bottom" constant="27" id="cwp-ew-DKO"/>
-                            <constraint firstItem="oWG-sz-me6" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="dDn-9v-W1M"/>
-                            <constraint firstItem="nzf-LA-Wqh" firstAttribute="leading" secondItem="eDv-ri-POF" secondAttribute="leadingMargin" constant="-20" id="eWW-qd-wRE"/>
-                            <constraint firstItem="yFk-4d-nl3" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="hnS-g1-MFD"/>
-                            <constraint firstItem="RmB-gD-aIx" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="k4a-31-2W0"/>
-                            <constraint firstItem="yFk-4d-nl3" firstAttribute="width" secondItem="RmB-gD-aIx" secondAttribute="width" id="kuh-IJ-aKb"/>
-                            <constraint firstItem="4rY-94-qf9" firstAttribute="top" secondItem="yFk-4d-nl3" secondAttribute="bottom" constant="60" id="raj-AH-aAQ"/>
-                            <constraint firstItem="0gN-MS-XLn" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="vf7-2F-zyh"/>
-                            <constraint firstItem="0Bb-ab-bqA" firstAttribute="centerX" secondItem="eDv-ri-POF" secondAttribute="centerX" id="vgN-Yt-56v"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="passwordField" destination="yFk-4d-nl3" id="xdF-df-3FD"/>
-                        <outlet property="usernameField" destination="RmB-gD-aIx" id="afa-lm-CGk"/>
-                        <segue destination="URf-ze-Qpj" kind="show" identifier="farmerLogin" id="Met-vs-gSM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsn-xa-MUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-273" y="1044"/>
+            <point key="canvasLocation" x="-1199" y="1986"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="e85-Rr-RXK">
@@ -816,13 +612,10 @@
                             <constraint firstItem="XnW-8g-fZK" firstAttribute="centerX" secondItem="Sz0-SR-sGr" secondAttribute="centerX" id="yav-RF-1ZD"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="uaw-vR-WRH" kind="show" identifier="signUp" id="nWd-aE-VRZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwJ-VR-i6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-716" y="1700"/>
+            <point key="canvasLocation" x="-534" y="1630"/>
         </scene>
         <!--Farmer Home View Controller-->
         <scene sceneID="PrQ-Yh-ONm">
@@ -949,7 +742,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9d-w2-EfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="406" y="1134"/>
+            <point key="canvasLocation" x="220" y="1144"/>
         </scene>
         <!--Farmer Orders View Controller-->
         <scene sceneID="6lx-GL-DtQ">
@@ -1237,6 +1030,12 @@
                                     <segue destination="hkq-ko-ZMY" kind="show" id="xBp-l1-vtG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-wK-bGc">
+                                <rect key="frame" x="99" y="75" width="207" height="36"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
+                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQM-Jr-KFG">
                                 <rect key="frame" x="134" y="444" width="215" height="60"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
@@ -1256,15 +1055,10 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="uaw-vR-WRH" kind="show" id="TtQ-Kc-wJh"/>
+                                    <action selector="restaurantLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xW4-0Z-Bmv"/>
+                                    <segue destination="uaw-vR-WRH" kind="show" identifier="restaurantLogout" id="TtQ-Kc-wJh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-wK-bGc">
-                                <rect key="frame" x="99" y="75" width="207" height="36"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="23"/>
-                                <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1286,7 +1080,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="227"/>
+            <point key="canvasLocation" x="220" y="277"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="66i-OM-PJp">
@@ -1648,13 +1442,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="83u-ln-TJu"/>
-        <segue reference="Met-vs-gSM"/>
-        <segue reference="lVB-rO-LMZ"/>
-        <segue reference="qaK-J5-Kbi"/>
-        <segue reference="xBp-l1-vtG"/>
-        <segue reference="qzp-sb-DnB"/>
         <segue reference="aQG-hh-Sqs"/>
-        <segue reference="TRF-tc-b84"/>
+        <segue reference="kKd-jt-T5I"/>
+        <segue reference="kr6-VA-Jvg"/>
+        <segue reference="9aq-hH-NXF"/>
+        <segue reference="xBp-l1-vtG"/>
+        <segue reference="jWw-VS-koL"/>
+        <segue reference="8H7-N4-UVE"/>
     </inferredMetricsTieBreakers>
 </document>
