@@ -1393,15 +1393,21 @@
                                     <segue destination="o2S-wS-wls" kind="show" id="aQG-hh-Sqs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your credit card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-Zp-o9R">
-                                <rect key="frame" x="169" y="69" width="262" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your total is: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-Zp-o9R">
+                                <rect key="frame" x="215" y="69" width="120" height="28"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
                                 <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="information below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGM-gS-i4d">
-                                <rect key="frame" x="215" y="105" width="170" height="28"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your credit card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGM-gS-i4d">
+                                <rect key="frame" x="171" y="114" width="209" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="information below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7He-co-Qlm">
+                                <rect key="frame" x="207" y="150" width="136" height="28"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
                                 <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1409,13 +1415,15 @@
                         <color key="backgroundColor" red="1" green="0.99601815800000004" blue="0.96620443249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VoP-g9-jAp" firstAttribute="top" secondItem="gck-Nc-GWU" secondAttribute="bottom" id="95P-YG-8r6"/>
-                            <constraint firstItem="CGM-gS-i4d" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="A0T-qg-HYi"/>
                             <constraint firstItem="dcm-hM-Bb4" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="Fhc-Ja-C0L"/>
-                            <constraint firstItem="sAV-Zp-o9R" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="Of4-au-2Fp"/>
+                            <constraint firstItem="7He-co-Qlm" firstAttribute="top" secondItem="CGM-gS-i4d" secondAttribute="bottom" constant="8" id="N03-mC-mcv"/>
+                            <constraint firstItem="CGM-gS-i4d" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="TGf-BF-wO6"/>
                             <constraint firstItem="VoP-g9-jAp" firstAttribute="leading" secondItem="PcB-o7-oRX" secondAttribute="leadingMargin" id="ZzN-Aj-4WV"/>
-                            <constraint firstItem="sAV-Zp-o9R" firstAttribute="top" secondItem="gck-Nc-GWU" secondAttribute="bottom" constant="50" id="eJE-FQ-JV6"/>
+                            <constraint firstItem="sAV-Zp-o9R" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="hOf-sF-Fok"/>
+                            <constraint firstItem="sAV-Zp-o9R" firstAttribute="top" secondItem="gck-Nc-GWU" secondAttribute="bottom" constant="49" id="hfN-kV-DiT"/>
+                            <constraint firstItem="7He-co-Qlm" firstAttribute="centerX" secondItem="PcB-o7-oRX" secondAttribute="centerX" id="prt-N7-0Ar"/>
                             <constraint firstItem="dcm-hM-Bb4" firstAttribute="centerY" secondItem="PcB-o7-oRX" secondAttribute="centerY" id="rJu-vG-efF"/>
-                            <constraint firstItem="CGM-gS-i4d" firstAttribute="top" secondItem="sAV-Zp-o9R" secondAttribute="bottom" constant="8" id="yPt-qV-Nn4"/>
+                            <constraint firstItem="CGM-gS-i4d" firstAttribute="top" secondItem="sAV-Zp-o9R" secondAttribute="bottom" constant="17" id="wDP-Ek-Xau"/>
                         </constraints>
                     </view>
                     <connections>

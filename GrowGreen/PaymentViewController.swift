@@ -69,7 +69,7 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad();
-        paymentTextField.frame = CGRectMake(15, 160, CGRectGetWidth(self.view.frame) - 30, 44)
+        paymentTextField.frame = CGRectMake(15, 205, CGRectGetWidth(self.view.frame) - 30, 44)
         paymentTextField.delegate = self
         view.addSubview(paymentTextField)
         
