@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uaw-vR-WRH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -31,7 +31,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="8nN-yi-0m9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="8nN-yi-0m9">
                                 <rect key="frame" x="40" y="509" width="138" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroGreen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-fw-gZt">
@@ -41,8 +41,8 @@
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eggplant" translatesAutoresizingMaskIntoConstraints="NO" id="45X-d7-mMk">
-                                <rect key="frame" x="186" y="499" width="176" height="132"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="eggplant" translatesAutoresizingMaskIntoConstraints="NO" id="45X-d7-mMk">
+                                <rect key="frame" x="341" y="499" width="176" height="132"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28w-KR-BNN">
                                 <rect key="frame" x="289" y="453" width="73" height="20"/>
@@ -59,7 +59,7 @@
                                     <segue destination="jLm-O1-tUF" kind="show" id="gdV-Od-ejS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-oR-kDg">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-oR-kDg">
                                 <rect key="frame" x="194" y="377" width="127" height="43"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -74,13 +74,13 @@
                                     <segue destination="5jh-Qc-V5c" kind="show" id="7ca-Oy-WmR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EEN-c1-pOB">
-                                <rect key="frame" x="131" y="190" width="244" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EEN-c1-pOB">
+                                <rect key="frame" x="135" y="190" width="244" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="244" id="0z8-FX-FWF"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="244" id="3iz-7Z-jgG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Drm-FX-q9P"/>
+                                    <constraint firstAttribute="width" constant="244" id="O4f-tP-n43"/>
                                     <constraint firstAttribute="width" constant="185" id="S3A-xE-YgW"/>
-                                    <constraint firstAttribute="width" constant="156" id="c3h-M8-JhH"/>
+                                    <constraint firstAttribute="height" constant="30" id="izN-cU-49Z"/>
                                 </constraints>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
@@ -91,22 +91,17 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-iF-aaQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-iF-aaQ">
                                 <rect key="frame" x="220" y="228" width="74" height="24"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
                                 <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-K3-zVt">
-                                <rect key="frame" x="213" y="165" width="81" height="17"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
-                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-Ok-NQS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TC9-Ok-NQS">
                                 <rect key="frame" x="131" y="253" width="244" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="0Ne-6P-RPg"/>
+                                    <constraint firstAttribute="height" constant="30" id="8kU-lM-0e4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="244" id="frm-zg-OIM"/>
                                 </constraints>
                                 <color key="textColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
@@ -128,14 +123,14 @@
                                     <segue destination="J8v-nE-T5E" kind="show" id="idl-Zx-KuL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's Turn Wasted Food Into Wanted Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Let's Turn Wasted Food Into Wanted Food!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Z-if-wEK">
                                 <rect key="frame" x="117" y="93" width="272" height="27"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
                                 <color key="textColor" red="0.060101249420000002" green="0.32227585079999999" blue="9.3167545749999999e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-tE-PcJ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-tE-PcJ">
                                 <rect key="frame" x="194" y="314" width="127" height="43"/>
                                 <color key="backgroundColor" red="0.044257830829999997" green="0.23732002620000001" blue="6.8607450240000002e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -150,25 +145,44 @@
                                     <action selector="signIn:" destination="uaw-vR-WRH" eventType="touchUpInside" id="wmo-dd-7No"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-K3-zVt">
+                                <rect key="frame" x="213" y="165" width="81" height="17"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                                <color key="textColor" red="0.02263299748" green="0.29597711560000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9960181580265518" blue="0.96620443246088161" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="0XC-Fk-okb"/>
-                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="8" id="BlN-Eb-sW5"/>
+                            <constraint firstItem="EEN-c1-pOB" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="3z4-yP-jty"/>
+                            <constraint firstItem="mEE-We-FJP" firstAttribute="leading" secondItem="6pJ-bY-8Q1" secondAttribute="leadingMargin" id="6oA-9R-4gf"/>
+                            <constraint firstItem="45X-d7-mMk" firstAttribute="top" secondItem="28w-KR-BNN" secondAttribute="bottom" constant="26" id="73b-je-BwL"/>
                             <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="3GX-iF-aaQ" secondAttribute="bottom" constant="1" id="DqZ-N1-agE"/>
-                            <constraint firstItem="EEN-c1-pOB" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="KRP-e4-viO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="45X-d7-mMk" secondAttribute="bottom" id="EQP-gO-2is"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="3GX-iF-aaQ" secondAttribute="bottom" constant="50" id="FsP-77-JUS"/>
+                            <constraint firstItem="8nN-yi-0m9" firstAttribute="leading" secondItem="6pJ-bY-8Q1" secondAttribute="leadingMargin" constant="50" id="J3Z-eO-IV2"/>
                             <constraint firstItem="hY2-tE-PcJ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="LnM-g8-brq"/>
                             <constraint firstItem="tyn-K3-zVt" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="RuV-Fn-dZJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8nN-yi-0m9" secondAttribute="bottom" id="TOU-M7-eCR"/>
+                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="top" secondItem="EEN-c1-pOB" secondAttribute="bottom" constant="8" id="UG2-p8-wuQ"/>
                             <constraint firstItem="vLv-oR-kDg" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="UVG-l5-05J"/>
                             <constraint firstItem="hY2-tE-PcJ" firstAttribute="top" secondItem="TC9-Ok-NQS" secondAttribute="bottom" constant="31" id="UbD-Mt-hlC"/>
                             <constraint firstItem="Id1-fw-gZt" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="8" id="UcU-fN-C1H"/>
-                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="XeX-gS-KKX"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="top" secondItem="3GX-iF-aaQ" secondAttribute="bottom" constant="8" id="Uud-8b-LMx"/>
+                            <constraint firstItem="EEN-c1-pOB" firstAttribute="top" secondItem="tyn-K3-zVt" secondAttribute="bottom" constant="-84" id="b91-yT-9oN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="45X-d7-mMk" secondAttribute="trailing" constant="63" id="dBy-PJ-x3R"/>
                             <constraint firstItem="Id1-fw-gZt" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="eOa-dC-kvj"/>
+                            <constraint firstItem="TC9-Ok-NQS" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="ePo-iu-Yqk"/>
+                            <constraint firstItem="3GX-iF-aaQ" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="evf-ov-G5q"/>
+                            <constraint firstItem="45X-d7-mMk" firstAttribute="top" secondItem="mEE-We-FJP" secondAttribute="bottom" constant="26" id="f9V-4x-aRK"/>
                             <constraint firstItem="G3Z-if-wEK" firstAttribute="top" secondItem="B8R-bI-j8u" secondAttribute="bottom" constant="73" id="hBF-8N-RXp"/>
-                            <constraint firstItem="EEN-c1-pOB" firstAttribute="top" secondItem="tyn-K3-zVt" secondAttribute="bottom" constant="8" id="hwW-Nv-EaL"/>
+                            <constraint firstItem="tyn-K3-zVt" firstAttribute="top" secondItem="G3Z-if-wEK" secondAttribute="bottom" constant="45" id="lrD-Rk-MXT"/>
+                            <constraint firstItem="28w-KR-BNN" firstAttribute="top" secondItem="vLv-oR-kDg" secondAttribute="bottom" constant="33" id="rQg-5w-igd"/>
                             <constraint firstItem="vLv-oR-kDg" firstAttribute="top" secondItem="hY2-tE-PcJ" secondAttribute="bottom" constant="20" id="udA-xT-o7x"/>
+                            <constraint firstItem="mEE-We-FJP" firstAttribute="top" secondItem="vLv-oR-kDg" secondAttribute="bottom" constant="33" id="xOA-hl-JQO"/>
+                            <constraint firstItem="vLv-oR-kDg" firstAttribute="top" secondItem="hY2-tE-PcJ" secondAttribute="bottom" constant="20" id="xhU-uc-a6f"/>
                             <constraint firstItem="G3Z-if-wEK" firstAttribute="centerX" secondItem="6pJ-bY-8Q1" secondAttribute="centerX" id="yg2-QT-AZ3"/>
-                            <constraint firstItem="tyn-K3-zVt" firstAttribute="top" secondItem="G3Z-if-wEK" secondAttribute="bottom" constant="45" id="zI4-UE-dIi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="28w-KR-BNN" secondAttribute="trailing" id="zQM-bt-84X"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1447,12 +1461,12 @@
         <image name="speech bubble" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oBs-5T-kl3"/>
-        <segue reference="aQG-hh-Sqs"/>
         <segue reference="xBp-l1-vtG"/>
-        <segue reference="jWw-VS-koL"/>
-        <segue reference="kKd-jt-T5I"/>
+        <segue reference="9aq-hH-NXF"/>
         <segue reference="kr6-VA-Jvg"/>
+        <segue reference="kKd-jt-T5I"/>
         <segue reference="8H7-N4-UVE"/>
+        <segue reference="jWw-VS-koL"/>
+        <segue reference="aQG-hh-Sqs"/>
     </inferredMetricsTieBreakers>
 </document>
