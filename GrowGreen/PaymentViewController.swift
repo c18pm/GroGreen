@@ -20,6 +20,7 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     let paymentTextField = STPPaymentCardTextField()
 
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var totalText: UILabel!
     
     @IBAction func submitOrder(sender: AnyObject) {
         
@@ -76,6 +77,17 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         quantity = NSUserDefaults .standardUserDefaults() .integerForKey("stepperQuantity")
     
         produceType = NSUserDefaults .standardUserDefaults() .stringForKey("produceType")!
+        
+         let farmItem = NSUserDefaults .standardUserDefaults() .objectForKey("farmChosen")!
+        
+         let producePrice = farmItem["price"] as! Double
+        
+        let quantDoub = Double(quantity)
+        
+        let orderTotal = quantDoub * producePrice
+        
+        totalText.text = "Your total is: $\(orderTotal)"
+        
         
         
     }
