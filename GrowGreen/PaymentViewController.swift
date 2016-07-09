@@ -84,7 +84,11 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         
         let quantDoub = Double(quantity)
         
-        let orderTotal = quantDoub * producePrice
+        let order = quantDoub * producePrice
+        
+        let deliveryFee = Double(round(100*(0.075*order))/100)
+        
+        let orderTotal = order + deliveryFee
         
         totalText.text = "Your total is: $\(orderTotal)"
         
