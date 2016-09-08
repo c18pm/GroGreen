@@ -929,7 +929,7 @@
                                     <constraint firstAttribute="height" constant="48" id="5hQ-5C-4Fg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="20"/>
-                                <state key="normal" title="Archive Order">
+                                <state key="normal" title="Ready for Delivery">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
